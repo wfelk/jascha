@@ -6,7 +6,8 @@
   "sections": {
     "hero": {
       "heading": "Jascha",
-      "subheading": "Russian-German language tandem club in Cologne"
+      "subheading": "Russian-German language tandem club in Cologne",
+      "button": "participate"
     }
   }
 }

@@ -6,7 +6,8 @@
   "sections": {
     "hero": {
       "heading": "Jascha",
-      "subheading": "Russisch-Deutscher Sprachtreff in Köln"
+      "subheading": "Russisch-Deutscher Sprachtreff in Köln",
+      "button": "mitmachen"
     }
   }
 }
