@@ -9,7 +9,7 @@ interface Props {
 
 const Hero: FC<Props> = ({ dict }) => {
   return (
-    <div className="border-8 border-sky-500/50 relative bg-sky-950/80 w-screen h-screen flex-col flex justify-center items-center">
+    <section className="border-8 border-sky-500/50 relative bg-sky-950/80 h-screen flex-col flex justify-center items-center snap-start will-change-scroll">
       <div className="w-full grow flex flex-col items-center justify-end mb-12">
         <h1 className="text-7xl text-sky-100/80 uppercase tracking-wider font-thin">
           {dict.heading}
@@ -39,7 +39,7 @@ const Hero: FC<Props> = ({ dict }) => {
           />
         </video>
       </div>
-    </div>
+    </section>
   );
 };
 

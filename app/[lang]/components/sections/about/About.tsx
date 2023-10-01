@@ -7,9 +7,9 @@ interface Props {
 
 const About: FC<Props> = ({ dict }) => {
   return (
-    <div className="w-screen h-screen border-8 border-sky-900/50">
+    <section className="h-screen snap-start border-8 border-sky-900/50 will-change-scroll">
       <AboutCarousel dict={dict} />
-    </div>
+    </section>
   );
 };
 

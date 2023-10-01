@@ -28,7 +28,7 @@ const TextCarousel: FC<Props> = ({ dict }) => {
 
   return (
     <div className="flex flex-col h-full w-full items-center justify-between">
-      <div className=" max-h-5/6 min-h-5/6 h-5/6">
+      <div className="w-full max-h-5/6 min-h-5/6 h-5/6">
         <AboutCarouselTile heading={carouselTiles[currentIndex]?.heading}>
           {carouselTiles[currentIndex].content}
         </AboutCarouselTile>
