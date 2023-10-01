@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 ::-webkit-scrollbar {
-  width: 4px; /* Width of the vertical scrollbar */
+  width: 0.25rem; /* Width of the vertical scrollbar */
 }
 
 ::-webkit-scrollbar-thumb {
