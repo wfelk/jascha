@@ -1,17 +1,22 @@
-import { FC } from "react";
+import { FC, ReactNode } from "react";
 
 interface Props {
   className?: string;
-  label: string;
+  children: string | ReactNode;
   onClick: () => void;
 }
-const Button: FC<Props> = ({ className, label, onClick }) => {
+
+const classNameDefault =
+  "bg-sky-100 hover:bg-sky-600 transition-all cursor-pointer py-4 px-8 rounded-full drop-shadow-2xl font-mono text-sky-900 tracking-wider uppercase font-bold border-4 border-sky-600/75 ring-2 ring-sky-100/50";
+
+const Button: FC<Props> = ({
+  className = classNameDefault,
+  children,
+  onClick,
+}) => {
   return (
-    <button
-      onClick={onClick}
-      className={`${className} bg-sky-100 hover:bg-sky-400 transition-all cursor-pointer py-4 px-8 rounded-full drop-shadow-2xl font-mono text-sky-950 tracking-wider uppercase font-bold`}
-    >
-      {label}
+    <button onClick={onClick} className={className}>
+      {children}
     </button>
   );
 };

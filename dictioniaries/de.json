@@ -6,8 +6,60 @@
   "sections": {
     "hero": {
       "heading": "Jascha",
-      "subheading": "Russisch-Deutscher Sprachtreff in Köln",
+      "subheading": {
+        "beforeEmphasis": "Russisch-Deutscher Sprachtreff",
+        "emphasis": "in Köln"
+      },
       "button": "mitmachen"
+    },
+    "about": {
+      "carouselTiles": {
+        "tile1": {
+          "heading": "Was ist Jascha?",
+          "content": {
+            "paragraph1": "Das ist der Name unseres Sprachtreffs, den wir für Russisch- und Deutschsprachige in Köln organisieren.",
+            "paragraph2": {
+              "beforeEmphasis": "Treffen Sie russisch- oder deutschsprachige Personen (z.B. Expats, Studenten, neu Zugezogene oder andere Kölner) und",
+              "emphasis": "üben Sie Ihre Sprachkenntnisse",
+              "afterEmphasis": "in einer Tandem-ähnlichen Weise."
+            },
+            "paragraph3": "In einer gemütlichen und freundlichen Atmosphäre sprechen wir über alles Mögliche – bei Kaffee, Kölsch oder einem anderen Getränk Ihrer Wahl."
+          }
+        },
+        "tile2": {
+          "heading": "Für wen ist Jascha?",
+          "content": {
+            "list": {
+              "item1": "Russischsprachige, die ihre Deutschkenntnisse üben möchten",
+              "item2": "Deutschsprachige, die ihre Russischkenntnisse üben möchten",
+              "item3": "Personen, die an der russischen oder deutschen Sprache interessiert sind",
+              "item4": "Personen, die einfach nur Ideen mit Russisch- oder Deutschsprachigen austauschen möchten"
+            },
+            "paragraph": {
+              "beforeEmphasis": "… und natürlich ist Jascha auch für alle offen, die",
+              "emphasis": "einfach mal vorbeischauen möchten."
+            }
+          }
+        },
+        "tile3": {
+          "heading": "Wie kann ich teilnehmen?",
+          "content": {
+            "paragraph1": "Komm' einfach vorbei!",
+            "paragraph2": {
+              "beforeEmphasis": "Du kannst uns auch im Voraus über in den sozialen Netzen Bescheid geben oder deine Teilnahme bei Meetup bestätigen. Das ermöglicht uns, die Anzahl der Teilnehmer im Auge zu behalten und bei Bedarf den Veranstaltungsort zu wechseln, um",
+              "emphasis": "genügend Platz für alle zu bieten."
+            },
+            "button": "Folge uns auf Meetup"
+          }
+        },
+        "tile4": {
+          "heading": "Wer sind die Organisatoren?",
+          "content": {
+            "paragraph1": "Der Sprachtreff Jascha wird von zwei Freunden organisiert: Andrej und Wilhelm. Zusammen haben sie die Idee im Jahr 2022 entwickelt.",
+            "paragraph2": "„Jascha“ ist einfach der Name des Sprachtreffs und seines Maskottchens, dem Eisbären Jascha."
+          }
+        }
+      }
     }
   }
 }

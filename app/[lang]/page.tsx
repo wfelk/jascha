@@ -2,6 +2,7 @@ import { FC } from "react";
 import Hero from "./components/sections/hero/Hero";
 import type Lang from "@/dictioniaries/types/lang";
 import { getDictionary } from "./dictionaries";
+import About from "./components/sections/about/About";
 
 interface Props {
   params: {
@@ -10,10 +11,11 @@ interface Props {
 }
 
 const Home: FC<Props> = async ({ params: { lang } }) => {
-  const dict = await getDictionary(lang);
+  const { sections } = await getDictionary(lang);
   return (
     <main>
-      <Hero dict={dict} />
+      <Hero dict={sections.hero} />
+      <About dict={sections.about} />
     </main>
   );
 };
