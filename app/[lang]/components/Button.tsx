@@ -9,7 +9,7 @@ const Button: FC<Props> = ({ className, label, onClick }) => {
   return (
     <button
       onClick={onClick}
-      className={`${className} bg-sky-600 hover:bg-sky-500 transition-all cursor-pointer py-4 px-8 rounded-full drop-shadow-2xl font-mono text-sky-950 tracking-wider uppercase font-bold`}
+      className={`${className} bg-sky-100 hover:bg-sky-400 transition-all cursor-pointer py-4 px-8 rounded-full drop-shadow-2xl font-mono text-sky-950 tracking-wider uppercase font-bold`}
     >
       {label}
     </button>

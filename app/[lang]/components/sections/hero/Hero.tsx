@@ -9,12 +9,14 @@ interface Props {
 
 const Hero: FC<Props> = ({ dict }) => {
   return (
-    <div className="border-8 border-sky-600 relative bg-sky-950/80 w-screen h-screen flex-col flex justify-center items-center">
-      <div className="w-full grow flex flex-col items-center justify-end gap-12">
+    <div className="border-8 border-sky-500/50 relative bg-sky-950/80 w-screen h-screen flex-col flex justify-center items-center">
+      <div className="w-full grow flex flex-col items-center justify-end mb-12">
         <h1 className="text-8xl text-sky-100 uppercase tracking-wider font-thin">
           {dict.sections.hero.heading}
         </h1>
-        <span className="max-w-1/2 text-xl font-semibold inline-block text-sky-200/75 text-center">
+      </div>
+      <div className="w-full flex flex-col items-center justify-center bg-sky-500/50 py-4">
+        <span className="w-full tracking-wide text-lg font-semibold inline-block text-sky-200 text-center py-4 ">
           {dict.sections.hero.subheading}
         </span>
       </div>

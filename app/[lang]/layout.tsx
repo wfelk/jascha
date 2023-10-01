@@ -15,7 +15,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${oswald.className} bg-sky-950`}>{children}</body>
+      <body className={`${oswald.className} bg-sky-950 box-border p-0 m-0`}>
+        {children}
+      </body>
     </html>
   );
 }
