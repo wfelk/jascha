@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: "Russian-German language tandem club in Cologne",
   viewport: { width: "device-width", initialScale: 1 },
   icons: { icon: "/favicon.ico" },
-  themeColor: { media: "(prefers-color-scheme: dark)", color: "#0EA5E9" },
+  themeColor: { media: "(prefers-color-scheme: dark)", color: "#0ea5e980" },
 };
 
 export default function RootLayout({
@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html>
       <body
-        className={`${oswald.className} w-screen bg-sky-950 overflow-hidden`}
+        className={`${oswald.className} w-screen overflow-x-hidden bg-sky-950`}
       >
         {children}
       </body>

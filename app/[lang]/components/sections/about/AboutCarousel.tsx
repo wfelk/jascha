@@ -1,8 +1,8 @@
 "use client";
 
 import { useState, FC } from "react";
-import AboutCarouselTile from "./AboutCarouselTile";
-import getCarouselTiles from "./getCarouselTiles";
+import AboutCarouselTile from "./AboutCarouselItem";
+import getCarouselTiles from "./getCarouselItems";
 import AboutControls from "./AboutControls";
 
 interface Props {

@@ -22,7 +22,7 @@ const OrganiserCard: FC<Props> = ({ name, children, imgSrc }) => {
           {name}
         </h3>
       </div>
-      <div className="bg-sky-600/75 overflow-y-auto flex flex-col rounded-r gap-8 p-4 text-sky-100/90 w-full h-full">
+      <div className="bg-sky-950/75 overflow-y-auto flex flex-col rounded-r gap-8 p-4 text-sky-200/90 w-full h-full">
         {children}
       </div>
     </article>
