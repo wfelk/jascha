@@ -9,11 +9,11 @@ interface Props {
 
 const Organisers: FC<Props> = ({ dict }) => {
   return (
-    <section className="h-screen snap-start flex flex-col will-change-scroll">
-      <h2 className="p-6 bg-gradient-to-r from-sky-950 to-sky-900 text-sky-400/75 h-1/8 tracking-wide font-light text-2xl">
+    <section className="h-screen bg-gradient-to-tr from-sky-800/50 to-sky-700 flex flex-col will-change-scroll">
+      <h2 className="p-8 text-sky-200/75 h-1/8 tracking-wide font-light text-2xl text-right">
         {dict?.heading}
       </h2>
-      <div className="flex flex-col w-full h-7/8 overflow-y-auto">
+      <div className="flex flex-col items-center w-full h-7/8 overflow-y-auto px-2">
         <OrganiserCard name={dict?.andrey.heading} imgSrc={imgAndrey}>
           <>
             <p>

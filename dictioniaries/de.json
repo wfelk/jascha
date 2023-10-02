@@ -15,19 +15,19 @@
     "about": {
       "carouselTiles": {
         "tile1": {
-          "heading": "Was ist Jascha?",
+          "heading": "Was ist „Jascha“?",
           "content": {
             "paragraph1": "Das ist der Name unseres Sprachtreffs, den wir für Russisch- und Deutschsprachige in Köln organisieren.",
             "paragraph2": {
-              "beforeEmphasis": "Treffen Sie russisch- oder deutschsprachige Personen (z.B. Expats, Studenten, neu Zugezogene oder andere Kölner) und",
-              "emphasis": "üben Sie Ihre Sprachkenntnisse",
-              "afterEmphasis": "in einer Tandem-ähnlichen Weise."
+              "beforeEmphasis": "Triff russisch- oder deutschsprachige Personen (z.B. Expats, Studenten, Neugezogene oder andere Kölner) und",
+              "emphasis": "übe deine Sprachkenntnisse",
+              "afterEmphasis": "wie bei einem Sprachtandem."
             },
-            "paragraph3": "In einer gemütlichen und freundlichen Atmosphäre sprechen wir über alles Mögliche – bei Kaffee, Kölsch oder einem anderen Getränk Ihrer Wahl."
+            "paragraph3": "In einer gemütlichen und freundlichen Atmosphäre sprechen wir über alles Mögliche – bei Kaffee, Kölsch oder einem anderen Getränk der Wahl."
           }
         },
         "tile2": {
-          "heading": "Für wen ist Jascha?",
+          "heading": "Für wen ist „Jascha“?",
           "content": {
             "list": {
               "item1": "Russischsprachige, die ihre Deutschkenntnisse üben möchten",
@@ -36,7 +36,7 @@
               "item4": "Personen, die einfach nur Ideen mit Russisch- oder Deutschsprachigen austauschen möchten"
             },
             "paragraph": {
-              "beforeEmphasis": "… und natürlich ist Jascha auch für alle offen, die",
+              "beforeEmphasis": "… und natürlich ist Jascha auch für diejenigen offen, die",
               "emphasis": "einfach mal vorbeischauen möchten."
             }
           }
@@ -46,38 +46,38 @@
           "content": {
             "paragraph1": "Komm' einfach vorbei!",
             "paragraph2": {
-              "beforeEmphasis": "Du kannst uns auch im Voraus über in den sozialen Netzen Bescheid geben oder deine Teilnahme bei Meetup bestätigen. Das ermöglicht uns, die Anzahl der Teilnehmer im Auge zu behalten und bei Bedarf den Veranstaltungsort zu wechseln, um",
+              "beforeEmphasis": "Du kannst uns auch im Voraus über den sozialen Netzen bescheidgeben oder deine Teilnahme bei Meetup bestätigen. Das ermöglicht uns, die Anzahl der Teilnehmer im Auge zu behalten und bei Bedarf den Veranstaltungsort zu wechseln, um",
               "emphasis": "genügend Platz für alle zu bieten."
             },
-            "button": "Folge uns auf Meetup"
+            "button": "Jascha auf Meetup folgen"
           }
         }
       }
     },
     "organisers": {
-      "heading": "Die Organisatoren",
+      "heading": "Das sind die Organisatoren!",
       "andrey": {
         "heading": "Andrej",
         "content": {
           "paragraph1": {
-            "beforeEmphasis": "Andrey is 29 years old and works as a software tester in Cologne. He was born and raised in Kaliningrad and has been living in Germany for three years. He has taken a liking to Cologne. Furthermore, he",
-            "emphasis": "sees his future in the city on the Rhine."
+            "beforeEmphasis": "Andrej ist 30 Jahre alt und arbeitet als Software-Tester in Köln. Er ist in Kaliningrad geboren und aufgewachsen und lebt seit drei Jahren in Deutschland. Köln hat es ihm angetan. Außerdem hat er",
+            "emphasis": "sieht er seine Zukunft in der Stadt am Rhein."
           },
           "paragraph2": {
-            "beforeEmphasis": "Even though Andrey has turned his back on his home country, he",
-            "emphasis": "doesn't want to lose touch with other speakers of Russian.",
-            "afterEmphasis": "In his opinion, there are not enough opportunities to network with other Russian speakers in Cologne. That's why he decided to set up the speaking club."
+            "beforeEmphasis": "Auch wenn Andrej seinem Heimatland den Rücken gekehrt hat, möchte er",
+            "emphasis": "den Kontakt zu anderen Russischsprachigen nicht verlieren.",
+            "afterEmphasis": "Seiner Meinung nach gibt es in Köln nicht genug Möglichkeiten, sich mit anderen Russischsprachigen zu vernetzen. Deshalb hat er beschlossen, den Sprachtreff zu gründen."
           }
         }
       },
       "wilhelm": {
         "heading": "Wilhelm",
         "content": {
-          "paragraph1": "Wilhelm is 27 years old and works as a web developer. He was born in Germany. His family comes from the former Soviet Union.",
+          "paragraph1": "Wilhelm ist 28 Jahre alt und arbeitet als Webentwickler. Er wurde in Deutschland geboren. Seine Familie stammt aus der ehemaligen Sowjetunion.",
           "paragraph2": {
-            "beforeEmphasis": "Although Wilhelm grew up speaking Russian, he only started to",
-            "emphasis": "discover the language for himself during his studies.",
-            "afterEmphasis": "He wants to speak Russian more often to maintain his language level."
+            "beforeEmphasis": "Obwohl Wilhelm mit der russischen Sprache aufgewachsen ist, hat er sie erst",
+            "emphasis": "während seines Studiums für sich entdeckt.",
+            "afterEmphasis": "Er möchte öfter Russisch sprechen, um sein Sprachniveau zu verbessern."
           }
         }
       }
