@@ -56,22 +56,10 @@ const getCarouselTiles = (dict: any): any[] => {
           </p>
           <Button
             onClick={() => {}}
-            className="bg-sky-200 mt-8 hover:bg-sky-600 transition-all cursor-pointer py-3 px-4 rounded-2xl drop-shadow-2xl font-mono text-sky-900 tracking-wider uppercase font-bold border-4 border-sky-600/75 ring-2 ring-sky-100/50 w-fit self-center"
+            className="bg-sky-200 mt-12 hover:bg-sky-600 transition-all cursor-pointer py-3 px-4 rounded-xl drop-shadow-2xl font-mono text-sky-900 tracking-wider uppercase font-bold border-4 border-sky-600/75 ring-2 ring-sky-100/50 w-fit self-center"
           >
             <a href="#">{dict.carouselTiles.tile3.content.button}</a>
           </Button>
-        </>
-      ),
-    },
-    // tile 4
-    {
-      heading: dict?.carouselTiles.tile4.heading,
-      content: (
-        <>
-          <p className="text-lg">
-            {dict?.carouselTiles.tile4.content.paragraph1}
-          </p>
-          <p>{dict?.carouselTiles.tile4.content.paragraph2}</p>
         </>
       ),
     },

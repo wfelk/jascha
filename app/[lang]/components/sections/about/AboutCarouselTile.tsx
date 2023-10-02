@@ -12,7 +12,7 @@ const AboutCarouselTile: FC<Props> = ({ heading, children }) => {
         {heading}
       </h2>
       <div className="w-full bg-sky-800 text-sm py-2 h-full flex flex-col overflow-y-auto">
-        <div className="bg-sky-800 overflow-y-auto flex flex-col grow px-6 py-4 w-full h-4/5 gap-4 text-sky-300 leading-loose tracking-wide">
+        <div className="bg-sky-800 overflow-y-auto flex flex-col grow px-8 py-4 w-full h-4/5 gap-4 text-sky-300 leading-loose tracking-wide">
           {children}
         </div>
       </div>

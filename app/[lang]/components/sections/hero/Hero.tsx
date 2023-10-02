@@ -23,8 +23,9 @@ const Hero: FC<Props> = ({ dict }) => {
           {dict.subheading.emphasis}
         </span>
       </div>
+      {/* TO-DO Decide on button */}
       <div className="w-full grow flex flex-col items-center justify-center">
-        <Button onClick={() => {}}>{dict.button}</Button>
+        {/* <Button onClick={() => {}}>{dict.button}</Button> */}
       </div>
       <div className="absolute w-full h-full left-0 top-0 overflow-hidden -z-10">
         <video

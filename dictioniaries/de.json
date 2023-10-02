@@ -51,12 +51,33 @@
             },
             "button": "Folge uns auf Meetup"
           }
-        },
-        "tile4": {
-          "heading": "Wer sind die Organisatoren?",
-          "content": {
-            "paragraph1": "Der Sprachtreff Jascha wird von zwei Freunden organisiert: Andrej und Wilhelm. Zusammen haben sie die Idee im Jahr 2022 entwickelt.",
-            "paragraph2": "„Jascha“ ist einfach der Name des Sprachtreffs und seines Maskottchens, dem Eisbären Jascha."
+        }
+      }
+    },
+    "organisers": {
+      "heading": "Die Organisatoren",
+      "andrey": {
+        "heading": "Andrej",
+        "content": {
+          "paragraph1": {
+            "beforeEmphasis": "Andrey is 29 years old and works as a software tester in Cologne. He was born and raised in Kaliningrad and has been living in Germany for three years. He has taken a liking to Cologne. Furthermore, he",
+            "emphasis": "sees his future in the city on the Rhine."
+          },
+          "paragraph2": {
+            "beforeEmphasis": "Even though Andrey has turned his back on his home country, he",
+            "emphasis": "doesn't want to lose touch with other speakers of Russian.",
+            "afterEmphasis": "In his opinion, there are not enough opportunities to network with other Russian speakers in Cologne. That's why he decided to set up the speaking club."
+          }
+        }
+      },
+      "wilhelm": {
+        "heading": "Wilhelm",
+        "content": {
+          "paragraph1": "Wilhelm is 27 years old and works as a web developer. He was born in Germany. His family comes from the former Soviet Union.",
+          "paragraph2": {
+            "beforeEmphasis": "Although Wilhelm grew up speaking Russian, he only started to",
+            "emphasis": "discover the language for himself during his studies.",
+            "afterEmphasis": "He wants to speak Russian more often to maintain his language level."
           }
         }
       }

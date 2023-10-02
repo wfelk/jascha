@@ -6,6 +6,7 @@ import IconArrowRight from "../../icons/IconArrowRight";
 import Button from "../../Button";
 import AboutCarouselTile from "./AboutCarouselTile";
 import getCarouselTiles from "./getCarouselTiles";
+import { Transition } from "@headlessui/react";
 
 interface Props {
   dict: any;
@@ -33,11 +34,21 @@ const TextCarousel: FC<Props> = ({ dict }) => {
           {carouselTiles[currentIndex].content}
         </AboutCarouselTile>
       </div>
-      <div className="w-full flex items-center max-h-1/6 min-h-1/6 h-1/6 justify-evenly gap-16 py-6">
-        <Button onClick={prevItem} className="">
+      <div className="w-full flex items-center justify-center max-h-1/6 min-h-1/6 h-1/6 py-6 px-4 gap-6">
+        <Button onClick={prevItem} className="flex items-center">
           <IconArrowLeft className="fill-sky-200/75 w-12 h-12" />
         </Button>
-        <Button onClick={nextItem} className="">
+        <div className="w-1/3 flex items-center justify-center">
+          {carouselTiles.map((_, index) => (
+            <span
+              key={index}
+              className={`inline-block mx-1 w-3 h-3 rounded-full ${
+                currentIndex === index ? "bg-sky-200/50" : "bg-sky-800"
+              }`}
+            ></span>
+          ))}
+        </div>
+        <Button onClick={nextItem} className="flex items-center justify-end">
           <IconArrowRight className="fill-sky-200/75 w-12 h-12" />
         </Button>
       </div>
