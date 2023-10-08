@@ -5,7 +5,7 @@ interface Props {
   heading: string;
 }
 
-const AboutCarouselTile: FC<Props> = ({ heading, children }) => {
+const AboutCarouselItem: FC<Props> = ({ heading, children }) => {
   return (
     <div className="rounded-lg w-full h-full flex flex-col justify-between">
       <h2 className="p-8 text-sky-400/75 h-1/8 tracking-wide font-light text-right text-2xl">
@@ -20,4 +20,4 @@ const AboutCarouselTile: FC<Props> = ({ heading, children }) => {
   );
 };
 
-export default AboutCarouselTile;
+export default AboutCarouselItem;

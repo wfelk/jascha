@@ -13,8 +13,8 @@
       "button": "participate"
     },
     "about": {
-      "carouselTiles": {
-        "tile1": {
+      "carouselItems": {
+        "item1": {
           "heading": "What is Jascha?",
           "content": {
             "paragraph1": "This is the name (pronounced like 'Yasha') of our language tandem club that we organise for Russian and German speakers in Cologne.",
@@ -26,7 +26,7 @@
             "paragraph3": "In a cosy and friendly atmosphere, we talk about everything under the sun – over coffee, Kölsch, or another drink of choice."
           }
         },
-        "tile2": {
+        "item2": {
           "heading": "Who is Jascha for?",
           "content": {
             "list": {
@@ -41,7 +41,7 @@
             }
           }
         },
-        "tile3": {
+        "item3": {
           "heading": "How can I participate?",
           "content": {
             "paragraph1": "Just come by!",

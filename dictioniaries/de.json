@@ -13,8 +13,8 @@
       "button": "mitmachen"
     },
     "about": {
-      "carouselTiles": {
-        "tile1": {
+      "carouselItems": {
+        "item1": {
           "heading": "Was ist „Jascha“?",
           "content": {
             "paragraph1": "Das ist der Name unseres Sprachtreffs, den wir für Russisch- und Deutschsprachige in Köln organisieren.",
@@ -26,7 +26,7 @@
             "paragraph3": "In einer gemütlichen und freundlichen Atmosphäre sprechen wir über alles Mögliche – bei Kaffee, Kölsch oder einem anderen Getränk der Wahl."
           }
         },
-        "tile2": {
+        "item2": {
           "heading": "Für wen ist „Jascha“?",
           "content": {
             "list": {
@@ -41,7 +41,7 @@
             }
           }
         },
-        "tile3": {
+        "item3": {
           "heading": "Wie kann ich teilnehmen?",
           "content": {
             "paragraph1": "Komm' einfach vorbei!",
