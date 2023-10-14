@@ -3,7 +3,7 @@ import Hero from "./components/sections/hero/Hero";
 import type Lang from "@/dictioniaries/types/lang";
 import { getDictionary } from "./dictionaries";
 import About from "./components/sections/about/About";
-import Organisers from "./components/sections/organisers/Organisers";
+import Organisers from "./components/sections/organisers/mobile/OrganisersSectionMobile";
 
 interface Props {
   params: {

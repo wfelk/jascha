@@ -46,7 +46,7 @@
           "content": {
             "paragraph1": "Komm' einfach vorbei!",
             "paragraph2": {
-              "beforeEmphasis": "Du kannst uns auch im Voraus über den sozialen Netzen bescheidgeben oder deine Teilnahme bei Meetup bestätigen. Das ermöglicht uns, die Anzahl der Teilnehmer im Auge zu behalten und bei Bedarf den Veranstaltungsort zu wechseln, um",
+              "beforeEmphasis": "Du kannst uns auch im Voraus über den sozialen Netzen bescheidgeben oder deine Teilnahme bei Meetup bestätigen. Das ermöglicht uns, die Anzahl der Teilnehmer im Auge zu behalten. Bei Bedarf wechseln wir dann den Veranstaltungsort, um",
               "emphasis": "genügend Platz für alle zu bieten."
             },
             "button": "Jascha auf Meetup folgen"
@@ -55,7 +55,7 @@
       }
     },
     "organisers": {
-      "heading": "Das sind die Organisatoren!",
+      "heading": "Das sind die Organisatoren.",
       "andrey": {
         "heading": "Andrej",
         "content": {
