@@ -15,7 +15,7 @@ const OrganiserCard: FC<Props> = ({ name, children, imgSrc }) => {
       <div className="relative flex flex-col items-center justify-center">
         <div
           className={`absolute left-1/2 bottom-1/2 translate-y-1/2 -translate-x-1/2 w-[250px] sm:w-[350px] h-[250px] sm:h-[350px] border-8 rounded-lg ${
-            name === "Wilhelm" ? "border-indigo-400/50" : "border-teal-400/50"
+            name === "Wilhelm" ? "border-indigo-400/75" : "border-teal-400/50"
           } drop-shadow-xl`}
         >
           <Image
