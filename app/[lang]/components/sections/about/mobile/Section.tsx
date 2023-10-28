@@ -1,14 +1,14 @@
 import { FC } from "react";
-import What from "./content/What";
-import Whom from "./content/Whom";
-import How from "./content/How";
-import Article from "./AboutArticleMobile";
+import What from "./articles/What";
+import Whom from "./articles/Whom";
+import How from "./articles/How";
+import Article from "./Article";
 
 interface Props {
   dict: any;
 }
 
-const AboutSectionMobile: FC<Props> = ({ dict }) => {
+const Section: FC<Props> = ({ dict }) => {
   return (
     <section className="drop-shadow-2xl">
       <Article heading={dict.carouselItems.item1.heading} style="bright">
@@ -24,4 +24,4 @@ const AboutSectionMobile: FC<Props> = ({ dict }) => {
   );
 };
 
-export default AboutSectionMobile;
+export default Section;

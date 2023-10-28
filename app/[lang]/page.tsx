@@ -3,8 +3,9 @@ import Hero from "./components/sections/hero/Hero";
 import type Lang from "@/dictioniaries/types/lang";
 import { getDictionary } from "./dictionaries";
 import About from "./components/sections/about/About";
-import Organisers from "./components/sections/organisers/mobile/OrganisersSectionMobile";
+import Organisers from "./components/sections/organisers/mobile/Section";
 import SocialMediaAccounts from "./components/sections/interstice/Interstice";
+import Flag from "./components/sections/footer/Flag";
 
 interface Props {
   params: {
@@ -20,6 +21,7 @@ const Home: FC<Props> = async ({ params: { lang } }) => {
       <SocialMediaAccounts />
       <About dict={sections.about} />
       <Organisers dict={sections.organisers} />
+      <Flag />
     </main>
   );
 };

@@ -6,7 +6,7 @@ interface Props {
   children: ReactNode;
 }
 
-const AboutMobileArticle: FC<Props> = ({ heading, children, style }) => {
+const Article: FC<Props> = ({ heading, children, style }) => {
   return (
     <article
       className={`bg-gradient-to-tr ${
@@ -33,4 +33,4 @@ const AboutMobileArticle: FC<Props> = ({ heading, children, style }) => {
   );
 };
 
-export default AboutMobileArticle;
+export default Article;

@@ -1,9 +1,9 @@
 import { FC } from "react";
-import Article from "./OrganisersArticleMobile";
+import Organiser from "./Organiser";
 import imgAndrey from "/public/images/organiser-andrey.jpeg";
 import imgWilhelm from "/public/images/organiser-wilhelm.jpeg";
-import Andrey from "./content/Andrey";
-import Wilhelm from "./content/Wilhelm";
+import Andrey from "./organisers/Andrey";
+import Wilhelm from "./organisers/Wilhelm";
 
 interface Props {
   dict: any;
@@ -16,12 +16,12 @@ const Organisers: FC<Props> = ({ dict }) => {
         {dict?.heading}
       </h2>
       <div className="flex flex-col">
-        <Article name={dict?.andrey.heading} imgSrc={imgAndrey}>
+        <Organiser name={dict?.andrey.heading} imgSrc={imgAndrey}>
           <Andrey dict={dict} />
-        </Article>
-        <Article name={dict?.wilhelm.heading} imgSrc={imgWilhelm}>
+        </Organiser>
+        <Organiser name={dict?.wilhelm.heading} imgSrc={imgWilhelm}>
           <Wilhelm dict={dict} />
-        </Article>
+        </Organiser>
       </div>
     </section>
   );

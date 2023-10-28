@@ -9,9 +9,9 @@ interface Props {
 
 const imageLength = 250;
 
-const OrganiserCard: FC<Props> = ({ name, children, imgSrc }) => {
+const Organiser: FC<Props> = ({ name, children, imgSrc }) => {
   return (
-    <article className="w-screen h-full drop-shadow-xl relative flex flex-col py-4 mt-[175px] sm:mt-[225px]">
+    <article className="w-screen h-full drop-shadow relative flex flex-col py-4 mt-[175px] sm:mt-[225px]">
       <div className="relative flex flex-col items-center justify-center">
         <div
           className={`absolute left-1/2 bottom-1/2 translate-y-1/2 -translate-x-1/2 w-[250px] sm:w-[350px] h-[250px] sm:h-[350px] border-8 rounded-lg ${
@@ -47,4 +47,4 @@ const OrganiserCard: FC<Props> = ({ name, children, imgSrc }) => {
   );
 };
 
-export default OrganiserCard;
+export default Organiser;

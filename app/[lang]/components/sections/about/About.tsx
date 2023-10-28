@@ -1,6 +1,6 @@
 import { FC } from "react";
 import AboutCarousel from "./AboutCarousel";
-import MobileView from "./mobile/AboutSectionMobile";
+import MobileView from "./mobile/Section";
 
 interface Props {
   dict: any;
