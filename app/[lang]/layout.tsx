@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "Russian-German language tandem club in Cologne",
   viewport: { width: "device-width", initialScale: 1 },
   icons: { icon: "/favicon.ico" },
-  themeColor: { media: "(prefers-color-scheme: dark)", color: "#FFD236" },
+  themeColor: { media: "(prefers-color-scheme: dark)", color: "#082F49" },
 };
 
 export default function RootLayout({
