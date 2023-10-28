@@ -4,11 +4,16 @@ import { range } from "lodash";
 interface Props {
   numOfColumns?: number;
   staggeredDelay?: number;
+  className?: string;
 }
 
-const Flag: FC<Props> = ({ numOfColumns = 10, staggeredDelay = 100 }) => {
+const Flag: FC<Props> = ({
+  numOfColumns = 30,
+  staggeredDelay = 25,
+  className = "w–[250px] h-[200px]",
+}) => {
   return (
-    <div className="flex aspect-w-3 aspect-h-2 w-full h-[250px] p-8">
+    <div className={`flex aspect-w-3 aspect-h-2 p-8 ${className}`}>
       {range(numOfColumns).map((columnIndex) => (
         <div
           key={columnIndex}

@@ -81,6 +81,16 @@
           }
         }
       }
+    },
+    "lookingForward": {
+      "content": "Wir freuen uns auf dich! 👋🏻"
+    }
+  },
+  "footer": {
+    "quote": {
+      "left": "«",
+      "center": "Тот прав, кто защищает свой дом",
+      "right": "»"
     }
   }
 }
