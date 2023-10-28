@@ -18,7 +18,7 @@ const socialMediaHandles = [
 
 const HeroSocial: FC = () => {
   return (
-    <div className="flex items-center overflow-x-auto py-6 w-full gap-4 h-fit opacity-75 px-6 no-scrollbar">
+    <div className="flex absolute top-0 items-center overflow-x-auto py-6 w-full gap-4 h-fit opacity-75 px-6 no-scrollbar">
       {socialMediaHandles.map(({ icon, url }, index) => (
         <a
           key={index}
