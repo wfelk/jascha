@@ -10,14 +10,14 @@ interface Props {
 
 const AboutSectionMobile: FC<Props> = ({ dict }) => {
   return (
-    <section>
-      <Article heading={dict.carouselItems.item1.heading} style="dark">
+    <section className="drop-shadow-2xl">
+      <Article heading={dict.carouselItems.item1.heading} style="bright">
         <What dict={dict} />
       </Article>
-      <Article heading={dict.carouselItems.item2.heading} style="bright">
+      <Article heading={dict.carouselItems.item2.heading} style="dark">
         <Whom dict={dict} />
       </Article>
-      <Article heading={dict.carouselItems.item3.heading} style="dark">
+      <Article heading={dict.carouselItems.item3.heading} style="bright">
         <How dict={dict} />
       </Article>
     </section>

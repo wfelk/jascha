@@ -2,6 +2,7 @@ import "../../assets/styles/globals.css";
 import type { Metadata } from "next";
 import { Oswald } from "next/font/google";
 const oswald = Oswald({ subsets: ["latin"] });
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Jascha",

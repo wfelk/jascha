@@ -4,6 +4,7 @@ import type Lang from "@/dictioniaries/types/lang";
 import { getDictionary } from "./dictionaries";
 import About from "./components/sections/about/About";
 import Organisers from "./components/sections/organisers/mobile/OrganisersSectionMobile";
+import SocialMediaAccounts from "./components/sections/interstice/Interstice";
 
 interface Props {
   params: {
@@ -16,6 +17,7 @@ const Home: FC<Props> = async ({ params: { lang } }) => {
   return (
     <main className="scroll-smooth w-full scrollbar-hidden">
       <Hero dict={sections.hero} />
+      <SocialMediaAccounts />
       <About dict={sections.about} />
       <Organisers dict={sections.organisers} />
     </main>

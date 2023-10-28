@@ -9,7 +9,7 @@ interface Props {
 
 const HeroImage: FC<Props> = ({ src, alt }) => {
   return (
-    <div className="absolute w-full h-full left-0 top-0 overflow-hidden -z-10">
+    <div className="absolute w-full h-full left-0 top-0 overflow-hidden -z-10 drop-shadow-2xl">
       <Image
         src={src}
         alt={alt}
