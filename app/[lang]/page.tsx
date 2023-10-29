@@ -1,12 +1,12 @@
 import { FC } from "react";
-import Hero from "./components/sections/hero/Hero";
+import Hero from "./components/sections/hero/Section";
 import type Lang from "@/dictioniaries/types/lang";
 import { getDictionary } from "./dictionaries";
 import About from "./components/sections/about/About";
 import Organisers from "./components/sections/organisers/mobile/Section";
-import LookingForward from "./components/sections/looking-forward/LookingForward";
-import Footer from "./components/sections/footer/Footer";
-import Interstice from "./components/Interstice";
+import NextMeeting from "./components/sections/next-meeting/Section";
+import LookingForward from "./components/sections/looking-forward/Section";
+import Footer from "./components/Footer";
 
 interface Props {
   params: {
@@ -20,11 +20,9 @@ const Home: FC<Props> = async ({ params: { lang } }) => {
     <>
       <main className="scroll-smooth w-full scrollbar-hidden">
         <Hero dict={sections.hero} />
-        <Interstice />
+        <NextMeeting dict={sections.nextMeeting} />
         <About dict={sections.about} />
         <Organisers dict={sections.organisers} />
-        <LookingForward dict={sections.lookingForward} />
-        <Interstice />
       </main>
       <Footer dict={footer} />
     </>

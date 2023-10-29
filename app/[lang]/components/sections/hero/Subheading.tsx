@@ -1,6 +1,6 @@
-import React, { FC } from "react";
+import { FC } from "react";
 
-const HeroSubheading: FC<{ beforeEmphasis: string; emphasis: string }> = ({
+const Subheading: FC<{ beforeEmphasis: string; emphasis: string }> = ({
   beforeEmphasis,
   emphasis,
 }) => {
@@ -16,4 +16,4 @@ const HeroSubheading: FC<{ beforeEmphasis: string; emphasis: string }> = ({
   );
 };
 
-export default HeroSubheading;
+export default Subheading;

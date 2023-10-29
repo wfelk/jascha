@@ -12,6 +12,26 @@
       },
       "button": "mitmachen"
     },
+    "nextMeeting": {
+      "heading": "Nächstes Treffen",
+      "data": {
+        "date": {
+          "day": "Samstag",
+          "date": "14.",
+          "month": "Dezember",
+          "year": "2023"
+        },
+        "time": { "display": "19:00", "marker": "Uhr" },
+        "location": "Bar Botanik",
+        "address": {
+          "street": "Kaygasse",
+          "houseNumber": "2",
+          "city": "Köln",
+          "postCode": "50676"
+        }
+      },
+      "button": "anmelden"
+    },
     "about": {
       "carouselItems": {
         "item1": {

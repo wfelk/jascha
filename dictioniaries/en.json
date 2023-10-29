@@ -12,6 +12,26 @@
       },
       "button": "participate"
     },
+    "nextMeeting": {
+      "heading": "Next meeting",
+      "data": {
+        "date": {
+          "day": "Saturday",
+          "date": "14th",
+          "month": "December",
+          "year": "2023"
+        },
+        "time": { "display": "7:00", "marker": "pm" },
+        "location": "Café Buur",
+        "address": {
+          "street": "Kaygasse",
+          "houseNumber": "2",
+          "city": "Köln",
+          "postCode": "50676"
+        }
+      },
+      "button": "register"
+    },
     "about": {
       "carouselItems": {
         "item1": {

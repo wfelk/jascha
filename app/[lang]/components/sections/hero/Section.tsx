@@ -2,17 +2,17 @@
 
 import { FC } from "react";
 import Button from "../../Button";
-import HeroHeading from "./HeroHeading";
-import HeroSubheading from "./HeroSubheading";
-import HeroImage from "./HeroImage";
+import HeroHeading from "./Heading";
+import HeroSubheading from "./Subheading";
+import HeroImage from "./Image";
 import cafe from "/public/images/cafe-1920-1280.jpeg";
-import HeroSocial from "./HeroSocial";
+import HeroSocial from "./SocialMedia";
 
 interface Props {
   dict: any;
 }
 
-const Hero: FC<Props> = ({ dict }) => {
+const Section: FC<Props> = ({ dict }) => {
   return (
     <section className="relative bg-sky-950/80 border-t-8 border-t-sky-500/50 h-screen flex-col flex justify-center items-center will-change-scroll">
       <HeroSocial />
@@ -29,4 +29,4 @@ const Hero: FC<Props> = ({ dict }) => {
   );
 };
 
-export default Hero;
+export default Section;

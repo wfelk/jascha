@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-const HeroVideo: FC<{ videoSrc: string }> = ({
+const Video: FC<{ videoSrc: string }> = ({
   videoSrc = "https://v3.cdnpk.net/videvo_files/video/free/2020-02/large_watermarked/200223_Cafe_03_03_preview.mp4",
 }) => {
   return (
@@ -18,4 +18,4 @@ const HeroVideo: FC<{ videoSrc: string }> = ({
   );
 };
 
-export default HeroVideo;
+export default Video;

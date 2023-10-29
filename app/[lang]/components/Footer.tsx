@@ -1,5 +1,5 @@
 import { FC } from "react";
-import Flag from "../../Flag";
+import Flag from "./Flag";
 
 interface Props {
   dict: any;
@@ -7,7 +7,7 @@ interface Props {
 
 const Footer: FC<Props> = ({ dict }) => {
   return (
-    <footer className="flex flex-col items-center gap-2 justify-center w-full text py-4 bg-gradient-to-tr from-sky-950 via-sky-900 to-sky-800 border-b-8 border-sky-800/50">
+    <footer className="flex flex-col items-center gap-2 justify-center w-full text py-4 border-b-8 border-sky-800/50">
       <Flag
         className="w-[125px] h-[100px]"
         numOfColumns={20}

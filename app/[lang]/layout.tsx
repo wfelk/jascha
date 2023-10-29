@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html>
       <body
-        className={`${oswald.className} w-screen overflow-x-hidden bg-sky-950`}
+        className={`${oswald.className} w-screen overflow-x-hidden bg-sky-950 bg-pattern-wallpaper bg-fixed`}
       >
         {children}
       </body>
