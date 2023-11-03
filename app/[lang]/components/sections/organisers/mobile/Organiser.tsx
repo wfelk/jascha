@@ -15,7 +15,7 @@ const Organiser: FC<Props> = ({ name, children, imgSrc }) => {
       <div className="relative flex flex-col items-center justify-center">
         <div
           className={`absolute left-1/2 bottom-1/2 translate-y-1/2 -translate-x-1/2 w-[250px] sm:w-[350px] h-[250px] sm:h-[350px] border-8 rounded-lg ${
-            name === "Wilhelm" ? "border-indigo-400/75" : "border-teal-400/50"
+            name === "Wilhelm" ? "border-indigo-500/75" : "border-yellow-400/50"
           } drop-shadow-xl`}
         >
           <Image
@@ -27,7 +27,7 @@ const Organiser: FC<Props> = ({ name, children, imgSrc }) => {
           />
           <h3
             className={`text-sky-100/80 ${
-              name === "Wilhelm" ? "bg-indigo-600/95" : "bg-teal-600/95"
+              name === "Wilhelm" ? "bg-indigo-600/95" : "bg-yellow-600/95"
             } px-3 py-2 right-4 rounded-lg -bottom-6 text-center w-1/2 uppercase text-xl absolute tracking-widest`}
           >
             {name}
@@ -35,7 +35,11 @@ const Organiser: FC<Props> = ({ name, children, imgSrc }) => {
         </div>
       </div>
       <div
-        className={`flex flex-col items-center bg-gradient-to-tr from-sky-900 to-sky-700 pt-[175px] sm:pt-[225px] pb-16 text-sky-200/90 sm:text-xl text-lg`}
+        className={`flex flex-col items-center bg-gradient-to-tr from-sky-900 to-sky-700 pt-[175px] sm:pt-[225px] pb-16 text-sky-200/90 sm:text-xl text-lg border-b-8 ${
+          name === "Wilhelm"
+            ? "border-b-indigo-600/40"
+            : "border-b-yellow-600/40"
+        }`}
       >
         <div
           className={`justify-center flex flex-col gap-8 w-[calc(100px_+_50vw)] sm:w-[455px]`}

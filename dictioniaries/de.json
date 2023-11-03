@@ -19,10 +19,11 @@
           "day": "Samstag",
           "date": "14.",
           "month": "Dezember",
-          "year": "2023"
+          "year": "2023",
+          "dateTime": "2023-12-14"
         },
-        "time": { "display": "19:00", "marker": "Uhr" },
-        "location": "Bar Botanik",
+        "time": { "display": "19:00", "marker": "Uhr", "dateTime": "19:00" },
+        "location": { "name": "Bar Botanik", "lang": "de" },
         "address": {
           "street": "Kaygasse",
           "houseNumber": "2",
@@ -106,11 +107,5 @@
       "content": "Wir freuen uns auf dich! 👋🏻"
     }
   },
-  "footer": {
-    "quote": {
-      "left": "«",
-      "center": "Тот прав, кто защищает свой дом",
-      "right": "»"
-    }
-  }
+  "footer": {}
 }

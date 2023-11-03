@@ -5,7 +5,6 @@ import { getDictionary } from "./dictionaries";
 import About from "./components/sections/about/About";
 import Organisers from "./components/sections/organisers/mobile/Section";
 import NextMeeting from "./components/sections/next-meeting/Section";
-import LookingForward from "./components/sections/looking-forward/Section";
 import Footer from "./components/Footer";
 
 interface Props {

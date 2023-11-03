@@ -47,18 +47,77 @@
   }
 }
 
-.flag-column {
+.flag--russia {
   background: linear-gradient(
     to bottom,
-    hsl(0deg 0% 100%) 0%,
-    hsl(0deg 0% 100%) 33%,
-    hsl(200deg 85% 70%) 33%,
-    hsl(200deg 85% 70%) 66%,
-    hsl(0deg 0% 100%) 66%,
-    hsl(0deg 0% 100%) 100%
+    white 0%,
+    white 33%,
+    #0083d6 33%,
+    #0083d6 66%,
+    white 66%,
+    white 100%
   );
   animation: flag-waving 500ms infinite;
   animation-direction: alternate;
   animation-timing-function: ease-in-out;
   animation-fill-mode: backwards;
+}
+.flag--ukraine {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 87, 183) 0%,
+    rgb(0, 87, 183) 50%,
+    rgb(255, 215, 0) 50%,
+    rgb(255, 215, 0) 100%
+  );
+  animation: flag-waving 500ms infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: backwards;
+}
+.flag--belarus {
+  background: linear-gradient(
+    to bottom,
+    white 0%,
+    white 33%,
+    red 33%,
+    red 66%,
+    white 66%,
+    white 100%
+  );
+  animation: flag-waving 500ms infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: backwards;
+}
+
+/* Default quotation marks for English */
+.quotation-marks {
+  quotes: '"' '"';
+}
+.quotation-marks::before {
+  content: open-quote;
+}
+.quotation-marks::after {
+  content: close-quote;
+}
+
+/* Quotation marks for German */
+.quotation-marks:lang(de) {
+  quotes: "„" "“";
+}
+
+/* Quotation marks for French */
+.quotation-marks:lang(fr) {
+  quotes: "«" "»";
+}
+
+/* Quotation marks for Russian */
+.quotation-marks:lang(ru) {
+  quotes: "«" "»";
+}
+
+/* Quotation marks for Ukrainian */
+.quotation-marks:lang(uk) {
+  quotes: "«" "»";
 }

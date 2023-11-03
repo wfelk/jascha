@@ -10,8 +10,10 @@ interface LatLng {
 
 interface Props {
   coordinates: LatLng;
+  className?: string;
 }
-const GoogleMaps: FC<Props> = ({ coordinates }) => {
+
+const GoogleMaps: FC<Props> = ({ coordinates, className = "w-full h-96" }) => {
   if (!process.env.NEXT_PUBLIC_GOOGLE_API_KEY) {
     throw new Error("Missing Google API Key");
   }
@@ -29,11 +31,7 @@ const GoogleMaps: FC<Props> = ({ coordinates }) => {
       {!isLoaded ? (
         <p>…</p>
       ) : (
-        <GoogleMap
-          mapContainerClassName="w-full h-96"
-          center={center}
-          zoom={15}
-        >
+        <GoogleMap mapContainerClassName={className} center={center} zoom={15}>
           <MarkerF
             position={center}
             icon={"https://maps.google.com/mapfiles/ms/icons/blue-dot.png"}

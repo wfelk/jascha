@@ -19,10 +19,11 @@
           "day": "Saturday",
           "date": "14th",
           "month": "December",
-          "year": "2023"
+          "year": "2023",
+          "dateTime": "2023-12-14"
         },
-        "time": { "display": "7:00", "marker": "pm" },
-        "location": "Café Buur",
+        "time": { "display": "7:00", "marker": "pm", "dateTime": "19:00" },
+        "location": { "name": "Bar Botanik", "lang": "en" },
         "address": {
           "street": "Kaygasse",
           "houseNumber": "2",
@@ -106,11 +107,5 @@
       "content": "We are looking forward to meeting you! 👋🏻"
     }
   },
-  "footer": {
-    "quote": {
-      "left": "«",
-      "center": "Тот прав, кто защищает свой дом",
-      "right": "»"
-    }
-  }
+  "footer": {}
 }
