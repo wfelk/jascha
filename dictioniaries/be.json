@@ -23,7 +23,7 @@
           "dateTime": "2023-12-14"
         },
         "time": { "display": "19:00", "marker": "pm", "dateTime": "19:00" },
-        "location": { "name": "Бар Батанік", "lang": "en" },
+        "location": { "name": "Бар Батанік", "lang": "be" },
         "address": {
           "street": "Кайгасэ",
           "houseNumber": "2",

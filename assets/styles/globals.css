@@ -123,3 +123,8 @@
 .quotation-marks:lang(uk) {
   quotes: "«" "»";
 }
+
+/* Quotation marks for Belarusian */
+.quotation-marks:lang(be) {
+  quotes: "«" "»";
+}
