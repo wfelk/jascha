@@ -1,30 +1,32 @@
 import { FC } from "react";
 import Flag from "./Flag";
 
-interface Props {
-  dict: any;
-}
+const flagProps = {
+  className: "w-[50px] h-[35px]",
+  numOfColumns: 20,
+  staggeredDelay: 17,
+};
 
-const Footer: FC<Props> = ({ dict }) => {
+const Footer: FC = () => {
   return (
-    <footer className="flex flex-col items-center gap-2 justify-center w-full text py-4 border-b-8 border-sky-800/50 bg-sky-900/50 opacity-75">
-      <div className="flex items-center justify-around gap-8 py-4 px-6">
+    <footer className="flex flex-col items-center gap-2 justify-center w-full text py-4 border-b-8 border-sky-800/50 opacity-75">
+      <div className="flex items-center justify-around gap-8 rounded-2xl bg-sky-900 py-8 px-10">
         <Flag
-          className="w-[75px] h-[50px]"
-          numOfColumns={20}
-          staggeredDelay={17}
+          className={flagProps.className}
+          numOfColumns={flagProps.numOfColumns}
+          staggeredDelay={flagProps.staggeredDelay}
           flag="russia"
         />
         <Flag
-          className="w-[75px] h-[50px]"
-          numOfColumns={20}
-          staggeredDelay={17}
+          className={flagProps.className}
+          numOfColumns={flagProps.numOfColumns}
+          staggeredDelay={flagProps.staggeredDelay}
           flag="ukraine"
         />
         <Flag
-          className="w-[75px] h-[50px]"
-          numOfColumns={20}
-          staggeredDelay={17}
+          className={flagProps.className}
+          numOfColumns={flagProps.numOfColumns}
+          staggeredDelay={flagProps.staggeredDelay}
           flag="belarus"
         />
       </div>

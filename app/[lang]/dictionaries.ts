@@ -1,4 +1,5 @@
 import "server-only";
+import type Lang from "@/dictioniaries/types/lang";
 
 // TO-DO Replace 'any' with correct type
 const dictionaries: any = {
@@ -6,6 +7,8 @@ const dictionaries: any = {
     import("../../dictioniaries/en.json").then((module) => module.default),
   de: () =>
     import("../../dictioniaries/de.json").then((module) => module.default),
+  ru: () =>
+    import("../../dictioniaries/ru.json").then((module) => module.default),
 };
 
-export const getDictionary = async (locale: any) => dictionaries[locale]();
+export const getDictionary = async (locale: Lang) => dictionaries[locale]();

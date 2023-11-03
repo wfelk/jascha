@@ -40,10 +40,10 @@
 
 @keyframes flag-waving {
   from {
-    transform: translateY(8px);
+    transform: translateY(4px);
   }
   to {
-    transform: translateY(-8px);
+    transform: translateY(-4px);
   }
 }
 
@@ -97,9 +97,11 @@
 }
 .quotation-marks::before {
   content: open-quote;
+  opacity: 0.75;
 }
 .quotation-marks::after {
   content: close-quote;
+  opacity: 0.75;
 }
 
 /* Quotation marks for German */

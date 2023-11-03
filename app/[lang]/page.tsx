@@ -14,7 +14,7 @@ interface Props {
 }
 
 const Home: FC<Props> = async ({ params: { lang } }) => {
-  const { sections, footer } = await getDictionary(lang);
+  const { sections } = await getDictionary(lang);
   return (
     <>
       <main className="scroll-smooth w-full scrollbar-hidden">
@@ -23,7 +23,7 @@ const Home: FC<Props> = async ({ params: { lang } }) => {
         <About dict={sections.about} />
         <Organisers dict={sections.organisers} />
       </main>
-      <Footer dict={footer} />
+      <Footer />
     </>
   );
 };

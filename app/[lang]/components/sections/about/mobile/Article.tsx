@@ -18,7 +18,7 @@ const Article: FC<Props> = ({ heading, children, style }) => {
       <h2
         className={`${
           style === "dark" ? "text-sky-400/75" : "text-sky-300/75"
-        } h-1/8 w-full px-[15vw] sm:px-16 sm:text-4xl tracking-wider font-light text-right text-2xl`}
+        } h-1/8 w-full md:px-[20vw] px-8 sm:text-4xl tracking-wider font-light text-right text-2xl`}
       >
         {heading}
       </h2>
