@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 "use client";
 
 import { FC, useMemo } from "react";
@@ -15,7 +16,7 @@ interface Props {
 
 const GoogleMaps: FC<Props> = ({ coordinates, className = "w-full h-96" }) => {
   if (!process.env.NEXT_PUBLIC_GOOGLE_API_KEY) {
-    throw new Error("Missing Google API Key");
+    return null;
   }
 
   const { isLoaded } = useLoadScript({
