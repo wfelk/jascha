@@ -15,4 +15,6 @@ const dictionaries: any = {
     import("../../dictioniaries/be.json").then((module) => module.default),
 };
 
-export const getDictionary = async (locale: Lang) => dictionaries[locale]();
+const getDictionary = async (locale: Lang) => dictionaries[locale]();
+
+export default getDictionary;

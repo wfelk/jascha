@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Organiser from "./Organiser";
-import imgAndrey from "/public/images/organiser-andrey.jpeg";
-import imgWilhelm from "/public/images/organiser-wilhelm.jpeg";
+import imgAndrey from "/public/images/organisers/andrey.jpeg";
+import imgWilhelm from "/public/images/organisers/wilhelm.jpeg";
 import Andrey from "./organisers/Andrey";
 import Wilhelm from "./organisers/Wilhelm";
 

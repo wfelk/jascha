@@ -1,10 +1,11 @@
 import { FC } from "react";
 import Hero from "./components/sections/hero/Section";
 import type Lang from "@/dictioniaries/types/lang";
-import { getDictionary } from "./dictionaries";
+import getDictionary from "../../utils/functions/getDictionary";
 import About from "./components/sections/about/About";
 import Organisers from "./components/sections/organisers/mobile/Section";
 import NextMeeting from "./components/sections/next-meeting/Section";
+import LastMeetings from "./components/sections/last-meetings/Section";
 import Footer from "./components/Footer";
 
 interface Props {
@@ -22,6 +23,7 @@ const Home: FC<Props> = async ({ params: { lang } }) => {
         <NextMeeting dict={sections.nextMeeting} />
         <About dict={sections.about} />
         <Organisers dict={sections.organisers} />
+        <LastMeetings />
       </main>
       <Footer />
     </>
