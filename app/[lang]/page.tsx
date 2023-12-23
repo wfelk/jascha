@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Hero from "./components/sections/hero/Section";
 import type Lang from "@/dictioniaries/types/lang";
-import { getDictionary } from "./dictionaries";
+import getDictionary from "../../utils/functions/getDictionary";
 import About from "./components/sections/about/About";
 import Organisers from "./components/sections/organisers/mobile/Section";
 import NextMeeting from "./components/sections/meeting-next/Section";
