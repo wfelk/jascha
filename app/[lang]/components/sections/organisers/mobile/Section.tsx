@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Organiser from "./Organiser";
-import imgAndrey from "/public/images/organiser-andrey.jpeg";
-import imgWilhelm from "/public/images/organiser-wilhelm.jpeg";
+import imgAndrey from "/public/images/organisers/jascha-organiser-andrey.jpeg";
+import imgWilhelm from "/public/images/organisers/jascha-organiser-wilhelm.jpeg";
 import Andrey from "./organisers/Andrey";
 import Wilhelm from "./organisers/Wilhelm";
 
@@ -16,11 +16,11 @@ const Organisers: FC<Props> = ({ dict }) => {
         {dict?.heading}
       </h2>
       <div className="flex flex-col">
-        <Organiser name={dict?.andrey.heading} imgSrc={imgAndrey}>
-          <Andrey dict={dict} />
-        </Organiser>
         <Organiser name={dict?.wilhelm.heading} imgSrc={imgWilhelm}>
           <Wilhelm dict={dict} />
+        </Organiser>
+        <Organiser name={dict?.andrey.heading} imgSrc={imgAndrey}>
+          <Andrey dict={dict} />
         </Organiser>
       </div>
     </section>
