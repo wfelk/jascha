@@ -33,6 +33,9 @@
       },
       "button": "anmelden"
     },
+    "photos": {
+      "heading": "Vergangene Treffen"
+    },
     "about": {
       "carouselItems": {
         "item1": {

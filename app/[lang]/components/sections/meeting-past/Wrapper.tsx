@@ -16,10 +16,10 @@ const PhotoCarousel: FC = () => {
 
   return (
     <>
-      <div className="md:hidden">
+      <div className="md:hidden py-4 from-sky-700/50 to-sky-600/75 bg-gradient-to-tr">
         <PhotosMobile />
       </div>
-      <div className="hidden md:block">
+      <div className="hidden md:flex from-sky-700/50 to-sky-600/75 bg-gradient-to-tr py-6 flex-col gap-4">
         <PhotosDesktop ref={main} />
         <Thumbnails ref={thumbnails} />
       </div>

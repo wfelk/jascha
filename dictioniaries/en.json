@@ -33,6 +33,9 @@
       },
       "button": "register"
     },
+    "photos": {
+      "heading": "Last meetings"
+    },
     "about": {
       "carouselItems": {
         "item1": {
