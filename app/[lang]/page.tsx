@@ -7,6 +7,7 @@ import Organisers from "./components/sections/organisers/mobile/Section";
 import NextMeeting from "./components/sections/meeting-next/Section";
 import Photos from "./components/sections/meeting-past/Section";
 import Footer from "./components/Footer";
+import LookingForward from "./components/sections/looking-forward/Section";
 
 interface Props {
   params: {
@@ -25,6 +26,7 @@ const Home: FC<Props> = async ({ params: { lang } }) => {
         <About dict={sections.about} />
         <Photos dict={sections.photos} />
         <Organisers dict={sections.organisers} />
+        <LookingForward dict={sections.lookingForward} />
       </main>
       <Footer />
     </>

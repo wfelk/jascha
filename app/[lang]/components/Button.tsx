@@ -3,7 +3,7 @@ import { FC, ReactNode } from "react";
 interface Props {
   className?: string;
   children: string | ReactNode;
-  onClick: () => void;
+  onClick?: () => void;
 }
 
 const classNameDefault =

@@ -30,7 +30,7 @@ const Section: FC<Props> = async ({ dict }) => {
 
   return (
     <section className="my-20">
-      <article className="flex flex-col items-center gap-12">
+      <article className="flex flex-col items-center gap-12" id="next-meeting">
         <Heading label={dict.heading} />
         <div className="bg-gradient-to-tr from-sky-900/80 via-sky-700/80 to-sky-600/75 drop-shadow-2xl w-full">
           <div className="px-4 py-8 border-t-8 items-center gap-12 flex flex-col border-t-teal-500/50">
