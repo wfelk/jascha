@@ -26,7 +26,7 @@ interface Props {
 const Section: FC<Props> = async ({ dict }) => {
   const address = convertToString(dict.data.address);
   const data = await getData(address);
-  const coordinates = data.results[0].geometry.location;
+  const coordinates = data?.results[0]?.geometry?.location;
 
   return (
     <section className="my-20">
