@@ -1,13 +1,13 @@
-import { FC } from "react";
-import Hero from "./components/sections/hero/Section";
-import type Lang from "@/dictioniaries/types/lang";
-import getDictionary from "../../utils/functions/getDictionary";
-import About from "./components/sections/about/About";
-import Organisers from "./components/sections/organisers/mobile/Section";
-import NextMeeting from "./components/sections/meeting-next/Section";
-import Photos from "./components/sections/meeting-past/Section";
-import Footer from "./components/Footer";
-import LookingForward from "./components/sections/looking-forward/Section";
+import { FC } from 'react';
+import Hero from './components/sections/hero/SectionHero';
+import type Lang from '@/dictioniaries/types/lang';
+import getDictionary from '../../utils/functions/getDictionary';
+import About from './components/sections/about/SectionAbout';
+import Organisers from './components/sections/organisers/SectionOrganisers';
+import NextMeeting from './components/sections/meeting-next/SectionMeetingNext';
+import Photos from './components/sections/meeting-past/SectionMeetingPast';
+import Footer from './components/Footer';
+import LookingForward from './components/sections/looking-forward/SectionLookingForward';
 
 interface Props {
   params: {
