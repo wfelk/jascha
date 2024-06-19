@@ -11,19 +11,19 @@ interface Props {
 }
 
 const SectionMeetingPast: FC<Props> = ({ dict }) => {
-  const main = useRef<Splide>(null);
-  const thumbnails = useRef<Splide>(null);
+  const mainRef = useRef<Splide>(null);
+  const thumbnailsRef = useRef<Splide>(null);
 
   useEffect(() => {
-    if (thumbnails?.current?.splide)
-      main?.current?.sync(thumbnails.current.splide);
-  }, [main, thumbnails]);
+    if (thumbnailsRef?.current?.splide)
+      mainRef?.current?.sync(thumbnailsRef.current.splide);
+  }, [mainRef, thumbnailsRef]);
 
   return (
     <section className="flex flex-col will-change-scroll mb-20 mt-20 gap-12">
       <SectionHeading label={dict?.heading} />
       <MeetingPastMobile />
-      <MeetingPastDesktop mainRef={main} thumbnailsRef={thumbnails} />
+      <MeetingPastDesktop mainRef={mainRef} thumbnailsRef={thumbnailsRef} />
     </section>
   );
 };

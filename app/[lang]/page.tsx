@@ -17,7 +17,6 @@ interface Props {
 
 const Home: FC<Props> = async ({ params: { lang } }) => {
   const { sections } = await getDictionary(lang);
-  const images = [];
   return (
     <>
       <main className="scroll-smooth w-full scrollbar-hidden">
