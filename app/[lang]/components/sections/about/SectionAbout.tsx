@@ -8,7 +8,7 @@ interface Props {
 
 const SectionAbout: FC<Props> = ({ dict }) => {
   return (
-    <section>
+    <section className="md:col-span-8 md:col-start-3 xl:col-start-7 xl:col-span-5">
       <Mobile dict={dict} />
       <Desktop dict={dict} />
     </section>

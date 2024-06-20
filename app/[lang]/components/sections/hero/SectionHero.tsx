@@ -14,7 +14,7 @@ interface Props {
 
 const SectionHero: FC<Props> = ({ dict }) => {
   return (
-    <section className="relative bg-sky-950/80 border-t-8 border-t-sky-500/50 h-screen flex-col flex justify-center items-center will-change-scroll">
+    <section className="relative bg-sky-950/80 border-t-8 border-t-sky-500/50 h-screen flex-col flex justify-center items-center will-change-scroll md:col-span-full">
       <Social />
       <Heading label={dict.heading} />
       <Subheading

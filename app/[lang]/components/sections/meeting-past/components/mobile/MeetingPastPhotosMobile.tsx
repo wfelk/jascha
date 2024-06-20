@@ -3,7 +3,7 @@
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
 import '@splidejs/splide/css/skyblue';
 import '@splidejs/react-splide/css';
-import { FC, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 import photos from '../../../../../../../utils/constants/photoSources';
 import NextImage from 'next/image';
 import IconXMark from '../../../../icons/IconXMark';
@@ -38,6 +38,17 @@ const MeetingPastPhotosMobile: FC = () => {
   const [currentlyDisplayedPhotoDate, setCurrentlyDisplayedPhotoDate] =
     useState(new Date());
   const [startIndex, setStartIndex] = useState(0);
+
+  useEffect(() => {
+    if (isVisible) {
+      document.body.classList.add('overflow-hidden');
+    } else {
+      document.body.classList.remove('overflow-hidden');
+    }
+    return () => {
+      document.body.classList.remove('overflow-hidden');
+    };
+  }, [isVisible]);
 
   const displayImageOnFullScreen = (
     src: any,

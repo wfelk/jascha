@@ -27,7 +27,7 @@ const options = {
   },
 };
 
-const MeetingPastThumbnails = forwardRef<Splide>(
+const MeetingPastThumbnailsDesktop = forwardRef<Splide>(
   (props, ref: ForwardedRef<Splide>) => {
     return (
       <Splide ref={ref} options={options} aria-label="Text">
@@ -46,4 +46,4 @@ const MeetingPastThumbnails = forwardRef<Splide>(
   }
 );
 
-export default MeetingPastThumbnails;
+export default MeetingPastThumbnailsDesktop;

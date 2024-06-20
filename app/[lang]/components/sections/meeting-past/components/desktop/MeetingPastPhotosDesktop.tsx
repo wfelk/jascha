@@ -11,7 +11,6 @@ const options = {
   heightRatio: 0.75,
   pagination: false,
   arrows: false,
-  cover: true,
 };
 
 const MeetingPastPhotosDesktop = forwardRef<Splide>(

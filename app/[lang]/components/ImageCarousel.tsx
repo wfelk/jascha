@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import { FC } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
-import "swiper/css/bundle";
-import Image from "next/image";
+import { FC } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
+import 'swiper/css/bundle';
+import Image from 'next/image';
 
 interface Props {
   className?: string;
@@ -14,7 +14,7 @@ interface Props {
   }[];
 }
 
-const Images: FC<Props> = ({ className, images }) => {
+const ImageCarousel: FC<Props> = ({ className, images }) => {
   return (
     <Swiper
       spaceBetween={50}
@@ -31,4 +31,4 @@ const Images: FC<Props> = ({ className, images }) => {
   );
 };
 
-export default Images;
+export default ImageCarousel;

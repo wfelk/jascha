@@ -2,7 +2,7 @@
 
 import { FC, RefObject } from 'react';
 import Photos from './components/desktop/MeetingPastPhotosDesktop';
-import Thumbnails from './components/desktop/MeetingPastThumbnails';
+import Thumbnails from './components/desktop/MeetingPastThumbnailsDesktop';
 import { Splide } from '@splidejs/react-splide';
 
 interface Props {
