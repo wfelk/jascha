@@ -1,4 +1,4 @@
-import '../../assets/styles/globals.css';
+import '../../assets/styles/globals.scss';
 import type { Metadata } from 'next';
 import { Oswald } from 'next/font/google';
 const oswald = Oswald({ subsets: ['latin'] });

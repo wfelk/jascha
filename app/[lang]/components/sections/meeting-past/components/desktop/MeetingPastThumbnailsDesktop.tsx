@@ -7,11 +7,11 @@ import photoSources from '../../../../../../../utils/constants/photoSources';
 import NextImage from 'next/image';
 
 const options = {
-  rewind: true,
+  rewind: false,
   fixedWidth: 104,
   fixedHeight: 58,
   isNavigation: true,
-  gap: 10,
+  gap: 15,
   focus: 'center' as const,
   pagination: false,
   cover: true,
@@ -28,11 +28,11 @@ const options = {
 };
 
 const MeetingPastThumbnailsDesktop = forwardRef<Splide>(
-  (props, ref: ForwardedRef<Splide>) => {
+  (_, ref: ForwardedRef<Splide>) => {
     return (
       <Splide ref={ref} options={options} aria-label="Text">
-        {photoSources.map((photo: any, index: any) => (
-          <SplideSlide key={index}>
+        {photoSources.map((photo: any, index: number) => (
+          <SplideSlide key={index} style={{}}>
             <NextImage
               src={photo.src}
               alt={photo.alt}

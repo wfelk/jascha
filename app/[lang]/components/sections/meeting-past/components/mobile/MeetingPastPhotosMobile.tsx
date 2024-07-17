@@ -9,7 +9,8 @@ import NextImage from 'next/image';
 import IconXMark from '../../../../icons/IconXMark';
 import IconArrowsPointingOut from '@/app/[lang]/components/icons/IconArrowsPointingOut';
 import IconMapPin from '@/app/[lang]/components/icons/IconMapPin';
-import IconCalendarDays from '@/app/[lang]/components/icons/IconCalendarDays';
+import MeetingPastDateYear from './MeetingPastDateYearMobile';
+import MeetingPastDate from '../MeetingPastDate';
 
 const options = {
   type: 'loop',
@@ -113,9 +114,7 @@ const MeetingPastPhotosMobile: FC = () => {
                   >
                     <IconArrowsPointingOut className="fill-sky-300/90 bg-sky-700/70 rounded w-12 h-12 p-1 shadow-2xl hover:bg-sky-900 hover:fill-sky-200 transition-all" />
                   </span>
-                  <div className="text-sky-200/50 bg-sky-900/90 bottom-4 left-4 absolute p-2 rounded text-3xl tracking-wide shadow-2xl">
-                    {date.year}
-                  </div>
+                  <MeetingPastDateYear year={date.year} />
                 </SplideSlide>
               )
             )}
@@ -137,24 +136,7 @@ const MeetingPastPhotosMobile: FC = () => {
             <IconXMark className="w-16 h-16 fill-sky-400/60 hover:fill-sky-300 transition-all" />
           </span>
           <div className="absolute bottom-4 text-right flex bg-transparent justify-around w-full overflow-hidden h-1/8">
-            <div className="bg-sky-900/90 rounded-lg flex w-2/5 align-bottom p-4 overflow-hidden shadow-2xl justify-end items-center relative">
-              <IconCalendarDays className="w-28 h-28 -left-7 -top-6 inline-block absolute fill-sky-600/30" />
-              <div className="self-end z-10">
-                <div className="flex justify-end">
-                  <span className="z-10 text-sky-300/80 tracking-wide text-2xl">
-                    {currentlyDisplayedPhoto.date.year}
-                  </span>
-                </div>
-                <div className="flex w-full justify-end tracking-widest items-end">
-                  <span className="text-sm text-sky-100/90">
-                    {currentlyDisplayedPhotoDate.toLocaleDateString(undefined, {
-                      month: 'long',
-                      day: 'numeric',
-                    })}
-                  </span>
-                </div>
-              </div>
-            </div>
+            <MeetingPastDate date={currentlyDisplayedPhoto.date} />
             <div className="w-1/2 bg-sky-900/90 rounded-lg flex p-4 overflow-hidden shadow-2xl text-right justify-end relative">
               <IconMapPin className="w-28 h-28 -left-7 -top-6 inline-block absolute fill-sky-600/30" />
               <div className="self-end z-10 flex-col flex">

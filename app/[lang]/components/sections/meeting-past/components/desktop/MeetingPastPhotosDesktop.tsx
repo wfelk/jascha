@@ -8,9 +8,14 @@ import NextImage from 'next/image';
 
 const options = {
   type: 'fade',
-  heightRatio: 0.75,
+  heightRatio: 1,
   pagination: false,
-  arrows: false,
+  paginationKeyboard: true,
+  padding: 70,
+  drag: true,
+  arrows: true,
+  autoplay: true,
+  interval: 5000,
 };
 
 const MeetingPastPhotosDesktop = forwardRef<Splide>(
@@ -22,8 +27,7 @@ const MeetingPastPhotosDesktop = forwardRef<Splide>(
             <NextImage
               src={photo.src}
               alt={photo.alt}
-              width={photo.width}
-              height={photo.height}
+              className="w-full h-auto"
             />
           </SplideSlide>
         ))}
