@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "./splide.scss";
-
 .no-scrollbar::-webkit-scrollbar {
   display: none; /* Chrome, Safari and Opera */
 }
@@ -108,25 +106,25 @@
 
 /* Quotation marks for German */
 .quotation-marks:lang(de) {
-  quotes: "„" "“";
+  quotes: '„' '“';
 }
 
 /* Quotation marks for French */
 .quotation-marks:lang(fr) {
-  quotes: "«" "»";
+  quotes: '«' '»';
 }
 
 /* Quotation marks for Russian */
 .quotation-marks:lang(ru) {
-  quotes: "«" "»";
+  quotes: '«' '»';
 }
 
 /* Quotation marks for Ukrainian */
 .quotation-marks:lang(uk) {
-  quotes: "«" "»";
+  quotes: '«' '»';
 }
 
 /* Quotation marks for Belarusian */
 .quotation-marks:lang(be) {
-  quotes: "«" "»";
+  quotes: '«' '»';
 }
