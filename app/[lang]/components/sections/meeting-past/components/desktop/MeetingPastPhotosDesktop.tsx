@@ -24,11 +24,7 @@ const MeetingPastPhotosDesktop = forwardRef<Splide>(
       <Splide ref={ref} options={options} aria-label="Text">
         {photos.map((photo: any, index: any) => (
           <SplideSlide key={index}>
-            <NextImage
-              src={photo.src}
-              alt={photo.alt}
-              className="w-full h-auto"
-            />
+            <NextImage src={photo.src} alt={photo.alt} />
           </SplideSlide>
         ))}
       </Splide>

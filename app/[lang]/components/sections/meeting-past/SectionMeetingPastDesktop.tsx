@@ -12,7 +12,7 @@ interface Props {
 
 const SectionMeetingPastDesktop: FC<Props> = ({ mainRef, thumbnailsRef }) => {
   return (
-    <div className="hidden md:flex from-sky-700/50 to-sky-600/75 bg-gradient-to-tr py-7 rounded-lg flex-col gap-4">
+    <div className="hidden max-h-full md:flex from-sky-700/50 to-sky-600/75 bg-gradient-to-tr py-7 rounded-lg flex-col gap-4">
       <Photos ref={mainRef} />
       {/* <Thumbnails ref={thumbnailsRef} /> */}
     </div>
