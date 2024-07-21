@@ -2,7 +2,7 @@
 
 import { FC } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
+import { EffectCards } from 'swiper/modules';
 import 'swiper/css/bundle';
 import Image from 'next/image';
 
@@ -12,19 +12,27 @@ interface Props {
     src: any;
     alt: string;
   }[];
+  screenSize: 'mobile' | 'desktop';
 }
 
-const ImageCarousel: FC<Props> = ({ className, images }) => {
+const ImageCarousel: FC<Props> = ({ className, images, screenSize }) => {
   return (
     <Swiper
-      spaceBetween={50}
-      slidesPerView={1}
+      effect={'cards'}
       className={className}
-      modules={[Pagination]}
+      grabCursor={true}
+      centeredSlides={true}
+      modules={[EffectCards]}
     >
       {images.map((image, index) => (
         <SwiperSlide key={index}>
-          <Image src={image.src} alt={image.alt} />
+          {({ isActive }) => (
+            <Image
+              src={image.src[screenSize]}
+              alt={image.alt}
+              className={`w-full transition ${!isActive ? 'blur' : 'border-8 rounded border-sky-300/50'}`}
+            />
+          )}
         </SwiperSlide>
       ))}
     </Swiper>

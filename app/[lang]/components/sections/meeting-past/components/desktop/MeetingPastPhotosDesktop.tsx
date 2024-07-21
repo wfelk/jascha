@@ -1,14 +1,12 @@
 'use client';
 
+import ImageCarousel from '@/app/[lang]/components/ImageCarousel';
 import photos from '../../../../../../../utils/constants/photoSources';
-import NextImage from 'next/image';
 
 const MeetingPastPhotosDesktop = () => {
   return (
     <div>
-      {photos.map((photo: any, index: any) => (
-        <NextImage src={photo.src} alt={photo.alt} />
-      ))}
+      <ImageCarousel images={photos} screenSize="desktop" />
     </div>
   );
 };
