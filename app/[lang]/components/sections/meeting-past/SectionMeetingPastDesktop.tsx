@@ -7,7 +7,7 @@ interface Props {}
 
 const SectionMeetingPastDesktop: FC<Props> = () => {
   return (
-    <div className="hidden max-h-full md:flex flex-col gap-4">
+    <div className="hidden h-[750px] md:flex flex-col gap-4">
       <Photos />
     </div>
   );

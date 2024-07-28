@@ -1,13 +1,13 @@
 {
   "meta": {
     "title": "Jascha",
-    "description": "Russian-German language tandem club in Cologne"
+    "description": "Russian-German Language Tandem Club in Cologne"
   },
   "sections": {
     "hero": {
       "heading": "Jascha",
       "subheading": {
-        "beforeEmphasis": "Russian-German language tandem club",
+        "beforeEmphasis": "Russian-German Language Tandem Club",
         "emphasis": "in Cologne"
       },
       "button": "participate"
@@ -79,7 +79,7 @@
       }
     },
     "organisers": {
-      "heading": "These are the organisers!",
+      "heading": "Organisers",
       "andrey": {
         "heading": "Andrey",
         "content": {

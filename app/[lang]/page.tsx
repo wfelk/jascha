@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import Hero from './components/sections/hero/SectionHero';
-import type Lang from '@/dictioniaries/types/lang';
+import type Lang from '../../types/lang';
 import getDictionary from '../../utils/functions/getDictionary';
 import About from './components/sections/about/SectionAbout';
 import Organisers from './components/sections/organisers/SectionOrganisers';
@@ -19,7 +19,7 @@ const Home: FC<Props> = async ({ params: { lang } }) => {
   const { sections } = await getDictionary(lang);
   return (
     <>
-      <main className="scroll-smooth w-full scrollbar-hidden md:grid md:grid-cols-12">
+      <main className="scroll-smooth w-full scrollbar-hidden md:grid md:grid-cols-12 md:gap-y-20">
         <Hero dict={sections.hero} />
         <NextMeeting dict={sections.nextMeeting} />
         <About dict={sections.about} />
