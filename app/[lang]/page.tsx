@@ -1,12 +1,13 @@
-import { FC } from "react";
-import Hero from "./components/sections/hero/Section";
-import type Lang from "@/dictioniaries/types/lang";
-import getDictionary from "../../utils/functions/getDictionary";
-import About from "./components/sections/about/About";
-import Organisers from "./components/sections/organisers/mobile/Section";
-import NextMeeting from "./components/sections/meeting-next/Section";
-import Photos from "./components/sections/meeting-past/Section";
-import Footer from "./components/Footer";
+import { FC } from 'react';
+import Hero from './components/sections/hero/SectionHero';
+import type Lang from '../../types/lang';
+import getDictionary from '../../utils/functions/getDictionary';
+import About from './components/sections/about/SectionAbout';
+import Organisers from './components/sections/organisers/SectionOrganisers';
+import NextMeeting from './components/sections/meeting-next/SectionMeetingNext';
+import Photos from './components/sections/meeting-past/SectionMeetingPast';
+import Footer from './components/Footer';
+import LookingForward from './components/sections/looking-forward/SectionLookingForward';
 
 interface Props {
   params: {
@@ -16,15 +17,15 @@ interface Props {
 
 const Home: FC<Props> = async ({ params: { lang } }) => {
   const { sections } = await getDictionary(lang);
-  const images = [];
   return (
     <>
-      <main className="scroll-smooth w-full scrollbar-hidden">
+      <main className="scroll-smooth w-full scrollbar-hidden md:grid md:grid-cols-12 md:gap-y-20">
         <Hero dict={sections.hero} />
         <NextMeeting dict={sections.nextMeeting} />
         <About dict={sections.about} />
         <Photos dict={sections.photos} />
         <Organisers dict={sections.organisers} />
+        <LookingForward dict={sections.lookingForward} />
       </main>
       <Footer />
     </>

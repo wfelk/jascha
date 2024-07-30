@@ -79,7 +79,7 @@
       }
     },
     "organisers": {
-      "heading": "Das sind die Organisatoren.",
+      "heading": "Organisatoren",
       "andrey": {
         "heading": "Andrej",
         "content": {
@@ -99,7 +99,7 @@
         "content": {
           "paragraph1": "Wilhelm ist 28 Jahre alt und arbeitet als Webentwickler. Er wurde in Deutschland geboren. Seine Familie stammt aus der ehemaligen Sowjetunion.",
           "paragraph2": {
-            "beforeEmphasis": "Obwohl Wilhelm mit der russischen Sprache aufgewachsen ist, hat er sie erst",
+            "beforeEmphasis": "Obwohl Wilhelm mit der russischen Sprache aufgewachsen ist, hat er sie erst ",
             "emphasis": "während seines Studiums für sich entdeckt.",
             "afterEmphasis": "Er möchte öfter Russisch sprechen, um sein Sprachniveau zu verbessern."
           }
@@ -107,7 +107,7 @@
       }
     },
     "lookingForward": {
-      "content": "Wir freuen uns auf dich! 👋🏻"
+      "content": "Wir freuen uns auf dich!"
     }
   },
   "footer": {}
