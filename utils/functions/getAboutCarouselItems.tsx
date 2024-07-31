@@ -2,7 +2,7 @@ import React from 'react';
 import One from '@/app/[lang]/components/sections/about/components/desktop/about-carousel-items/AboutCarouselItemOne';
 import Two from '@/app/[lang]/components/sections/about/components/desktop/about-carousel-items/AboutCarouselItemTwo';
 import Three from '@/app/[lang]/components/sections/about/components/desktop/about-carousel-items/AboutCarouselItemThree';
- 
+
 export interface CarouselItem {
   heading: string;
   content: (
@@ -15,15 +15,19 @@ export interface CarouselItem {
 const getClassName = (
   isCurrentItem: boolean,
   isIndexTheNextAfterCurrentItem: boolean
-) => `max-w-full h-full flex-col flex xl:gap-16 gap-8 justify-center absolute duration-1000 ${
+) => {
+  const className = `max-w-full h-full flex-col flex xl:gap-16 gap-8 justify-center absolute duration-1000 ${
     isCurrentItem
       ? 'opacity-100 translate-x-0'
       : isIndexTheNextAfterCurrentItem
         ? 'opacity-0 translate-x-full'
         : 'opacity-0 -translate-x-full'
-    }`;
+  }`;
+  console.log(className);
+  return className;
+};
 
-const getAboutCarouselItems = (dict: any): CarouselItem[] => {  
+const getAboutCarouselItems = (dict: any): CarouselItem[] => {
   const carouselItems = [
     {
       heading: dict?.carouselItems.item1.heading,
@@ -34,7 +38,10 @@ const getAboutCarouselItems = (dict: any): CarouselItem[] => {
       ) => (
         <One
           dict={dict}
-          className={getClassName(isCurrentItem, isIndexTheNextAfterCurrentItem)}
+          className={getClassName(
+            isCurrentItem,
+            isIndexTheNextAfterCurrentItem
+          )}
           key={index}
         />
       ),
@@ -48,7 +55,10 @@ const getAboutCarouselItems = (dict: any): CarouselItem[] => {
       ) => (
         <Two
           dict={dict}
-          className={getClassName(isCurrentItem, isIndexTheNextAfterCurrentItem)}
+          className={getClassName(
+            isCurrentItem,
+            isIndexTheNextAfterCurrentItem
+          )}
           key={index}
         />
       ),
@@ -62,7 +72,10 @@ const getAboutCarouselItems = (dict: any): CarouselItem[] => {
       ) => (
         <Three
           dict={dict}
-          className={getClassName(isCurrentItem, isIndexTheNextAfterCurrentItem)}
+          className={getClassName(
+            isCurrentItem,
+            isIndexTheNextAfterCurrentItem
+          )}
           key={index}
         />
       ),
