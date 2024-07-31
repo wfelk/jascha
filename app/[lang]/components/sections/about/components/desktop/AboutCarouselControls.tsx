@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import React, { FC } from 'react';
 import Button from '../../../../Button';
 import IconArrowLeft from '../../../../icons/IconArrowLeft';
 import IconArrowRight from '../../../../icons/IconArrowRight';

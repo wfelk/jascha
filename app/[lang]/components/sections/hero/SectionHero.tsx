@@ -1,6 +1,6 @@
 'use client';
 
-import { FC } from 'react';
+import React, { FC } from 'react';
 import Button from '../../Button';
 import Heading from './components/HeroHeading';
 import Subheading from './components/HeroSubheading';

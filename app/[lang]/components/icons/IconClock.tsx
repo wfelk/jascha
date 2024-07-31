@@ -1,10 +1,10 @@
-import { FC } from "react";
+import React, { FC } from 'react';
 
 interface Props {
   className?: string;
 }
 
-const IconClock: FC<Props> = ({ className = "w-8 h-8" }) => {
+const IconClock: FC<Props> = ({ className = 'w-8 h-8' }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

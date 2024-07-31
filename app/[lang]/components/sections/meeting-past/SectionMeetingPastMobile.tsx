@@ -1,6 +1,4 @@
-'use client';
-
-import { FC } from 'react';
+import React, { FC } from 'react';
 import Photos from './components/mobile/MeetingPastPhotosMobile';
 
 const SectionMeetingPastMobile: FC = () => {

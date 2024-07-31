@@ -1,10 +1,10 @@
-import { FC } from "react";
-import { range } from "lodash";
+import React, { FC } from 'react';
+import { range } from 'lodash';
 
 const flags = {
-  russia: "russia",
-  ukraine: "ukraine",
-  belarus: "belarus",
+  russia: 'russia',
+  ukraine: 'ukraine',
+  belarus: 'belarus',
 };
 
 interface Props {
@@ -17,12 +17,12 @@ interface Props {
 const Flag: FC<Props> = ({
   numOfColumns = 30,
   staggeredDelay = 25,
-  className = "w–[250px] h-[200px]",
+  className = 'w–[250px] h-[200px]',
   flag,
 }) => {
   return (
     <div className={`flex aspect-w-3 aspect-h-2 ${className}`}>
-      {range(numOfColumns).map((columnIndex) => (
+      {range(numOfColumns).map(columnIndex => (
         <div
           key={columnIndex}
           className={`flex-1 flag--${flag}`}

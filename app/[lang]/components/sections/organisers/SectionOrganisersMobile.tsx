@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import React, { FC } from 'react';
 import Organiser from './components/mobile/OrganisersOrganiser';
 import imgAndrey from '/public/images/organisers/jascha-organiser-andrey.jpeg';
 import imgWilhelm from '/public/images/organisers/jascha-organiser-wilhelm.jpeg';

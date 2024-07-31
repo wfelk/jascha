@@ -11,7 +11,7 @@ async function getData(address: string) {
   return res.json();
 }
 
-import { FC } from 'react';
+import React, { FC } from 'react';
 import convertShallowObjectToString from '../../../../../utils/functions/convertShallowObjectToString';
 import SectionHeading from './SectionMeetingHeading';
 import Time from './components/MeetingNextTime';

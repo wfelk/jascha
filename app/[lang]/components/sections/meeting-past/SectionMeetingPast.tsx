@@ -1,6 +1,6 @@
 'use client';
 
-import { FC } from 'react';
+import React, { FC } from 'react';
 import MeetingPastMobile from './SectionMeetingPastMobile';
 import MeetingPastDesktop from './SectionMeetingPastDesktop';
 import SectionHeading from '../../SectionHeading';

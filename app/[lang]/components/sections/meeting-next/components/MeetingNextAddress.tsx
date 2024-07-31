@@ -1,6 +1,6 @@
 'use client';
 
-import { FC } from 'react';
+import React, { FC } from 'react';
 import type Lang from '@/types/lang';
 import GoogleMaps from '../../../GoogleMaps';
 import IconMapPin from '../../../icons/IconMapPin';

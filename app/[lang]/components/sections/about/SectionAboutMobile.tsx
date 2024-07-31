@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import React, { FC } from 'react';
 import Article from './components/mobile/AboutArticle';
 import ArticleHow from './components/mobile/articles/AboutArticleHow';
 import ArticleWhat from './components/mobile/articles/AboutArticleWhat';

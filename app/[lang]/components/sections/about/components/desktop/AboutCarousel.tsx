@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, FC } from 'react';
+import React, { useState, FC } from 'react';
 import AboutCarouselTile from './AboutCarouselTile';
 import getCarouselItems from '../../../../../../../utils/functions/getAboutCarouselItems';
 import AboutCarouselControls from './AboutCarouselControls';
@@ -31,7 +31,11 @@ const AboutCarousel: FC<Props> = ({ dict }) => {
             const isCurrentItem = index === currentIndex;
             const isIndexTheNextAfterCurrentItem =
               index === (currentIndex + 1) % carouselItems.length;
-            return item.content(isCurrentItem, isIndexTheNextAfterCurrentItem, index);
+            return item.content(
+              isCurrentItem,
+              isIndexTheNextAfterCurrentItem,
+              index
+            );
           })}
         </AboutCarouselTile>
       </div>

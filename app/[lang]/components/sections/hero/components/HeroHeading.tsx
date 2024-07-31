@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import React, { FC } from 'react';
 
 const HeroHeading: FC<{ label: string }> = ({ label }) => {
   return (

@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import React, { FC } from 'react';
 import IconArrowUpRight from '../../../icons/IconArrowUpRight';
 
 interface Props {

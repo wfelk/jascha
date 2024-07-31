@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import React, { FC } from 'react';
 import Hero from './components/sections/hero/SectionHero';
 import type Lang from '../../types/lang';
 import getDictionary from '../../utils/functions/getDictionary';

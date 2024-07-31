@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import React, { FC } from 'react';
 import IconCalendarDays from '../../../icons/IconCalendarDays';
 
 interface Props {

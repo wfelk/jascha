@@ -1,5 +1,4 @@
-'use client';
-
+import React from 'react';
 import photos from '../../../../../../../utils/constants/photoSources';
 import SwiperDefault from '@/app/[lang]/components/swiper/SwiperDefault';
 const classNamePagination =

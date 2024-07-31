@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import { FC, useMemo } from "react";
-import { GoogleMap, MarkerF, useLoadScript } from "@react-google-maps/api";
+import React, { FC, useMemo } from 'react';
+import { GoogleMap, MarkerF, useLoadScript } from '@react-google-maps/api';
 
 interface LatLng {
   lat: number;
@@ -13,9 +13,9 @@ interface Props {
   className?: string;
 }
 
-const GoogleMaps: FC<Props> = ({ coordinates, className = "w-full h-96" }) => {
+const GoogleMaps: FC<Props> = ({ coordinates, className = 'w-full h-96' }) => {
   if (!process.env.NEXT_PUBLIC_GOOGLE_API_KEY) {
-    throw new Error("Missing Google API Key");
+    throw new Error('Missing Google API Key');
   }
 
   const { isLoaded } = useLoadScript({
@@ -34,7 +34,7 @@ const GoogleMaps: FC<Props> = ({ coordinates, className = "w-full h-96" }) => {
         <GoogleMap mapContainerClassName={className} center={center} zoom={15}>
           <MarkerF
             position={center}
-            icon={"https://maps.google.com/mapfiles/ms/icons/blue-dot.png"}
+            icon={'https://maps.google.com/mapfiles/ms/icons/blue-dot.png'}
           />
         </GoogleMap>
       )}
