@@ -1,10 +1,10 @@
 import React, { FC, ReactNode } from 'react';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 
 interface Props {
   name: string;
   children: ReactNode;
-  imgSrc: any;
+  imgSrc: StaticImageData | string;
 }
 
 const imageLength = 250;

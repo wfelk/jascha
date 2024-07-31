@@ -1,23 +1,22 @@
 import React, { FC } from 'react';
-
-interface Props {
-  dict: any;
-  className: string;
-}
+import type Props from '@/types/about-carousel-item';
 
 const AboutCarouselItemTwo: FC<Props> = ({ dict, className }) => {
   return (
     <div className={className}>
       <ul className="list-disc px-6 flex flex-col gap-2">
-        <li>{dict?.carouselItems.item2.content.list.item1}</li>
-        <li>{dict?.carouselItems.item2.content.list.item2}</li>
-        <li>{dict?.carouselItems.item2.content.list.item3}</li>
-        <li>{dict?.carouselItems.item2.content.list.item4}</li>
+        <li>{dict.sections.about.carouselItems.item2.content.list?.item1}</li>
+        <li>{dict.sections.about.carouselItems.item2.content.list?.item2}</li>
+        <li>{dict.sections.about.carouselItems.item2.content.list?.item3}</li>
+        <li>{dict.sections.about.carouselItems.item2.content.list?.item4}</li>
       </ul>
       <p>
-        {dict?.carouselItems.item2.content.paragraph.beforeEmphasis}{' '}
+        {
+          dict.sections.about.carouselItems.item2.content.paragraph2
+            ?.beforeEmphasis
+        }{' '}
         <span className="font-bold text-sky-200">
-          {dict?.carouselItems.item2.content.paragraph.emphasis}
+          {dict.sections.about.carouselItems.item2.content.paragraph2?.emphasis}
         </span>
       </p>
     </div>

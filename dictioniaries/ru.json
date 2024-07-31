@@ -33,6 +33,9 @@
       },
       "button": "зарегистрироваться"
     },
+    "photos": {
+      "heading": "string"
+    },
     "about": {
       "carouselItems": {
         "item1": {

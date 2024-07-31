@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
-import NextImage from 'next/image';
+import NextImage, { StaticImageData } from 'next/image';
 
 interface Props {
-  src: any;
+  src: StaticImageData | string;
   alt: string;
 }
 

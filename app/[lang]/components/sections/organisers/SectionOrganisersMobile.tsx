@@ -4,18 +4,21 @@ import imgAndrey from '/public/images/organisers/jascha-organiser-andrey.jpeg';
 import imgWilhelm from '/public/images/organisers/jascha-organiser-wilhelm.jpeg';
 import Andrey from './components/mobile/OrganisersOrganiserAndrey';
 import Wilhelm from './components/mobile/OrganisersOrganiserWilhelm';
-
-interface Props {
-  dict: any;
-}
+import type { Props } from '@/types/dictionary';
 
 const SectionOrganisersMobile: FC<Props> = ({ dict }) => {
   return (
     <div className="flex flex-col md:hidden">
-      <Organiser name={dict?.wilhelm.heading} imgSrc={imgWilhelm}>
+      <Organiser
+        name={dict.sections.organisers.wilhelm.heading}
+        imgSrc={imgWilhelm}
+      >
         <Wilhelm dict={dict} />
       </Organiser>
-      <Organiser name={dict?.andrey.heading} imgSrc={imgAndrey}>
+      <Organiser
+        name={dict.sections.organisers.andrey.heading}
+        imgSrc={imgAndrey}
+      >
         <Andrey dict={dict} />
       </Organiser>
     </div>

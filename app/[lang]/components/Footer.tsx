@@ -1,11 +1,4 @@
 import React, { FC } from 'react';
-import Flag from './Flag';
-
-const flagProps = {
-  className: 'w-[50px] h-[35px]',
-  numOfColumns: 20,
-  staggeredDelay: 17,
-};
 
 const Footer: FC = () => {
   return (

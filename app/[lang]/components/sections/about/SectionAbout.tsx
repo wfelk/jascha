@@ -1,10 +1,7 @@
 import React, { FC } from 'react';
 import Mobile from './SectionAboutMobile';
 import Desktop from './SectionAboutDesktop';
-
-interface Props {
-  dict: any;
-}
+import type { Props } from '@/types/dictionary';
 
 const SectionAbout: FC<Props> = ({ dict }) => {
   return (

@@ -16,16 +16,16 @@ interface Props {
 }
 
 const Home: FC<Props> = async ({ params: { lang } }) => {
-  const { sections } = await getDictionary(lang);
+  const dict = await getDictionary(lang);
   return (
     <>
       <main className="scroll-smooth w-full scrollbar-hidden md:grid md:grid-cols-12 md:gap-y-20">
-        <Hero dict={sections.hero} />
-        <NextMeeting dict={sections.nextMeeting} />
-        <About dict={sections.about} />
-        <Photos dict={sections.photos} />
-        <Organisers dict={sections.organisers} />
-        <LookingForward dict={sections.lookingForward} />
+        <Hero dict={dict} />
+        <NextMeeting dict={dict} />
+        <About dict={dict} />
+        <Photos dict={dict} />
+        <Organisers dict={dict} />
+        <LookingForward dict={dict} />
       </main>
       <Footer />
     </>

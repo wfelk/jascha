@@ -1,9 +1,6 @@
 import React, { FC } from 'react';
 import Carousel from './components/desktop/AboutCarousel';
-
-interface Props {
-  dict: any;
-}
+import type { Props } from '@/types/dictionary';
 
 const SectionAboutDesktop: FC<Props> = ({ dict }) => {
   return (

@@ -1,22 +1,24 @@
 import React, { FC } from 'react';
-
-interface Props {
-  dict: any;
-  className: string;
-}
+import type Props from '@/types/about-carousel-item';
 
 const AboutCarouselItemOne: FC<Props> = ({ dict, className }) => {
   return (
     <div className={className}>
-      <p>{dict?.carouselItems.item1.content.paragraph1}</p>
+      <p>{dict.sections.about.carouselItems.item1.content.paragraph1}</p>
       <p>
-        {dict?.carouselItems.item1.content.paragraph2.beforeEmphasis}{' '}
+        {
+          dict.sections.about.carouselItems.item1.content.paragraph2
+            ?.beforeEmphasis
+        }{' '}
         <span className="font-bold text-sky-200">
-          {dict?.carouselItems.item1.content.paragraph2.emphasis}
+          {dict.sections.about.carouselItems.item1.content.paragraph2?.emphasis}
         </span>{' '}
-        {dict?.carouselItems.item1.content.paragraph2.afterEmphasis}
+        {
+          dict.sections.about.carouselItems.item1.content.paragraph2
+            ?.afterEmphasis
+        }
       </p>
-      <p>{dict?.carouselItems.item1.content.paragraph3}</p>
+      <p>{dict.sections.about.carouselItems.item1.content.paragraph3}</p>
     </div>
   );
 };

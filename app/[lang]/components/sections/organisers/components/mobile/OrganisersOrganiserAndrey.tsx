@@ -1,24 +1,33 @@
 import React, { FC } from 'react';
-
-interface Props {
-  dict: any;
-}
+import type { Props } from '@/types/dictionary';
 
 const OrganisersOrganiserAndrey: FC<Props> = ({ dict }) => {
   return (
     <>
       <p className="leading-loose">
-        {dict?.andrey.content.paragraph1.beforeEmphasis}{' '}
+        {
+          (
+            dict.sections.organisers.andrey.content.paragraph1 as {
+              beforeEmphasis: string;
+            }
+          ).beforeEmphasis
+        }{' '}
         <span className="font-bold text-sky-100">
-          {dict?.andrey.content.paragraph1.emphasis}
+          {
+            (
+              dict.sections.organisers.andrey.content.paragraph1 as {
+                emphasis: string;
+              }
+            ).emphasis
+          }
         </span>
       </p>
       <p className="leading-loose">
-        {dict?.andrey.content.paragraph2.beforeEmphasis}{' '}
+        {dict.sections.organisers.andrey.content.paragraph2.beforeEmphasis}{' '}
         <span className="font-bold text-sky-100">
-          {dict?.andrey.content.paragraph2.emphasis}
+          {dict.sections.organisers.andrey.content.paragraph2.emphasis}
         </span>{' '}
-        {dict?.andrey.content.paragraph2.afterEmphasis}
+        {dict.sections.organisers.andrey.content.paragraph2.afterEmphasis}
       </p>
     </>
   );

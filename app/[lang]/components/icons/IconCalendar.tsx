@@ -4,7 +4,7 @@ interface Props {
   className?: string;
 }
 
-const IconCalendar: FC<Props> = ({ className = "w-8 h-8" }) => {
+const IconCalendar: FC<Props> = ({ className = 'w-8 h-8' }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

@@ -2,6 +2,7 @@ import React from 'react';
 import One from '@/app/[lang]/components/sections/about/components/desktop/about-carousel-items/AboutCarouselItemOne';
 import Two from '@/app/[lang]/components/sections/about/components/desktop/about-carousel-items/AboutCarouselItemTwo';
 import Three from '@/app/[lang]/components/sections/about/components/desktop/about-carousel-items/AboutCarouselItemThree';
+import { Dictionary } from '@/types/dictionary';
 
 export interface CarouselItem {
   heading: string;
@@ -27,10 +28,10 @@ const getClassName = (
   return className;
 };
 
-const getAboutCarouselItems = (dict: any): CarouselItem[] => {
+const getAboutCarouselItems = (dict: Dictionary): CarouselItem[] => {
   const carouselItems = [
     {
-      heading: dict?.carouselItems.item1.heading,
+      heading: dict.sections.about.carouselItems.item1.heading,
       content: (
         isCurrentItem: boolean,
         isIndexTheNextAfterCurrentItem: boolean,
@@ -47,7 +48,7 @@ const getAboutCarouselItems = (dict: any): CarouselItem[] => {
       ),
     },
     {
-      heading: dict?.carouselItems.item2.heading,
+      heading: dict.sections.about.carouselItems.item2.heading,
       content: (
         isCurrentItem: boolean,
         isIndexTheNextAfterCurrentItem: boolean,
@@ -64,7 +65,7 @@ const getAboutCarouselItems = (dict: any): CarouselItem[] => {
       ),
     },
     {
-      heading: dict?.carouselItems.item3.heading,
+      heading: dict.sections.about.carouselItems.item3.heading,
       content: (
         isCurrentItem: boolean,
         isIndexTheNextAfterCurrentItem: boolean,

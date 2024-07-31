@@ -4,10 +4,7 @@ import React, { useState, FC } from 'react';
 import AboutCarouselTile from './AboutCarouselTile';
 import getCarouselItems from '../../../../../../../utils/functions/getAboutCarouselItems';
 import AboutCarouselControls from './AboutCarouselControls';
-
-interface Props {
-  dict: any;
-}
+import type { Props } from '@/types/dictionary';
 
 const AboutCarousel: FC<Props> = ({ dict }) => {
   const [currentIndex, setCurrentIndex] = useState(0);

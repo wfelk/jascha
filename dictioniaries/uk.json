@@ -33,6 +33,9 @@
       },
       "button": "зареєструватися"
     },
+    "photos": {
+      "heading": "string"
+    },
     "about": {
       "carouselItems": {
         "item1": {

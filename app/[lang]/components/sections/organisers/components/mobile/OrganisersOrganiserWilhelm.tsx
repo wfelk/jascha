@@ -1,19 +1,18 @@
 import React, { FC } from 'react';
-
-interface Props {
-  dict: any;
-}
+import type { Props } from '@/types/dictionary';
 
 const OrganisersOrganiserWilhelm: FC<Props> = ({ dict }) => {
   return (
     <>
-      <p className="leading-loose">{dict?.wilhelm.content.paragraph1}</p>
       <p className="leading-loose">
-        {dict?.wilhelm.content.paragraph2.beforeEmphasis}
+        {dict.sections.organisers.wilhelm.content.paragraph1 as string}
+      </p>
+      <p className="leading-loose">
+        {dict.sections.organisers.wilhelm.content.paragraph2.beforeEmphasis}
         <span className="font-bold text-sky-100">
-          {dict?.wilhelm.content.paragraph2.emphasis}
+          {dict.sections.organisers.wilhelm.content.paragraph2.emphasis}
         </span>{' '}
-        {dict?.wilhelm.content.paragraph2.afterEmphasis}
+        {dict.sections.organisers.wilhelm.content.paragraph2.afterEmphasis}
       </p>
     </>
   );

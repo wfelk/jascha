@@ -15,7 +15,8 @@ const HeroSocialMedia: FC = () => {
           key={index}
           href={url}
           target="_blank"
-          className=" text-sky-200/75 bg-gradient-to-tr from-sky-800 via-sky-600/50 to-sky-600/75 border-2 border-sky-200/25 rounded-full p-3 flex items-center justify-center snap-start hover:border-sky-100/75 transition-all hover:text-sky-100"
+          rel="noreferrer"
+          className="text-sky-200/75 bg-gradient-to-tr from-sky-800 via-sky-600/50 to-sky-600/75 border-2 border-sky-200/25 rounded-full p-3 flex items-center justify-center snap-start hover:border-sky-100/75 transition-all hover:text-sky-100"
         >
           <FontAwesomeIcon icon={icon} className="w-10 h-10" />
         </a>

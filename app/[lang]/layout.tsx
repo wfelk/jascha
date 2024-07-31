@@ -1,3 +1,4 @@
+import React from 'react';
 import '../../assets/styles/globals.scss';
 import type { Metadata } from 'next';
 import { Oswald } from 'next/font/google';

@@ -2,7 +2,9 @@ import 'server-only';
 import type Lang from '../../types/lang';
 
 // TO-DO Replace 'any' with correct type
-const dictionaries: any = {
+const dictionaries: {
+  [key in Lang]: () => Promise<any>;
+} = {
   en: () =>
     import('../../dictioniaries/en.json').then(module => module.default),
   de: () =>
