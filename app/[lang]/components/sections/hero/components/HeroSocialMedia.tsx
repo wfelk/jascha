@@ -9,7 +9,6 @@ import {
 const socialMediaHandles = [
   { icon: faMeetup, url: 'https://www.meetup.com/jascha-cologne/' },
   { icon: faInstagram, url: 'https://www.instagram.com/jascha.club/' },
-  { icon: faThreads, url: 'https://www.threads.net/jascha.club' },
 ];
 
 const HeroSocialMedia: FC = () => {
