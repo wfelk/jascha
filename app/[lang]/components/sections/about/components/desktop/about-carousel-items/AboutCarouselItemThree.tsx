@@ -4,11 +4,12 @@ import { classNameDefault } from '@/app/[lang]/components/Button';
 
 interface Props {
   dict: any;
+  className: string;
 }
 
-const AboutCarouselItemThree: FC<Props> = ({ dict }) => {
+const AboutCarouselItemThree: FC<Props> = ({ dict, className }) => {
   return (
-    <>
+    <div className={className}>
       <p className="font-light text-3xl">
         {dict?.carouselItems.item3.content.paragraph1}
       </p>
@@ -21,7 +22,7 @@ const AboutCarouselItemThree: FC<Props> = ({ dict }) => {
       <Button className={`${classNameDefault} mt-8`}>
         <a href="#">{dict.carouselItems.item3.content.button}</a>
       </Button>
-    </>
+    </div>
   );
 };
 

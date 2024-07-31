@@ -1,23 +1,24 @@
-import { FC, ReactNode } from 'react';
+import { FC } from 'react';
 import Button from '../../../../Button';
 import IconArrowLeft from '../../../../icons/IconArrowLeft';
 import IconArrowRight from '../../../../icons/IconArrowRight';
+import type { CarouselItem } from '../../../../../../../utils/functions/getAboutCarouselItems';
 
 interface Props {
   onLeftClick: () => void;
   onRightClick: () => void;
-  carouselItems: ReactNode[];
+  carouselItems: CarouselItem[];
   currentIndex: number;
 }
 
-const AboutControls: FC<Props> = ({
+const AboutCarouselControls: FC<Props> = ({
   onLeftClick,
   onRightClick,
   carouselItems,
   currentIndex,
 }) => {
   return (
-    <div className="w-full flex items-center justify-center max-h-1/6 min-h-1/6 h-1/6 py-6 px-4 gap-6">
+    <div className="w-full flex items-center justify-center max-h-1/6 min-h-1/6 h-1/6 p-8 gap-6">
       <Button
         onClick={onLeftClick}
         className="flex items-center opacity-50 focus:outline-none"
@@ -44,4 +45,4 @@ const AboutControls: FC<Props> = ({
   );
 };
 
-export default AboutControls;
+export default AboutCarouselControls;

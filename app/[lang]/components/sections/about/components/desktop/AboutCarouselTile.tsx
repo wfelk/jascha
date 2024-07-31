@@ -7,14 +7,12 @@ interface Props {
 
 const AboutCarouselTile: FC<Props> = ({ heading, children }) => {
   return (
-    <div className="rounded-lg w-full h-full flex flex-col justify-between">
+    <div className="rounded-lg w-full h-full min-h-[500px] flex flex-col justify-between">
       <h2 className="p-8 text-sky-950 h-1/8 tracking-wide font-light text-right text-4xl">
         {heading}
       </h2>
-      <div className="text-xl tracking-widest h-full flex flex-col px-8 overflow-y-auto">
-        <div className="overflow-y-auto flex flex-col justify-evenly h-full w-full rounded gap-8 text-sky-300 leading-loose tracking-wide">
-          {children}
-        </div>
+      <div className="relative text-md xl:text-xl 2xl:text-2xl font-light tracking-widest h-full px-8 overflow-hidden w-full text-sky-300 leading-looser">
+        {children}
       </div>
     </div>
   );

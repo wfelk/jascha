@@ -2,11 +2,12 @@ import React, { FC } from 'react';
 
 interface Props {
   dict: any;
+  className: string;
 }
 
-const AboutCarouselItemOne: FC<Props> = ({ dict }) => {
+const AboutCarouselItemOne: FC<Props> = ({ dict, className }) => {
   return (
-    <>
+    <div className={className}>
       <p>{dict?.carouselItems.item1.content.paragraph1}</p>
       <p>
         {dict?.carouselItems.item1.content.paragraph2.beforeEmphasis}{' '}
@@ -16,7 +17,7 @@ const AboutCarouselItemOne: FC<Props> = ({ dict }) => {
         {dict?.carouselItems.item1.content.paragraph2.afterEmphasis}
       </p>
       <p>{dict?.carouselItems.item1.content.paragraph3}</p>
-    </>
+    </div>
   );
 };
 
