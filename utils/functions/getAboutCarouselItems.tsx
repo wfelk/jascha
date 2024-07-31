@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import One from '@/app/[lang]/components/sections/about/components/desktop/about-carousel-items/AboutCarouselItemOne';
 import Two from '@/app/[lang]/components/sections/about/components/desktop/about-carousel-items/AboutCarouselItemTwo';
 import Three from '@/app/[lang]/components/sections/about/components/desktop/about-carousel-items/AboutCarouselItemThree';
@@ -6,25 +6,24 @@ import { Dictionary } from '@/types/dictionary';
 
 export interface CarouselItem {
   heading: string;
-  content: (
+  getCarouselItem: (
     isCurrentItem: boolean,
-    isIndexTheNextAfterCurrentItem: boolean,
+    isItemTheNextAfterCurrentItem: boolean,
     index: number
-  ) => React.ReactNode;
+  ) => ReactNode;
 }
 
 const getClassName = (
   isCurrentItem: boolean,
-  isIndexTheNextAfterCurrentItem: boolean
+  isItemTheNextAfterCurrentItem: boolean
 ) => {
-  const className = `max-w-full h-full flex-col flex xl:gap-16 gap-8 justify-center absolute duration-1000 ${
+  const className = `about-carousel-item max-w-full h-full flex-col flex xl:gap-16 gap-8 justify-center absolute ${
     isCurrentItem
-      ? 'opacity-100 translate-x-0'
-      : isIndexTheNextAfterCurrentItem
-        ? 'opacity-0 translate-x-full'
-        : 'opacity-0 -translate-x-full'
+      ? 'about-carousel-item--current-item'
+      : isItemTheNextAfterCurrentItem
+        ? 'about-carousel-item--next-item'
+        : 'about-carousel-item--previous-item'
   }`;
-  console.log(className);
   return className;
 };
 
@@ -32,51 +31,42 @@ const getAboutCarouselItems = (dict: Dictionary): CarouselItem[] => {
   const carouselItems = [
     {
       heading: dict.sections.about.carouselItems.item1.heading,
-      content: (
+      getCarouselItem: (
         isCurrentItem: boolean,
-        isIndexTheNextAfterCurrentItem: boolean,
+        isItemTheNextAfterCurrentItem: boolean,
         index: number
       ) => (
         <One
           dict={dict}
-          className={getClassName(
-            isCurrentItem,
-            isIndexTheNextAfterCurrentItem
-          )}
+          className={getClassName(isCurrentItem, isItemTheNextAfterCurrentItem)}
           key={index}
         />
       ),
     },
     {
       heading: dict.sections.about.carouselItems.item2.heading,
-      content: (
+      getCarouselItem: (
         isCurrentItem: boolean,
-        isIndexTheNextAfterCurrentItem: boolean,
+        isItemTheNextAfterCurrentItem: boolean,
         index: number
       ) => (
         <Two
           dict={dict}
-          className={getClassName(
-            isCurrentItem,
-            isIndexTheNextAfterCurrentItem
-          )}
+          className={getClassName(isCurrentItem, isItemTheNextAfterCurrentItem)}
           key={index}
         />
       ),
     },
     {
       heading: dict.sections.about.carouselItems.item3.heading,
-      content: (
+      getCarouselItem: (
         isCurrentItem: boolean,
-        isIndexTheNextAfterCurrentItem: boolean,
+        isItemTheNextAfterCurrentItem: boolean,
         index: number
       ) => (
         <Three
           dict={dict}
-          className={getClassName(
-            isCurrentItem,
-            isIndexTheNextAfterCurrentItem
-          )}
+          className={getClassName(isCurrentItem, isItemTheNextAfterCurrentItem)}
           key={index}
         />
       ),
