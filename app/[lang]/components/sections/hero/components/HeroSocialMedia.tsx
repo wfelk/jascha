@@ -1,10 +1,6 @@
 import { FC } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faInstagram,
-  faMeetup,
-  faThreads,
-} from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faMeetup } from '@fortawesome/free-brands-svg-icons';
 
 const socialMediaHandles = [
   { icon: faMeetup, url: 'https://www.meetup.com/jascha-cologne/' },
