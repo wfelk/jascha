@@ -25,13 +25,13 @@ const AboutCarousel: FC<Props> = ({ dict }) => {
 
   return (
     <div className="flex flex-col h-full w-full items-center justify-between">
-      <div className="w-full max-h-5/6 min-h-5/6 h-5/6 p-4">
+      <div className="w-full max-h-5/6 min-h-5/6 h-5/6 p-12">
         <AboutCarouselTile heading={carouselItems[currentIndex]?.heading}>
           {carouselItems.map((item, index) => {
             const isCurrentItem = index === currentIndex;
             const isIndexTheNextAfterCurrentItem =
               index === (currentIndex + 1) % carouselItems.length;
-            return item.content(isCurrentItem, isIndexTheNextAfterCurrentItem);
+            return item.content(isCurrentItem, isIndexTheNextAfterCurrentItem, index);
           })}
         </AboutCarouselTile>
       </div>
