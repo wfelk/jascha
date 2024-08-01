@@ -19,7 +19,7 @@ const Home: FC<Props> = async ({ params: { lang } }) => {
   const dict = await getDictionary(lang);
   return (
     <>
-      <main className="scroll-smooth w-full scrollbar-hidden md:grid md:grid-cols-12 md:gap-y-20">
+      <main className="scroll-smooth w-full scrollbar-hidden md:grid md:grid-cols-12 md:gap-y-32">
         <Hero dict={dict} />
         <NextMeeting dict={dict} />
         <About dict={dict} />
