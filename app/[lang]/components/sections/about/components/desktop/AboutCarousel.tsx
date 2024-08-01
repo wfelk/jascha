@@ -2,9 +2,7 @@
 
 import React, { useState, FC, ReactNode } from 'react';
 import AboutCarouselTile from './AboutCarouselTile';
-import getCarouselItems, {
-  CarouselItem,
-} from '../../../../../../../utils/functions/getAboutCarouselItems';
+import getCarouselItems, { CarouselItem } from '../getAboutCarouselItems';
 import AboutCarouselControls from './AboutCarouselControls';
 import type { Props } from '@/types/dictionary';
 

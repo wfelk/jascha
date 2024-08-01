@@ -17,7 +17,7 @@ const getClassName = (
   isCurrentItem: boolean,
   isItemTheNextAfterCurrentItem: boolean
 ) => {
-  const className = `about-carousel-item max-w-full h-full flex-col flex xl:gap-16 gap-8 justify-center absolute ${
+  const className = `about-carousel-item max-w-full h-full flex-col flex gap-8 justify-center absolute ${
     isCurrentItem
       ? 'about-carousel-item--current-item'
       : isItemTheNextAfterCurrentItem
