@@ -1,5 +1,4 @@
 import React, { FC, ReactNode } from 'react';
-
 interface Props {
   className?: string;
   children: string | ReactNode;

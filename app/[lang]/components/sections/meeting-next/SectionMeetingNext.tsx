@@ -28,8 +28,11 @@ const SectionMeetingNext: FC<Props> = async ({ dict }) => {
   const coordinates = data?.results[0]?.geometry?.location;
 
   return (
-    <section className="md:col-span-8 md:col-start-3 lg:col-start-2 lg:col-span-4 mt-32 md:m-0">
-      <article className="flex flex-col items-center gap-12" id="next-meeting">
+    <section
+      className="md:col-span-8 md:col-start-3 lg:col-start-2 lg:col-span-4 mt-32 md:m-0"
+      id="next-meeting"
+    >
+      <article className="flex flex-col items-center gap-12">
         <SectionHeading label={dict.sections.nextMeeting.heading} />
         <div className="bg-gradient-to-tr from-sky-900/80 via-sky-700/80 to-sky-600/75 drop-shadow-2xl w-full md:rounded-lg">
           <div className="px-4 py-8 md:px-12 border-t-8 items-center gap-12 flex flex-col border-t-teal-500/50 md:rounded-lg md:gap-8">
