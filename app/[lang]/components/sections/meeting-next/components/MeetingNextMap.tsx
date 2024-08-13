@@ -20,6 +20,8 @@ interface Props {
   venue: string;
 }
 
+console.log('test');
+
 const MeetingNextMap: FC<Props> = ({ coordinates, venue }) => {
   return (
     <MapContainer
