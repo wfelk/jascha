@@ -1,20 +1,13 @@
-'use client';
-
 import React, { FC } from 'react';
 import type Lang from '@/types/lang';
 import IconMapPin from '../../../icons/IconMapPin';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import 'leaflet/dist/leaflet.css';
-import L from 'leaflet';
 
-const defaultIcon = new L.Icon({
-  iconUrl: require('leaflet/dist/images/marker-icon.png'),
-  iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
-  shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
-  popupAnchor: [1, -34],
-  shadowSize: [41, 41],
+import dynamic from 'next/dynamic';
+const Map = dynamic(() => import('./MeetingNextMap'), {
+  ssr: false,
+  loading: () => (
+    <div className="min-h-[250px] bg-white/50 animate-pulse rounded-md" />
+  ),
 });
 
 interface Props {
@@ -59,24 +52,7 @@ const Address: FC<Props> = ({
           </div>
         </div>
       </address>
-      {coordinates && (
-        <MapContainer
-          center={[coordinates.lat, coordinates.lon]}
-          zoom={13}
-          style={{ height: '250px', width: '100%' }}
-        >
-          <TileLayer
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          />
-          <Marker
-            position={[coordinates.lat, coordinates.lon]}
-            icon={defaultIcon}
-          >
-            <Popup>{venue}</Popup>
-          </Marker>
-        </MapContainer>
-      )}
+      {coordinates && <Map coordinates={coordinates} venue={venue} />}
     </div>
   );
 };

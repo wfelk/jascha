@@ -1,13 +1,7 @@
-'use client';
-
 import React, { FC } from 'react';
 import type { Props } from '@/types/dictionary';
 import Unscheduled from './components/MeetingNextUnscheduled';
-import dynamic from 'next/dynamic';
-
-const Scheduled = dynamic(() => import('./components/MeetingNextScheduled'), {
-  ssr: false,
-});
+import Scheduled from './components/MeetingNextScheduled';
 
 const SectionMeetingNext: FC<Props> = ({ dict }) => {
   const isNextMeetingScheduled = true;

@@ -2,8 +2,8 @@ import React, { FC } from 'react';
 import SectionHeading from '../SectionMeetingHeading';
 import Time from './MeetingNextTime';
 import Date from './MeetingNextDate';
-import Address from './MeetingNextAddress';
 import Button from './MeetingNextButton';
+import Address from './MeetingNextAddress';
 
 import type { Props } from '@/types/dictionary';
 import convertShallowObjectToString from '@/utils/functions/convertShallowObjectToString';
