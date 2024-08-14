@@ -22,7 +22,7 @@ const AboutCarousel: FC<Props> = ({ dict }) => {
 
   return (
     <div className="flex flex-col h-full w-full items-center justify-between">
-      <div className="w-full max-h-5/6 min-h-5/6 h-5/6 p-12">
+      <div className="w-full max-h-5/6 min-h-5/6 h-5/6 px-12 pt-10">
         <AboutCarouselTile heading={carouselItems[currentIndex]?.heading}>
           {carouselItems.map((item: CarouselItem, index: number): ReactNode => {
             const isCurrentItem = index === currentIndex;

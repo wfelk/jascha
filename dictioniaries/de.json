@@ -31,7 +31,11 @@
           "postCode": "50676"
         }
       },
-      "button": "anmelden"
+      "button": "anmelden",
+      "unscheduled": {
+        "heading": "Noch nichts geplant!",
+        "content": "Das nächste Treffen ist leider noch nicht geplant worden. Sobald es Informationen gibt, werden sie hier angezeigt. Folge uns auf Meetup oder Instagram, um auch dort auf dem Laufenden zu bleiben!"
+      }
     },
     "photos": {
       "heading": "Vergangene Treffen"

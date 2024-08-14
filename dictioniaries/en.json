@@ -31,6 +31,10 @@
           "postCode": "50676"
         }
       },
+      "unscheduled": {
+        "heading": "Nothing planned yet!",
+        "content": "Unfortunately, the next meeting has not been scheduled yet. As soon as there is information, it will be displayed here. Follow us on Meetup or Instagram to stay updated there as well!"
+      },
       "button": "register"
     },
     "photos": {

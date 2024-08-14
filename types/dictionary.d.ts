@@ -40,6 +40,10 @@ export interface Dictionary {
           postCode: string;
         };
       };
+      unscheduled: {
+        heading: string;
+        content: string;
+      };
       button: string;
     };
     photos: {

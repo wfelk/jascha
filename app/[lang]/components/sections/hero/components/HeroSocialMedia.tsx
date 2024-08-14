@@ -1,11 +1,6 @@
 import React, { FC } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram, faMeetup } from '@fortawesome/free-brands-svg-icons';
-
-const socialMediaHandles = [
-  { icon: faMeetup, url: 'https://www.meetup.com/jascha-cologne/' },
-  { icon: faInstagram, url: 'https://www.instagram.com/jascha.club/' },
-];
+import socialMediaHandles from '@/utils/constants/socialMediaHandles';
 
 const HeroSocialMedia: FC = () => {
   return (

@@ -18,7 +18,9 @@ const AboutCarouselItemThree: FC<Props> = ({ dict, className }) => {
           {dict.sections.about.carouselItems.item3.content.paragraph2?.emphasis}
         </span>
       </p>
-      <Button className={`${classNameDefault} mt-8`}>
+      <Button
+        className={`${classNameDefault} mt-8 lg:mt-0 2xl:mt-16 max-w-fit mx-auto`}
+      >
         <a href="#">{dict.sections.about.carouselItems.item3.content.button}</a>
       </Button>
     </div>
