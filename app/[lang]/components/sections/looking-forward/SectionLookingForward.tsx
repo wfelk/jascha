@@ -16,7 +16,7 @@ const SectionLookingForward: FC<Props> = ({ dict }) => {
         {dict.sections.lookingForward.content}
       </p>
       <Button onClick={handleClick}>
-        <span>zum nächsten Treffen</span>
+        <span>{dict.sections.lookingForward.button}</span>
       </Button>
     </section>
   );

@@ -44,7 +44,7 @@
       "button": "зарегистрироваться"
     },
     "photos": {
-      "heading": "string"
+      "heading": "прошедшие встречи"
     },
     "about": {
       "carouselItems": {
@@ -117,7 +117,8 @@
       }
     },
     "lookingForward": {
-      "content": "С нетерпением ждем встречи с вами!"
+      "content": "С нетерпением ждем встречи с вами!",
+      "button": "на следующую встречу"
     }
   },
   "footer": {}

@@ -97,6 +97,7 @@ export interface Dictionary {
     };
     lookingForward: {
       content: string;
+      button: string;
     };
   };
   footer: Record<string, never>;

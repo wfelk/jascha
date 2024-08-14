@@ -109,7 +109,7 @@
         "content": {
           "paragraph1": "Wilhelm is 27 years old and works as a web developer. He was born in Germany. His family comes from the former Soviet Union.",
           "paragraph2": {
-            "beforeEmphasis": "Although Wilhelm grew up speaking Russian, he only started to",
+            "beforeEmphasis": "Although Wilhelm grew up speaking Russian, he only started to ",
             "emphasis": "discover the language for himself during his studies.",
             "afterEmphasis": "He wants to speak Russian more often to maintain his language level."
           }
@@ -117,7 +117,8 @@
       }
     },
     "lookingForward": {
-      "content": "We are looking forward to meeting you!"
+      "content": "We are looking forward to meeting you!",
+      "button": "next meeting"
     }
   },
   "footer": {}

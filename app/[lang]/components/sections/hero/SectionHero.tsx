@@ -8,8 +8,12 @@ import Image from './components/HeroImage';
 import cafe from '/public/images/cafe-1920-1280.jpeg';
 import Social from './components/HeroSocialMedia';
 import type { Props } from '@/types/dictionary';
+import scrollSmoothlyTo from '@/utils/functions/scrollSmoothlyTo';
 
 const SectionHero: FC<Props> = ({ dict }) => {
+  const handleClick = () => {
+    scrollSmoothlyTo('next-meeting');
+  };
   return (
     <section className="relative bg-sky-950/80 border-t-8 border-t-sky-500/50 h-screen flex-col flex justify-center items-center will-change-scroll md:col-span-full">
       <Social />
@@ -20,7 +24,7 @@ const SectionHero: FC<Props> = ({ dict }) => {
       />
       <Image src={cafe} alt="people talking in a cafe" />
       <div className="w-full grow flex flex-col items-center justify-center">
-        <Button onClick={() => {}}>{dict.sections.hero.button}</Button>
+        <Button onClick={handleClick}>{dict.sections.hero.button}</Button>
       </div>
     </section>
   );

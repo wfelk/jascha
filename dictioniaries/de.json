@@ -117,7 +117,8 @@
       }
     },
     "lookingForward": {
-      "content": "Wir freuen uns auf dich!"
+      "content": "Wir freuen uns auf dich!",
+      "button": "zum nächsten Treffen"
     }
   },
   "footer": {}
