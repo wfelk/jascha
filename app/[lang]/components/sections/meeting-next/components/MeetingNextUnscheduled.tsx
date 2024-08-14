@@ -10,7 +10,16 @@ const MeetingNextUnscheduled: FC<Props> = ({ dict }) => {
         {dict.sections.nextMeeting.unscheduled.heading}
       </h3>
       <p className="px-6 text-xl text-sky-200/75 sm:w-2/3 md:w-full">
-        {dict.sections.nextMeeting.unscheduled.content}
+        {
+          dict.sections.nextMeeting.unscheduled.content.paragraphOne
+            .beforeEmphasis
+        }{' '}
+        <span className="font-bold text-sky-200">
+          {dict.sections.nextMeeting.unscheduled.content.paragraphOne.emphasis}
+        </span>
+      </p>
+      <p className="px-6 text-xl text-orange-200/75 sm:w-2/3 md:w-full">
+        {dict.sections.nextMeeting.unscheduled.content.paragraphTwo}
       </p>
       <div className="flex gap-6">
         {socialMediaHandles.map(({ icon, url }, index) => (

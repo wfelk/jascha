@@ -34,7 +34,13 @@
       "button": "anmelden",
       "unscheduled": {
         "heading": "Noch nichts geplant!",
-        "content": "Das nächste Treffen ist leider noch nicht geplant worden. Sobald es Informationen gibt, werden sie hier angezeigt. Folge uns auf Meetup oder Instagram, um auch dort auf dem Laufenden zu bleiben!"
+        "content": {
+          "paragraphOne": {
+            "beforeEmphasis": "Leider ist das nächste Treffen noch nicht geplant worden. Sobald es feststeht,",
+            "emphasis": "kündigen wir das nächste Treffen hier an."
+          },
+          "paragraphTwo": "Über andere Kanäle halten wir dich auch auf dem Laufenden. Folge uns auf Meetup oder Instagram!"
+        }
       }
     },
     "photos": {

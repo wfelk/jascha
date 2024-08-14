@@ -33,7 +33,13 @@
       },
       "unscheduled": {
         "heading": "Nothing planned yet!",
-        "content": "Unfortunately, the next meeting has not been scheduled yet. As soon as there is information, it will be displayed here. Follow us on Meetup or Instagram to stay updated there as well!"
+        "content": {
+          "paragraphOne": {
+            "beforeEmphasis": "Unfortunately, the next meeting has not yet been planned. Once it is confirmed,",
+            "emphasis": "we will announce the next meeting here."
+          },
+          "paragraphTwo": "We will also keep you updated through other channels. Follow us on Meetup or Instagram!"
+        }
       },
       "button": "register"
     },

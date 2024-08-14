@@ -42,7 +42,13 @@ export interface Dictionary {
       };
       unscheduled: {
         heading: string;
-        content: string;
+        content: {
+          paragraphOne: {
+            beforeEmphasis: string;
+            emphasis: string;
+          };
+          paragraphTwo: string;
+        };
       };
       button: string;
     };
