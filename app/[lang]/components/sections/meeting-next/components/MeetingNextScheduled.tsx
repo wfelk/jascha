@@ -1,7 +1,6 @@
 import React, { FC } from 'react';
 import Time from './MeetingNextTime';
 import Date from './MeetingNextDate';
-import Button from './MeetingNextButton';
 import Address from './MeetingNextAddress';
 
 import type { Props } from '@/types/dictionary';
