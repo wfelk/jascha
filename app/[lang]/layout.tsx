@@ -1,14 +1,18 @@
 import React from 'react';
 import '../../assets/styles/globals.scss';
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Oswald } from 'next/font/google';
 const oswald = Oswald({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Jascha',
-  description: 'Russian-German language tandem club in Cologne',
-  viewport: { width: 'device-width', initialScale: 1 },
-  themeColor: { media: '(prefers-color-scheme: dark)', color: '#082F49' },
+  description: 'Russian-German Language Tandem Club in Cologne',
+};
+
+export const viewport: Viewport = {
+  themeColor: '#306995',
+  width: 'device-width',
+  initialScale: 1,
 };
 
 export default function RootLayout({

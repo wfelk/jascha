@@ -8,6 +8,7 @@ import NextMeeting from './components/sections/meeting-next/SectionMeetingNext';
 import Photos from './components/sections/meeting-past/SectionMeetingPast';
 import Footer from './components/Footer';
 import LookingForward from './components/sections/looking-forward/SectionLookingForward';
+import LanguageSwitcher from './components/LanguageSwitcher';
 
 interface Props {
   params: {
@@ -28,6 +29,7 @@ const Home: FC<Props> = async ({ params: { lang } }) => {
         <LookingForward dict={dict} />
       </main>
       <Footer />
+      <LanguageSwitcher dict={dict} />
     </>
   );
 };
