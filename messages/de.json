@@ -1,0 +1,125 @@
+{
+  "meta": {
+    "title": "Jascha",
+    "description": "Russisch-Deutscher Sprachtreff in Köln"
+  },
+  "sections": {
+    "hero": {
+      "heading": "Jascha",
+      "subheading": {
+        "beforeEmphasis": "Russisch-Deutscher Sprachtreff",
+        "emphasis": "in Köln"
+      },
+      "button": "mitmachen"
+    },
+    "nextMeeting": {
+      "heading": "Nächstes Treffen",
+      "data": {
+        "date": {
+          "day": "Samstag",
+          "date": "14.",
+          "month": "Dezember",
+          "year": "2023",
+          "dateTime": "2023-12-14"
+        },
+        "time": { "display": "19:00", "marker": "Uhr", "dateTime": "19:00" },
+        "location": { "name": "Bar Botanik", "lang": "de" },
+        "address": {
+          "street": "Kaygasse",
+          "houseNumber": "2",
+          "city": "Köln",
+          "postCode": "50676"
+        }
+      },
+      "button": "anmelden",
+      "unscheduled": {
+        "heading": "Noch nichts geplant!",
+        "content": {
+          "paragraphOne": {
+            "beforeEmphasis": "Leider ist das nächste Treffen noch nicht geplant worden. Sobald es feststeht,",
+            "emphasis": "kündigen wir das nächste Treffen hier an."
+          },
+          "paragraphTwo": "Über andere Kanäle halten wir dich auch auf dem Laufenden. Folge uns auf Meetup oder Instagram!"
+        }
+      }
+    },
+    "photos": {
+      "heading": "Vergangene Treffen"
+    },
+    "about": {
+      "carouselItems": {
+        "item1": {
+          "heading": "Was ist „Jascha“?",
+          "content": {
+            "paragraph1": "Das ist der Name unseres Sprachtreffs, den wir für Russisch- und Deutschsprachige in Köln organisieren.",
+            "paragraph2": {
+              "beforeEmphasis": "Triff russisch- oder deutschsprachige Personen (z.B. Expats, Studenten, Neugezogene oder andere Kölner) und",
+              "emphasis": "übe deine Sprachkenntnisse",
+              "afterEmphasis": "wie bei einem Sprachtandem."
+            },
+            "paragraph3": "In einer gemütlichen und freundlichen Atmosphäre sprechen wir über alles Mögliche – bei Kaffee, Kölsch oder einem anderen Getränk der Wahl."
+          }
+        },
+        "item2": {
+          "heading": "Für wen ist „Jascha“?",
+          "content": {
+            "list": {
+              "item1": "Russischsprachige, die ihre Deutschkenntnisse üben möchten",
+              "item2": "Deutschsprachige, die ihre Russischkenntnisse üben möchten",
+              "item3": "Personen, die an der russischen oder deutschen Sprache interessiert sind",
+              "item4": "Personen, die einfach nur Ideen mit Russisch- oder Deutschsprachigen austauschen möchten"
+            },
+            "paragraph": {
+              "beforeEmphasis": "… und natürlich ist Jascha auch für diejenigen offen, die",
+              "emphasis": "einfach mal vorbeischauen möchten."
+            }
+          }
+        },
+        "item3": {
+          "heading": "Wie kann ich teilnehmen?",
+          "content": {
+            "paragraph1": "Komm' einfach vorbei!",
+            "paragraph2": {
+              "beforeEmphasis": "Du kannst uns auch im Voraus über den sozialen Netzen bescheidgeben oder deine Teilnahme bei Meetup bestätigen. Das ermöglicht uns, die Anzahl der Teilnehmer im Auge zu behalten. Bei Bedarf wechseln wir dann den Veranstaltungsort, um",
+              "emphasis": "genügend Platz für alle zu bieten."
+            },
+            "button": "Jascha auf Meetup folgen"
+          }
+        }
+      }
+    },
+    "organisers": {
+      "heading": "Organisatoren",
+      "andrey": {
+        "heading": "Andrej",
+        "content": {
+          "paragraph1": {
+            "beforeEmphasis": "Andrej ist 30 Jahre alt und arbeitet als Software-Tester in Köln. Er ist in Kaliningrad geboren und aufgewachsen und lebt seit drei Jahren in Deutschland. Köln hat es ihm angetan. Außerdem hat er",
+            "emphasis": "sieht er seine Zukunft in der Stadt am Rhein."
+          },
+          "paragraph2": {
+            "beforeEmphasis": "Auch wenn Andrej seinem Heimatland den Rücken gekehrt hat, möchte er",
+            "emphasis": "den Kontakt zu anderen Russischsprachigen nicht verlieren.",
+            "afterEmphasis": "Seiner Meinung nach gibt es in Köln nicht genug Möglichkeiten, sich mit anderen Russischsprachigen zu vernetzen. Deshalb hat er beschlossen, den Sprachtreff zu gründen."
+          }
+        }
+      },
+      "wilhelm": {
+        "heading": "Wilhelm",
+        "content": {
+          "paragraph1": "Wilhelm ist 28 Jahre alt und arbeitet als Webentwickler. Er wurde in Deutschland geboren. Seine Familie stammt aus der ehemaligen Sowjetunion.",
+          "paragraph2": {
+            "beforeEmphasis": "Obwohl Wilhelm mit der russischen Sprache aufgewachsen ist, hat er sie erst ",
+            "emphasis": "während seines Studiums für sich entdeckt.",
+            "afterEmphasis": "Er möchte öfter Russisch sprechen, um sein Sprachniveau zu verbessern."
+          }
+        }
+      }
+    },
+    "lookingForward": {
+      "content": "Wir freuen uns auf dich!",
+      "button": "zum nächsten Treffen"
+    }
+  },
+  "footer": {}
+}

@@ -1,0 +1,125 @@
+{
+  "meta": {
+    "title": "Jascha",
+    "description": "Russian-German Language Tandem Club in Cologne"
+  },
+  "sections": {
+    "hero": {
+      "heading": "Jascha",
+      "subheading": {
+        "beforeEmphasis": "Russian-German Language Tandem Club",
+        "emphasis": "in Cologne"
+      },
+      "button": "participate"
+    },
+    "nextMeeting": {
+      "heading": "Next meeting",
+      "data": {
+        "date": {
+          "day": "Saturday",
+          "date": "14th",
+          "month": "December",
+          "year": "2023",
+          "dateTime": "2023-12-14"
+        },
+        "time": { "display": "7:00", "marker": "pm", "dateTime": "19:00" },
+        "location": { "name": "Bar Botanik", "lang": "en" },
+        "address": {
+          "street": "Kaygasse",
+          "houseNumber": "2",
+          "city": "Köln",
+          "postCode": "50676"
+        }
+      },
+      "unscheduled": {
+        "heading": "Nothing planned yet!",
+        "content": {
+          "paragraphOne": {
+            "beforeEmphasis": "Unfortunately, the next meeting has not yet been planned. Once it is confirmed,",
+            "emphasis": "we will announce the next meeting here."
+          },
+          "paragraphTwo": "We will also keep you updated through other channels. Follow us on Meetup or Instagram!"
+        }
+      },
+      "button": "register"
+    },
+    "photos": {
+      "heading": "Last meetings"
+    },
+    "about": {
+      "carouselItems": {
+        "item1": {
+          "heading": "What is Jascha?",
+          "content": {
+            "paragraph1": "This is the name (pronounced like 'Yasha') of our language tandem club that we organise for Russian and German speakers in Cologne.",
+            "paragraph2": {
+              "beforeEmphasis": "Meet Russian or German-speaking people (e.g. expats, students, newly moved residents or other Colognians) and",
+              "emphasis": "practise your language skills",
+              "afterEmphasis": "in a Tandem-like manner."
+            },
+            "paragraph3": "In a cosy and friendly atmosphere, we talk about everything under the sun – over coffee, Kölsch, or another drink of choice."
+          }
+        },
+        "item2": {
+          "heading": "Who is Jascha for?",
+          "content": {
+            "list": {
+              "item1": "Russian speakers, who want to practise their German skills",
+              "item2": "German speakers, who want to practise their Russian skills",
+              "item3": "those interested in the Russian or German language",
+              "item4": "those who simply want to exchange ideas with Russian or German speakers"
+            },
+            "paragraph": {
+              "beforeEmphasis": "…and of course, Jascha is also open to anyone who",
+              "emphasis": "just wants to drop by."
+            }
+          }
+        },
+        "item3": {
+          "heading": "How can I participate?",
+          "content": {
+            "paragraph1": "Just come by!",
+            "paragraph2": {
+              "beforeEmphasis": "You can also let us know in advance by posting a message on social media, or confirm your participation here on Meetup. This allows us to keep track of the number of participants, and change the venue if necessary to provide",
+              "emphasis": "enough space for everyone."
+            },
+            "button": "Join us on Meetup"
+          }
+        }
+      }
+    },
+    "organisers": {
+      "heading": "Organisers",
+      "andrey": {
+        "heading": "Andrey",
+        "content": {
+          "paragraph1": {
+            "beforeEmphasis": "Andrey is 29 years old and works as a software tester in Cologne. He was born and raised in Kaliningrad and has been living in Germany for three years. He has taken a liking to Cologne. Furthermore, he",
+            "emphasis": "sees his future in the city on the Rhine."
+          },
+          "paragraph2": {
+            "beforeEmphasis": "Even though Andrey has turned his back on his home country, he",
+            "emphasis": "doesn't want to lose touch with other speakers of Russian.",
+            "afterEmphasis": "In his opinion, there are not enough opportunities to network with other Russian speakers in Cologne. That's why he decided to set up the speaking club."
+          }
+        }
+      },
+      "wilhelm": {
+        "heading": "Wilhelm",
+        "content": {
+          "paragraph1": "Wilhelm is 27 years old and works as a web developer. He was born in Germany. His family comes from the former Soviet Union.",
+          "paragraph2": {
+            "beforeEmphasis": "Although Wilhelm grew up speaking Russian, he only started to ",
+            "emphasis": "discover the language for himself during his studies.",
+            "afterEmphasis": "He wants to speak Russian more often to maintain his language level."
+          }
+        }
+      }
+    },
+    "lookingForward": {
+      "content": "We are looking forward to meeting you!",
+      "button": "next meeting"
+    }
+  },
+  "footer": {}
+}
