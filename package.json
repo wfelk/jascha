@@ -21,6 +21,7 @@
     "lodash": "^4.17.21",
     "negotiator": "^0.6.3",
     "next": "latest",
+    "next-intl": "^3.17.6",
     "react": "latest",
     "react-dom": "latest",
     "react-leaflet": "^4.2.1",
