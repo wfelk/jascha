@@ -14,7 +14,7 @@ import beFlag from '/public/images/flags/be.png';
 const imageClassName =
   'w-full h-full rounded-lg opacity-90 lg:opacity-50 hover:opacity-100 data-[active]:opacity-100 cursor-pointer transition-all shadow-lg';
 
-const LanguageSwitcher: FC = () => {
+const HeroLanguageSwitcher: FC = () => {
   const { lang } = useParams();
 
   const languages = [
@@ -64,27 +64,25 @@ const LanguageSwitcher: FC = () => {
   ];
 
   return (
-    <div className="absolute top-8 left-4 z-50">
-      <Menu>
-        <MenuButton className="border-4 border-sky-600/85 transition-all w-12 h-12 lg:w-16 lg:h-16 rounded-full overflow-hidden opacity-50 hover:opacity-100 flex items-center justify-center">
-          {languages.find(({ locale }) => locale === lang)!.image}
-        </MenuButton>
-        <MenuItems
-          anchor={{ to: 'bottom', gap: '8px' }}
-          transition
-          className="flex flex-col p-4 gap-4 bg-sky-800/90 rounded shadow-2xl mx-4 max-w-[100px] w-[100px] border-2 border-sky-700/90"
-        >
-          {languages.map(({ locale, image }) => (
-            <MenuItem key={locale}>
-              <Link href="/" locale={locale}>
-                {image}
-              </Link>
-            </MenuItem>
-          ))}
-        </MenuItems>
-      </Menu>
-    </div>
+    <Menu>
+      <MenuButton className="border-4 border-sky-600/85 transition-all w-12 h-12 lg:w-16 lg:h-16 rounded-full overflow-hidden hover:opacity-100 flex items-center justify-center">
+        {languages.find(({ locale }) => locale === lang)!.image}
+      </MenuButton>
+      <MenuItems
+        anchor={{ to: 'bottom', gap: '8px' }}
+        transition
+        className="flex flex-col p-4 gap-4 bg-sky-800/90 rounded shadow-2xl mx-4 max-w-[100px] w-[100px] border-2 border-sky-700/90"
+      >
+        {languages.map(({ locale, image }) => (
+          <MenuItem key={locale}>
+            <Link href="/" locale={locale}>
+              {image}
+            </Link>
+          </MenuItem>
+        ))}
+      </MenuItems>
+    </Menu>
   );
 };
 
-export default LanguageSwitcher;
+export default HeroLanguageSwitcher;

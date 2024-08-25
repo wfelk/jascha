@@ -6,7 +6,7 @@ import NextMeeting from './components/sections/meeting-next/SectionMeetingNext';
 import Photos from './components/sections/meeting-past/SectionMeetingPast';
 import Footer from './components/Footer';
 import LookingForward from './components/sections/looking-forward/SectionLookingForward';
-import LanguageSwitcher from './components/LanguageSwitcher';
+import LanguageSwitcher from './components/sections/hero/components/HeroLanguageSwitcher';
 
 const Home: FC = async () => {
   return (
@@ -18,7 +18,6 @@ const Home: FC = async () => {
         <Photos />
         <Organisers />
         <LookingForward />
-        <LanguageSwitcher />
       </main>
       <Footer />
     </>
