@@ -5,11 +5,11 @@ import { useParams } from 'next/navigation';
 import { Link } from '@/src/navigation';
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
 import Image from 'next/image';
-import enFlag from '@/public/images/flags/en.png';
-import deFlag from '@/public/images/flags/de.png';
-import ruFlag from '@/public/images/flags/ru.png';
-import ukFlag from '@/public/images/flags/uk.png';
-import beFlag from '@/public/images/flags/be.png';
+import enFlag from '/public/images/flags/en.png';
+import deFlag from '/public/images/flags/de.png';
+import ruFlag from '/public/images/flags/ru.png';
+import ukFlag from '/public/images/flags/uk.png';
+import beFlag from '/public/images/flags/be.png';
 
 const imageClassName =
   'w-full h-full rounded-lg opacity-90 lg:opacity-50 hover:opacity-100 data-[active]:opacity-100 cursor-pointer transition-all';

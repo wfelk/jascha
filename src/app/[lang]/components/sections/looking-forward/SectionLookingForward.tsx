@@ -2,7 +2,6 @@
 
 import React, { FC } from 'react';
 import Button from '../../Button';
-import type { Props } from '@/types/dictionary';
 import scrollSmoothlyTo from '@/utils/functions/scrollSmoothlyTo';
 import { useTranslations } from 'next-intl';
 
