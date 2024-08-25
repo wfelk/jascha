@@ -1,23 +1,18 @@
 import React, { FC } from 'react';
-import type { Props } from '@/types/dictionary';
-const AboutArticleWhat: FC<Props> = ({ dict }) => {
+import { useTranslations } from 'next-intl';
+const AboutArticleWhat: FC = () => {
+  const t = useTranslations('sections.about.carouselItems.item1.content');
   return (
     <>
-      <p>{dict.sections.about.carouselItems.item1.content.paragraph1}</p>
+      <p>{t('paragraph1')}</p>
       <p>
-        {
-          dict.sections.about.carouselItems.item1.content.paragraph2
-            ?.beforeEmphasis
-        }{' '}
+        {t('paragraph2.beforeEmphasis')}{' '}
         <span className="font-bold text-sky-100">
-          {dict.sections.about.carouselItems.item1.content.paragraph2?.emphasis}
+          {t('paragraph2.emphasis')}
         </span>{' '}
-        {
-          dict.sections.about.carouselItems.item1.content.paragraph2
-            ?.afterEmphasis
-        }
+        {t('paragraph2.afterEmphasis')}
       </p>
-      <p>{dict.sections.about.carouselItems.item1.content.paragraph3}</p>
+      <p>{t('paragraph3')}</p>
     </>
   );
 };

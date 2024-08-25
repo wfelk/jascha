@@ -1,24 +1,20 @@
 import React, { FC } from 'react';
 import type Props from '@/types/about-carousel-item';
+import { useTranslations } from 'next-intl';
 
-const AboutCarouselItemOne: FC<Props> = ({ dict, className }) => {
+const AboutCarouselItemOne: FC<Props> = ({ className }) => {
+  const t = useTranslations('sections.about.carouselItems.item1.content');
   return (
     <div className={className}>
-      <p>{dict.sections.about.carouselItems.item1.content.paragraph1}</p>
+      <p>{t('paragraph1')}</p>
       <p>
-        {
-          dict.sections.about.carouselItems.item1.content.paragraph2
-            ?.beforeEmphasis
-        }{' '}
+        {t('paragraph2.beforeEmphasis')}{' '}
         <span className="font-bold text-sky-200">
-          {dict.sections.about.carouselItems.item1.content.paragraph2?.emphasis}
+          {t('paragraph2.emphasis')}
         </span>{' '}
-        {
-          dict.sections.about.carouselItems.item1.content.paragraph2
-            ?.afterEmphasis
-        }
+        {t('paragraph2.afterEmphasis')}
       </p>
-      <p>{dict.sections.about.carouselItems.item1.content.paragraph3}</p>
+      <p>{t('paragraph3')}</p>
     </div>
   );
 };

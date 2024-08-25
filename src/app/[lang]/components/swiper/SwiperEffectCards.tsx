@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCards } from 'swiper/modules';
 import 'swiper/css/bundle';
 import Image from 'next/image';
-import type Props from '../../../../types/swiper';
+import type Props from '../../../../../types/swiper';
 
 const SwiperEffectCards: FC<Props> = ({ className, images, screenSize }) => {
   return (

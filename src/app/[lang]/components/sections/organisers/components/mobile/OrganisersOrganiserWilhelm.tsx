@@ -1,18 +1,17 @@
 import React, { FC } from 'react';
-import type { Props } from '@/types/dictionary';
+import { useTranslations } from 'next-intl';
 
-const OrganisersOrganiserWilhelm: FC<Props> = ({ dict }) => {
+const OrganisersOrganiserWilhelm: FC = () => {
+  const t = useTranslations('sections.organisers.wilhelm.content');
   return (
     <>
+      <p className="leading-loose">{t('paragraph1')}</p>
       <p className="leading-loose">
-        {dict.sections.organisers.wilhelm.content.paragraph1 as string}
-      </p>
-      <p className="leading-loose">
-        {dict.sections.organisers.wilhelm.content.paragraph2.beforeEmphasis}
+        {t('paragraph2.beforeEmphasis')}
         <span className="font-bold text-sky-100">
-          {dict.sections.organisers.wilhelm.content.paragraph2.emphasis}
+          {t('paragraph2.emphasis')}
         </span>{' '}
-        {dict.sections.organisers.wilhelm.content.paragraph2.afterEmphasis}
+        {t('paragraph2.afterEmphasis')}
       </p>
     </>
   );

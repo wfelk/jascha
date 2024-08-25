@@ -1,22 +1,21 @@
 import React, { FC } from 'react';
 import type Props from '@/types/about-carousel-item';
+import { useTranslations } from 'next-intl';
 
-const AboutCarouselItemTwo: FC<Props> = ({ dict, className }) => {
+const AboutCarouselItemTwo: FC<Props> = ({ className }) => {
+  const t = useTranslations('sections.about.carouselItems.item2.content');
   return (
     <div className={className}>
       <ul className="list-disc px-6 flex flex-col gap-2">
-        <li>{dict.sections.about.carouselItems.item2.content.list?.item1}</li>
-        <li>{dict.sections.about.carouselItems.item2.content.list?.item2}</li>
-        <li>{dict.sections.about.carouselItems.item2.content.list?.item3}</li>
-        <li>{dict.sections.about.carouselItems.item2.content.list?.item4}</li>
+        <li>{t('list.item1')}</li>
+        <li>{t('list.item2')}</li>
+        <li>{t('list.item3')}</li>
+        <li>{t('list.item4')}</li>
       </ul>
       <p>
-        {
-          dict.sections.about.carouselItems.item2.content.paragraph2
-            ?.beforeEmphasis
-        }{' '}
+        {t('paragraph.beforeEmphasis')}{' '}
         <span className="font-bold text-sky-200">
-          {dict.sections.about.carouselItems.item2.content.paragraph2?.emphasis}
+          {t('paragraph.emphasis')}
         </span>
       </p>
     </div>

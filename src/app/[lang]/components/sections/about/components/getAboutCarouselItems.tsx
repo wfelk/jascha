@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 import One from '@/src/app/[lang]/components/sections/about/components/desktop/about-carousel-items/AboutCarouselItemOne';
 import Two from '@/src/app/[lang]/components/sections/about/components/desktop/about-carousel-items/AboutCarouselItemTwo';
 import Three from '@/src/app/[lang]/components/sections/about/components/desktop/about-carousel-items/AboutCarouselItemThree';
-import { Dictionary } from '@/types/dictionary';
+import { useTranslations } from 'next-intl';
 
 export interface CarouselItem {
   heading: string;
@@ -27,45 +27,43 @@ const getClassName = (
   return className;
 };
 
-const getAboutCarouselItems = (dict: Dictionary): CarouselItem[] => {
+const getAboutCarouselItems = (): CarouselItem[] => {
+  const t = useTranslations('sections.about.carouselItems');
   const carouselItems = [
     {
-      heading: dict.sections.about.carouselItems.item1.heading,
+      heading: t('item1.heading'),
       getCarouselItem: (
         isCurrentItem: boolean,
         isItemTheNextAfterCurrentItem: boolean,
         index: number
       ) => (
         <One
-          dict={dict}
           className={getClassName(isCurrentItem, isItemTheNextAfterCurrentItem)}
           key={index}
         />
       ),
     },
     {
-      heading: dict.sections.about.carouselItems.item2.heading,
+      heading: t('item2.heading'),
       getCarouselItem: (
         isCurrentItem: boolean,
         isItemTheNextAfterCurrentItem: boolean,
         index: number
       ) => (
         <Two
-          dict={dict}
           className={getClassName(isCurrentItem, isItemTheNextAfterCurrentItem)}
           key={index}
         />
       ),
     },
     {
-      heading: dict.sections.about.carouselItems.item3.heading,
+      heading: t('item3.heading'),
       getCarouselItem: (
         isCurrentItem: boolean,
         isItemTheNextAfterCurrentItem: boolean,
         index: number
       ) => (
         <Three
-          dict={dict}
           className={getClassName(isCurrentItem, isItemTheNextAfterCurrentItem)}
           key={index}
         />

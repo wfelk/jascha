@@ -1,13 +1,12 @@
 import React, { FC } from 'react';
 import Mobile from './SectionAboutMobile';
 import Desktop from './SectionAboutDesktop';
-import type { Props } from '@/types/dictionary';
 
-const SectionAbout: FC<Props> = ({ dict }) => {
+const SectionAbout: FC = () => {
   return (
     <section className="md:col-span-8 md:col-start-3 lg:col-start-7 lg:col-span-5 mt-32 md:mt-0">
-      <Mobile dict={dict} />
-      <Desktop dict={dict} />
+      <Mobile />
+      <Desktop />
     </section>
   );
 };

@@ -1,25 +1,23 @@
 import React, { FC } from 'react';
-import type { Props } from '@/types/dictionary';
 import socialMediaHandles from '@/utils/constants/socialMediaHandles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useTranslations } from 'next-intl';
 
-const MeetingNextUnscheduled: FC<Props> = ({ dict }) => {
+const MeetingNextUnscheduled: FC = () => {
+  const t = useTranslations('sections.nextMeeting.unscheduled');
   return (
     <>
       <h3 className="text-5xl text-orange-950/75 text-center px-2">
-        {dict.sections.nextMeeting.unscheduled.heading}
+        {t('heading')}
       </h3>
       <p className="px-6 text-xl text-sky-200/75 sm:w-2/3 md:w-full">
-        {
-          dict.sections.nextMeeting.unscheduled.content.paragraphOne
-            .beforeEmphasis
-        }{' '}
+        {t('content.paragraphOne.beforeEmphasis')}{' '}
         <span className="font-bold text-sky-200">
-          {dict.sections.nextMeeting.unscheduled.content.paragraphOne.emphasis}
+          {t('content.paragraphOne.emphasis')}
         </span>
       </p>
       <p className="px-6 text-xl text-orange-200/75 sm:w-2/3 md:w-full">
-        {dict.sections.nextMeeting.unscheduled.content.paragraphTwo}
+        {t('content.paragraphTwo')}
       </p>
       <div className="flex gap-6">
         {socialMediaHandles.map(({ icon, url }, index) => (

@@ -2,21 +2,17 @@
 
 import React, { FC } from 'react';
 import Button from '../../../../../Button';
-import type { Props } from '@/types/dictionary';
+import { useTranslations } from 'next-intl';
 
-const AboutArticleHow: FC<Props> = ({ dict }) => {
+const AboutArticleHow: FC = () => {
+  const t = useTranslations('sections.about.carouselItems.item3.content');
   return (
     <>
-      <p className="text-2xl mb-4 font-light">
-        {dict.sections.about.carouselItems.item3.content.paragraph1}
-      </p>
+      <p className="text-2xl mb-4 font-light">{t('paragraph1')}</p>
       <p>
-        {
-          dict.sections.about.carouselItems.item3.content.paragraph2
-            ?.beforeEmphasis
-        }{' '}
+        {t('paragraph2.beforeEmphasis')}{' '}
         <span className="font-bold text-sky-200">
-          {dict.sections.about.carouselItems.item3.content.paragraph2?.emphasis}
+          {t('paragraph2.emphasis')}
         </span>
       </p>
       <Button
@@ -28,7 +24,7 @@ const AboutArticleHow: FC<Props> = ({ dict }) => {
           target="_blank"
           rel="noreferrer"
         >
-          {dict.sections.about.carouselItems.item3.content.button}
+          {t('button')}
         </a>
       </Button>
     </>

@@ -1,9 +1,8 @@
 'use client';
 
 import React, { FC, useEffect, useState } from 'react';
-import { Props } from '@/types/dictionary';
 
-const LanguageSwitcher: FC<Props> = ({ dict }) => {
+const LanguageSwitcher: FC = () => {
   const [language, setLanguage] = useState('en');
 
   const handleClick = () => {

@@ -3,28 +3,20 @@ import Article from './components/mobile/AboutArticle';
 import ArticleHow from './components/mobile/articles/AboutArticleHow';
 import ArticleWhat from './components/mobile/articles/AboutArticleWhat';
 import ArticleWhom from './components/mobile/articles/AboutArticleWhom';
-import type { Props } from '@/types/dictionary';
+import { useTranslations } from 'next-intl';
 
-const SectionAboutMobile: FC<Props> = ({ dict }) => {
+const SectionAboutMobile: FC = () => {
+  const t = useTranslations('sections.about.carouselItems');
   return (
     <div className="block md:hidden drop-shadow-2xl">
-      <Article
-        heading={dict.sections.about.carouselItems.item1.heading}
-        style="bright"
-      >
-        <ArticleWhat dict={dict} />
+      <Article heading={t('item1.heading')} style="bright">
+        <ArticleWhat />
       </Article>
-      <Article
-        heading={dict.sections.about.carouselItems.item2.heading}
-        style="dark"
-      >
-        <ArticleWhom dict={dict} />
+      <Article heading={t('item2.heading')} style="dark">
+        <ArticleWhom />
       </Article>
-      <Article
-        heading={dict.sections.about.carouselItems.item3.heading}
-        style="bright"
-      >
-        <ArticleHow dict={dict} />
+      <Article heading={t('item3.heading')} style="bright">
+        <ArticleHow />
       </Article>
     </div>
   );

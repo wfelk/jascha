@@ -1,7 +1,6 @@
 import React, { FC } from 'react';
 import Hero from './components/sections/hero/SectionHero';
 import type Lang from '@/types/lang';
-import getDictionary from '@/utils/functions/getDictionary';
 import About from './components/sections/about/SectionAbout';
 import Organisers from './components/sections/organisers/SectionOrganisers';
 import NextMeeting from './components/sections/meeting-next/SectionMeetingNext';
@@ -17,19 +16,18 @@ interface Props {
 }
 
 const Home: FC<Props> = async ({ params: { lang } }) => {
-  const dict = await getDictionary(lang);
   return (
     <>
       <main className="scroll-smooth w-full scrollbar-hidden md:grid md:grid-cols-12 md:gap-y-32">
-        <Hero dict={dict} />
-        <NextMeeting dict={dict} />
-        <About dict={dict} />
-        <Photos dict={dict} />
-        <Organisers dict={dict} />
-        <LookingForward dict={dict} />
+        <Hero />
+        <NextMeeting />
+        <About />
+        <Photos />
+        <Organisers />
+        <LookingForward />
       </main>
       <Footer />
-      <LanguageSwitcher dict={dict} />
+      <LanguageSwitcher />
     </>
   );
 };

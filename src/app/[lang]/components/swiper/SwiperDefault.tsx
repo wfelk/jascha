@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image';
 import 'swiper/css/bundle';
 import { Pagination } from 'swiper/modules';
-import type Props from '../../../../types/swiper';
+import type Props from '../../../../../types/swiper';
 
 const SwiperDefault: FC<Props> = ({
   className,

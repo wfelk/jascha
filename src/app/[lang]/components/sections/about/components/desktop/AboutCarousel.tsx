@@ -4,11 +4,10 @@ import React, { useState, FC, ReactNode } from 'react';
 import AboutCarouselTile from './AboutCarouselItem';
 import getCarouselItems, { CarouselItem } from '../getAboutCarouselItems';
 import AboutCarouselControls from './AboutCarouselControls';
-import type { Props } from '@/types/dictionary';
 
-const AboutCarousel: FC<Props> = ({ dict }) => {
+const AboutCarousel: FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const carouselItems: CarouselItem[] = getCarouselItems(dict);
+  const carouselItems: CarouselItem[] = getCarouselItems();
 
   const nextTile = () => {
     setCurrentIndex(prevIndex => (prevIndex + 1) % carouselItems.length);

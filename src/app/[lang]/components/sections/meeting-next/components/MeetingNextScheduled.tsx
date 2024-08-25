@@ -2,9 +2,8 @@ import React, { FC } from 'react';
 import Time from './MeetingNextTime';
 import Date from './MeetingNextDate';
 import Address from './MeetingNextAddress';
-
-import type { Props } from '@/types/dictionary';
-import convertShallowObjectToString from '@/utils/functions/convertShallowObjectToString';
+import { useTranslations } from 'next-intl';
+import Lang from '@/types/lang';
 
 async function getData(address: string) {
   const res = await fetch(
@@ -19,10 +18,9 @@ async function getData(address: string) {
   return res.json();
 }
 
-const MeetingNextScheduled: FC<Props> = async ({ dict }) => {
-  const address = convertShallowObjectToString(
-    dict.sections.nextMeeting.data.address
-  );
+const MeetingNextScheduled: FC = async () => {
+  const t = useTranslations('sections.nextMeeting.data');
+  const address = `${t('address.street')} ${t('address.houseNumber')}, ${t('address.postCode')} ${t('address.city')}`;
   const data = await getData(address);
   const coordinates = data?.[0];
 
@@ -30,27 +28,27 @@ const MeetingNextScheduled: FC<Props> = async ({ dict }) => {
     <>
       <div className="flex flex-col xl:flex-row items-center gap-8 w-full xl:justify-between 2xl:justify-around">
         <Time
-          dateTime={dict.sections.nextMeeting.data.time.dateTime}
-          marker={dict.sections.nextMeeting.data.time.marker}
-          display={dict.sections.nextMeeting.data.time.display}
+          dateTime={t('time.dateTime')}
+          marker={t('time.marker')}
+          display={t('time.display')}
         />
         <Date
-          dateTime={dict.sections.nextMeeting.data.date.dateTime}
-          date={dict.sections.nextMeeting.data.date.date}
-          month={dict.sections.nextMeeting.data.date.month}
-          year={dict.sections.nextMeeting.data.date.year}
+          dateTime={t('date.dateTime')}
+          date={t('date.date')}
+          month={t('date.month')}
+          year={t('date.year')}
+        />
+        <Address
+          coordinates={coordinates}
+          lang={t('location.lang') as Lang}
+          name={t('location.name')}
+          street={t('address.street')}
+          houseNumber={t('address.houseNumber')}
+          postCode={t('address.postCode')}
+          city={t('address.city')}
+          venue={t('location.name')}
         />
       </div>
-      <Address
-        coordinates={coordinates}
-        lang={dict.sections.nextMeeting.data.location.lang}
-        name={dict.sections.nextMeeting.data.location.name}
-        street={dict.sections.nextMeeting.data.address.street}
-        houseNumber={dict.sections.nextMeeting.data.address.houseNumber}
-        postCode={dict.sections.nextMeeting.data.address.postCode}
-        city={dict.sections.nextMeeting.data.address.city}
-        venue={dict.sections.nextMeeting.data.location.name}
-      />
     </>
   );
 };
