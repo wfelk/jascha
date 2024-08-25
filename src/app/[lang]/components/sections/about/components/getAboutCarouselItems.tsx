@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
-import One from '@/app/[lang]/components/sections/about/components/desktop/about-carousel-items/AboutCarouselItemOne';
-import Two from '@/app/[lang]/components/sections/about/components/desktop/about-carousel-items/AboutCarouselItemTwo';
-import Three from '@/app/[lang]/components/sections/about/components/desktop/about-carousel-items/AboutCarouselItemThree';
+import One from '@/src/app/[lang]/components/sections/about/components/desktop/about-carousel-items/AboutCarouselItemOne';
+import Two from '@/src/app/[lang]/components/sections/about/components/desktop/about-carousel-items/AboutCarouselItemTwo';
+import Three from '@/src/app/[lang]/components/sections/about/components/desktop/about-carousel-items/AboutCarouselItemThree';
 import { Dictionary } from '@/types/dictionary';
 
 export interface CarouselItem {

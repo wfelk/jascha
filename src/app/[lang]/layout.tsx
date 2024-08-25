@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../assets/styles/globals.scss';
+import '@/assets/styles/globals.scss';
 import type { Metadata, Viewport } from 'next';
 import { Oswald } from 'next/font/google';
 const oswald = Oswald({ subsets: ['latin'] });

@@ -1,6 +1,6 @@
 import React from 'react';
-import photos from '../../../../../../../utils/constants/photoSources';
-import SwiperDefault from '@/app/[lang]/components/swiper/SwiperDefault';
+import photos from '@/utils/constants/photoSources';
+import SwiperDefault from '@/src/app/[lang]/components/swiper/SwiperDefault';
 const classNamePagination =
   'p-[6px] !inline-flex items-center justify-center !bg-sky-300/75';
 

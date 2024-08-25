@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
-import Button from '@/app/[lang]/components/Button';
-import { classNameDefault } from '@/app/[lang]/components/Button';
+import Button from '@/src/app/[lang]/components/Button';
+import { classNameDefault } from '@/src/app/[lang]/components/Button';
 import type Props from '@/types/about-carousel-item';
 
 const AboutCarouselItemThree: FC<Props> = ({ dict, className }) => {

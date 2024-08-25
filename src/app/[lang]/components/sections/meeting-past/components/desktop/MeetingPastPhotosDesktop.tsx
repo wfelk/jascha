@@ -1,6 +1,6 @@
 import React from 'react';
-import SwiperEffectCards from '@/app/[lang]/components/swiper/SwiperEffectCards';
-import photos from '../../../../../../../utils/constants/photoSources';
+import SwiperEffectCards from '@/src/app/[lang]/components/swiper/SwiperEffectCards';
+import photos from '@/utils/constants/photoSources';
 
 const MeetingPastPhotosDesktop = () => {
   return (

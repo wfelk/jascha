@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import Hero from './components/sections/hero/SectionHero';
-import type Lang from '../../types/lang';
-import getDictionary from '../../utils/functions/getDictionary';
+import type Lang from '@/types/lang';
+import getDictionary from '@/utils/functions/getDictionary';
 import About from './components/sections/about/SectionAbout';
 import Organisers from './components/sections/organisers/SectionOrganisers';
 import NextMeeting from './components/sections/meeting-next/SectionMeetingNext';
