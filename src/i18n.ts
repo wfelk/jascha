@@ -4,6 +4,7 @@ import { locales } from '@/utils/constants/locales';
 
 export default getRequestConfig(async ({ locale }) => {
   if (!locales.includes(locale as any)) notFound();
+  console.log(locale);
 
   return {
     messages: (await import(`../messages/${locale}.json`)).default,
