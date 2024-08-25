@@ -4,7 +4,7 @@ import socialMediaHandles from '@/utils/constants/socialMediaHandles';
 
 const HeroSocialMedia: FC = () => {
   return (
-    <div className="flex absolute top-0 justify-center md:justify-start items-center overflow-x-auto py-6 w-full gap-4 h-fit opacity-75 px-6 no-scrollbar snap-x snap-proximity scroll-pl-4">
+    <div className="flex absolute top-0 justify-end items-center overflow-x-auto py-6 w-full gap-4 h-fit opacity-75 px-6 no-scrollbar snap-x snap-proximity scroll-pl-4">
       {socialMediaHandles.map(({ icon, url }, index) => (
         <a
           key={index}

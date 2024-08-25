@@ -25,9 +25,9 @@ const Home: FC<Props> = async ({ params: { lang } }) => {
         <Photos />
         <Organisers />
         <LookingForward />
+        <LanguageSwitcher />
       </main>
       <Footer />
-      <LanguageSwitcher />
     </>
   );
 };
