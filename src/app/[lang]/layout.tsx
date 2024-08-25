@@ -1,4 +1,6 @@
 import React from 'react';
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages } from 'next-intl/server';
 import '@/assets/styles/globals.scss';
 import type { Metadata, Viewport } from 'next';
 import { Oswald } from 'next/font/google';
@@ -15,17 +17,22 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params: { locale },
 }: {
   children: React.ReactNode;
+  params: { locale: string };
 }) {
+  const messages = await getMessages();
   return (
-    <html>
+    <html lang={locale}>
       <body
         className={`${oswald.className} w-screen overflow-x-hidden bg-sky-950 bg-pattern-wallpaper bg-fixed`}
       >
-        {children}
+        <NextIntlClientProvider messages={messages}>
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   );
