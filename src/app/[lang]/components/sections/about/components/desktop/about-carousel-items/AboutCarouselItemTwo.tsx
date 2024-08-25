@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import type Props from '@/types/about-carousel-item';
+import type Props from '@/types/className';
 import { useTranslations } from 'next-intl';
 
 const AboutCarouselItemTwo: FC<Props> = ({ className }) => {

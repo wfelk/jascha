@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import Button from '@/src/app/[lang]/components/Button';
 import { classNameDefault } from '@/src/app/[lang]/components/Button';
-import type Props from '@/types/about-carousel-item';
+import type Props from '@/types/className';
 import { useTranslations } from 'next-intl';
 
 const AboutCarouselItemThree: FC<Props> = ({ className }) => {
