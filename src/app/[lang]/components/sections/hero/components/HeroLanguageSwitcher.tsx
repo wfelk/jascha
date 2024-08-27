@@ -65,7 +65,7 @@ const HeroLanguageSwitcher: FC = () => {
 
   return (
     <Menu>
-      <MenuButton className="border-4 border-sky-600/85 transition-all w-12 h-12 lg:w-16 lg:h-16 rounded-full overflow-hidden hover:opacity-100 flex items-center justify-center">
+      <MenuButton className="border-4 border-sky-600/85 transition-all w-16 h-16 rounded-full overflow-hidden hover:opacity-100 flex items-center justify-center">
         {languages.find(({ locale }) => locale === lang)!.image}
       </MenuButton>
       <MenuItems
