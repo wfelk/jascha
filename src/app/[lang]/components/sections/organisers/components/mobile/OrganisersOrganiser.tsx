@@ -30,6 +30,8 @@ const OrganisersOrganiser: FC<Props> = ({ name, children, imgSrc }) => {
             height={imageLength}
             width={imageLength}
             className="object-cover w-full h-full"
+            placeholder="blur"
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAiSURBVHgB7coxDQAACMNQ9h+6H0YgnCQffU7FdcMC/PUAGmkDdjVjNJ0AAAAASUVORK5CYII="
           />
           <h3
             className={`text-sky-100/80 ${
