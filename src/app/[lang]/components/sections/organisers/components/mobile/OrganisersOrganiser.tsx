@@ -18,7 +18,7 @@ const OrganisersOrganiser: FC<Props> = ({ name, children, imgSrc }) => {
     >
       <div className="relative flex flex-col items-center justify-center">
         <div
-          className={`absolute left-1/2 bottom-1/2 translate-y-1/2 -translate-x-1/2 w-[250px] sm:w-[350px] md:w-[200px] h-[250px] sm:h-[350px] md:h-[200px] border-8 rounded-lg ${
+          className={`absolute flex flex-col items-center left-1/2 bottom-1/2 translate-y-1/2 -translate-x-1/2 w-[250px] sm:w-[350px] md:w-[200px] h-[250px] sm:h-[350px] md:h-[200px] border-8 rounded-lg ${
             variationsOfWilhelm.includes(name)
               ? 'border-indigo-500/75'
               : 'border-yellow-400/50'
@@ -36,7 +36,7 @@ const OrganisersOrganiser: FC<Props> = ({ name, children, imgSrc }) => {
               variationsOfWilhelm.includes(name)
                 ? 'bg-indigo-600/95'
                 : 'bg-yellow-600/95'
-            } px-3 py-2 right-4 rounded-lg -bottom-6 text-center w-fit uppercase text-xl absolute tracking-widest`}
+            } px-3 py-2 rounded-lg -bottom-6 text-center w-fit uppercase text-xl absolute tracking-widest`}
           >
             {name}
           </h3>
@@ -50,7 +50,7 @@ const OrganisersOrganiser: FC<Props> = ({ name, children, imgSrc }) => {
         }`}
       >
         <div
-          className={`justify-center flex flex-col gap-8 w-[calc(100px_+_50vw)] sm:w-[455px] md:w-fit`}
+          className={`justify-center text-lg xl:text-xl flex flex-col gap-8 w-[calc(100px_+_50vw)] sm:w-[455px] md:w-fit`}
         >
           {children}
         </div>

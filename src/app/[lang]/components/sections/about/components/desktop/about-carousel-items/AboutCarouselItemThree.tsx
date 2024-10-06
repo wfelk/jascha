@@ -8,7 +8,7 @@ const AboutCarouselItemThree: FC<Props> = ({ className }) => {
   const t = useTranslations('sections.about.carouselItems.item3.content');
   return (
     <div className={className}>
-      <p className="font-light text-3xl">{t('paragraph1')}</p>
+      <p className="font-light text-xl">{t('paragraph1')}</p>
       <p>
         {t('paragraph2.beforeEmphasis')}{' '}
         <span className="font-bold text-sky-200">

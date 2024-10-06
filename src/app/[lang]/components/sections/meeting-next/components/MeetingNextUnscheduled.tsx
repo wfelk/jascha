@@ -7,16 +7,16 @@ const MeetingNextUnscheduled: FC = () => {
   const t = useTranslations('sections.nextMeeting.unscheduled');
   return (
     <>
-      <h3 className="text-5xl text-orange-950/75 text-center px-2">
+      <h3 className="text-3xl xl:text-4xl text-orange-950/75 text-center px-2">
         {t('heading')}
       </h3>
-      <p className="px-6 text-xl text-sky-200/75 sm:w-2/3 md:w-full">
+      <p className="px-6 text-xl md:text-sm xl:text-xl text-sky-200/75 sm:w-2/3 md:w-full">
         {t('content.paragraphOne.beforeEmphasis')}{' '}
         <span className="font-bold text-sky-200">
           {t('content.paragraphOne.emphasis')}
         </span>
       </p>
-      <p className="px-6 text-xl text-orange-200/75 sm:w-2/3 md:w-full">
+      <p className="px-6 text-xl md:text-lg text-orange-200/75 sm:w-2/3 md:w-full">
         {t('content.paragraphTwo')}
       </p>
       <div className="flex gap-6">

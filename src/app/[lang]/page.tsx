@@ -28,7 +28,7 @@ const Home: FC = async () => {
   }
   return (
     <>
-      <main className="scroll-smooth w-full scrollbar-hidden md:grid md:grid-cols-12 md:gap-y-32">
+      <main className="scroll-smooth w-full scrollbar-hidden md:grid md:grid-cols-12 md:gap-y-24">
         <Hero />
         <NextMeeting />
         <About />
