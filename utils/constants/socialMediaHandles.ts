@@ -1,7 +1,7 @@
-import { faInstagram, faMeetup } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 const socialMediaHandles = [
-  { icon: faMeetup, url: 'https://www.meetup.com/jascha-cologne/' },
+  { icon: faWhatsapp, url: 'https://chat.whatsapp.com/DGBQ1s8ZdsKItnTvZRxEQj' },
   { icon: faInstagram, url: 'https://www.instagram.com/jascha.club/' },
 ];
 
