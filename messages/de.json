@@ -83,7 +83,10 @@
               "beforeEmphasis": "Du kannst uns auch im Voraus über den sozialen Netzen bescheidgeben oder deine Teilnahme bei Meetup bestätigen. Das ermöglicht uns, die Anzahl der Teilnehmer im Auge zu behalten. Bei Bedarf wechseln wir dann den Veranstaltungsort, um",
               "emphasis": "genügend Platz für alle zu bieten."
             },
-            "button": "Jascha auf Meetup folgen"
+            "button": {
+              "nextMeetingScheduled": "zum nächsten Treffen",
+              "nextMeetingUnscheduled": "auf dem Laufenden bleiben"
+            }
           }
         }
       }

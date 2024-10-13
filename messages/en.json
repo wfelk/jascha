@@ -83,7 +83,10 @@
               "beforeEmphasis": "You can also let us know in advance by posting a message on social media, or confirm your participation here on Meetup. This allows us to keep track of the number of participants, and change the venue if necessary to provide",
               "emphasis": "enough space for everyone."
             },
-            "button": "Join us on Meetup"
+            "button": {
+              "nextMeetingScheduled": "to the next meeting",
+              "nextMeetingUnscheduled": "stay informed"
+            }
           }
         }
       }
