@@ -1,3 +1,5 @@
+// TODO: Write proper error handling
+
 import React, { FC } from 'react';
 import Hero from './components/sections/hero/SectionHero';
 import About from './components/sections/about/SectionAbout';
@@ -12,30 +14,25 @@ const Home: FC = async () => {
     const response = await fetch('https://jascha.vercel.app/api/meetings', {
       method: 'POST',
     });
-    const data = await response.json();
-    console.log('Fetched data:', data);
+    const infoOnMeetings = await response.json();
 
-    if (!response.ok) {
-      console.error('Failed to fetch data:', response.statusText);
-      return <div>Failed to load content</div>;
-    }
+    return (
+      <>
+        <main className="scroll-smooth w-full scrollbar-hidden md:grid md:grid-cols-12 md:gap-y-24">
+          <Hero />
+          <NextMeeting infoOnMeetings={infoOnMeetings} />
+          <About />
+          <Photos />
+          <Organisers />
+          <LookingForward />
+        </main>
+        <Footer />
+      </>
+    );
   } catch (error) {
-    console.error('Failed to fetch data:', error);
-    return <div>Failed to load content</div>;
+    console.error('FAILED: fetch meetings', error);
+    return <div>An error has occured.</div>;
   }
-  return (
-    <>
-      <main className="scroll-smooth w-full scrollbar-hidden md:grid md:grid-cols-12 md:gap-y-24">
-        <Hero />
-        <NextMeeting />
-        <About />
-        <Photos />
-        <Organisers />
-        <LookingForward />
-      </main>
-      <Footer />
-    </>
-  );
 };
 
 export default Home;

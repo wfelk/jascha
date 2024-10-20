@@ -5,9 +5,13 @@ import SectionHeading from './SectionMeetingHeading';
 import Button from './components/MeetingNextButton';
 import { useTranslations } from 'next-intl';
 
-const SectionMeetingNext: FC = () => {
+interface Props {
+  infoOnMeetings: InfoOnMeetings;
+}
+
+const SectionMeetingNext: FC<Props> = ({ infoOnMeetings }) => {
   const t = useTranslations('sections.nextMeeting');
-  const isNextMeetingScheduled = false;
+  const isNextMeetingScheduled = infoOnMeetings.isNextMeetingScheduled ?? false;
   return (
     <section
       className="md:col-span-8 md:max-h-[80vh] md:col-start-3 lg:max-h-full lg:col-start-2 lg:col-span-4 mt-32 md:m-0"
