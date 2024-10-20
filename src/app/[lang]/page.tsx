@@ -6,7 +6,6 @@ import NextMeeting from './components/sections/meeting-next/SectionMeetingNext';
 import Photos from './components/sections/meeting-past/SectionMeetingPast';
 import Footer from './components/Footer';
 import LookingForward from './components/sections/looking-forward/SectionLookingForward';
-import { headers } from 'next/headers';
 
 const Home: FC = async () => {
   try {
