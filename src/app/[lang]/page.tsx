@@ -16,13 +16,10 @@ const Home: FC = async () => {
     });
 
     notionData = await response.json();
-    console.log(
-      'Date of next meeting:',
-      notionData.results[2].properties.Datum.date.start
-    );
+    console.log('Date of next meeting:', notionData.results);
   } catch (error) {
     console.error(
-      'An error has occurred while trying to fetch data from Notion:',
+      'An error has occurred while trying to fetch data from Notion.',
       error
     );
   }
