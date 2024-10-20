@@ -12,6 +12,8 @@ const Home: FC = async () => {
     const response = await fetch('https://jascha.vercel.app/api/meetings', {
       method: 'POST',
     });
+    const data = await response.json();
+    console.log('Fetched data:', data);
 
     if (!response.ok) {
       console.error('Failed to fetch data:', response.statusText);
@@ -21,7 +23,6 @@ const Home: FC = async () => {
     console.error('Failed to fetch data:', error);
     return <div>Failed to load content</div>;
   }
-
   return (
     <>
       <main className="scroll-smooth w-full scrollbar-hidden md:grid md:grid-cols-12 md:gap-y-24">
