@@ -19,12 +19,13 @@ const AboutArticleHow: FC = () => {
         onClick={() => {}}
         className="bg-sky-200 hover:bg-sky-600 transition-all mt-12 cursor-pointer py-4 px-6 rounded-full font-mono text-sky-900 tracking-wider uppercase font-bold border-4 text-sm border-sky-600/75 ring-2 ring-sky-100/50 w-fit self-center sm:self-end"
       >
+        //TODO: Remove
         <a
           href="https://www.meetup.com/jascha-cologne/"
           target="_blank"
           rel="noreferrer"
         >
-          {t('button')}
+          {t('button.nextMeetingUnscheduled')}
         </a>
       </Button>
     </>
