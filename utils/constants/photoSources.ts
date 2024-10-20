@@ -38,7 +38,7 @@ interface PhotoSource {
   };
 }
 
-const photoSources: PhotoSource[] = [
+const PHOTO_SOURCES: PhotoSource[] = [
   {
     src: {
       desktop: meeting1Desktop,
@@ -156,4 +156,4 @@ const photoSources: PhotoSource[] = [
   },
 ];
 
-export default photoSources;
+export default PHOTO_SOURCES;

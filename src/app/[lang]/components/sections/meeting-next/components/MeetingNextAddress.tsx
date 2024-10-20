@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import type Lang from '@/types/lang';
 import IconMapPin from '../../../icons/IconMapPin';
 
 import dynamic from 'next/dynamic';

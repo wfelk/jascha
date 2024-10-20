@@ -1,0 +1,3 @@
+interface OnlyClassNameProps {
+  className?: string;
+}

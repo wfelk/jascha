@@ -1,5 +1,5 @@
 import React from 'react';
-import photos from '@/utils/constants/photoSources';
+import PHOTO_SOURCES from '@/utils/constants/photoSources';
 import SwiperDefault from '@/src/app/[lang]/components/swiper/SwiperDefault';
 
 const classNamePagination =
@@ -7,7 +7,7 @@ const classNamePagination =
 
 const MeetingPastPhotosMobile = () => (
   <SwiperDefault
-    images={photos}
+    images={PHOTO_SOURCES}
     screenSize="mobile"
     options={{
       centeredSlides: true,

@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import socialMediaHandles from '@/utils/constants/socialMediaHandles';
+import SOCIAL_MEDIA_HANDLES from '@/utils/constants/socialMediaHandles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useTranslations } from 'next-intl';
 
@@ -20,7 +20,7 @@ const MeetingNextUnscheduled: FC = () => {
         {t('content.paragraphTwo')}
       </p>
       <div className="flex gap-6">
-        {socialMediaHandles.map(({ icon, url }, index) => (
+        {SOCIAL_MEDIA_HANDLES.map(({ icon, url }, index) => (
           <a
             key={index}
             href={url}

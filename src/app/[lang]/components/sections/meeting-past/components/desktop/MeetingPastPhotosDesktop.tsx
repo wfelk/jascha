@@ -1,13 +1,13 @@
 import React from 'react';
 import SwiperEffectCards from '@/src/app/[lang]/components/swiper/SwiperEffectCards';
-import photos from '@/utils/constants/photoSources';
+import PHOTO_SOURCES from '@/utils/constants/photoSources';
 
 const MeetingPastPhotosDesktop = () => {
   return (
     // Wrapping div element is somehow necessary for the SwiperEffectCards to work properly
     <div>
       <SwiperEffectCards
-        images={photos}
+        images={PHOTO_SOURCES}
         screenSize="desktop"
         className={{
           image: {

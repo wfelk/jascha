@@ -1,17 +1,20 @@
 'use client';
 
-import React, { FC } from 'react';
+import React, { FC, useEffect } from 'react';
 import Unscheduled from './components/MeetingNextUnscheduled';
 import Scheduled from './components/MeetingNextScheduled';
 import SectionHeading from './SectionMeetingHeading';
 import Button from './components/MeetingNextButton';
 import { useTranslations } from 'next-intl';
-import isNextMeetingScheduled from '@/utils/constants/isNextMeetingScheduled';
 import useInfoOnMeetings from '@/utils/hooks/useInfoOnMeetings';
 
 const SectionMeetingNext: FC = () => {
   const t = useTranslations('sections.nextMeeting');
-  const res = useInfoOnMeetings();
+  const { isNextMeetingScheduled } = useInfoOnMeetings();
+
+  useEffect(() => {
+    console.log('🟣 isNextMeetingScheduled', isNextMeetingScheduled);
+  }, [isNextMeetingScheduled]);
 
   return (
     <section

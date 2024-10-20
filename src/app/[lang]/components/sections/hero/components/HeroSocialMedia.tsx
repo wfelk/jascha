@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import socialMediaHandles from '@/utils/constants/socialMediaHandles';
+import SOCIAL_MEDIA_HANDLES from '@/utils/constants/socialMediaHandles';
 import LanguageSwitcher from './HeroLanguageSwitcher';
 
 const HeroSocialMedia: FC = () => {
@@ -8,7 +8,7 @@ const HeroSocialMedia: FC = () => {
     <div className="flex absolute top-0 justify-between items-center overflow-x-auto py-6 w-full gap-4 h-fit opacity-75 px-6 no-scrollbar snap-x snap-proximity scroll-pl-4">
       <LanguageSwitcher />
       <div className="flex items-center gap-4">
-        {socialMediaHandles.map(({ icon, url }, index) => (
+        {SOCIAL_MEDIA_HANDLES.map(({ icon, url }, index) => (
           <a
             key={index}
             href={url}

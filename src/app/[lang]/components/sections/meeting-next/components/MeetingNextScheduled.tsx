@@ -3,7 +3,6 @@ import Time from './MeetingNextTime';
 import Date from './MeetingNextDate';
 import Address from './MeetingNextAddress';
 import { useTranslations } from 'next-intl';
-import Lang from '@/types/lang';
 
 async function getData(address: string) {
   const res = await fetch(

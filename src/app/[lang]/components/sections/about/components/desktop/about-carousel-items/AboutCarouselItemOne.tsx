@@ -1,8 +1,7 @@
 import React, { FC } from 'react';
-import type Props from '@/types/className';
 import { useTranslations } from 'next-intl';
 
-const AboutCarouselItemOne: FC<Props> = ({ className }) => {
+const AboutCarouselItemOne: FC<OnlyClassNameProps> = ({ className }) => {
   const t = useTranslations('sections.about.carouselItems.item1.content');
   return (
     <div className={className}>

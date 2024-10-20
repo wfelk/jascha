@@ -1,9 +1,16 @@
+'use client';
+
 import React, { useEffect, useState } from 'react';
+import structureFetchedDataOnMeetings from '@/utils/functions/structureFetchedDataOnMeetings';
+
+interface Info {
+  isNextMeetingScheduled: boolean;
+}
 
 const useInfoOnMeetings = () => {
-  const [res, setRes] = useState(null);
+  const [info, setInfo] = useState<Info>({ isNextMeetingScheduled: false });
   useEffect(() => {
-    const fetchInfoOnMeetings = async () => {
+    const getDataOnMeetings = async () => {
       let notionData = null;
 
       try {
@@ -12,8 +19,22 @@ const useInfoOnMeetings = () => {
         });
 
         notionData = await response.json();
-        setRes(notionData.results);
-        console.log('🟣 Meetings', notionData.results);
+        const structuredDataOnMeetings = structureFetchedDataOnMeetings(
+          notionData.results
+        );
+
+        const isNextMeetingScheduled = structuredDataOnMeetings.some(
+          (meeting: StructuredMeeting) => {
+            const meetingDate = new Date(meeting.date);
+            return meetingDate > new Date();
+          }
+        );
+
+        setInfo({
+          isNextMeetingScheduled,
+        });
+        console.log('🟣 isNextMeetingScheduled', isNextMeetingScheduled);
+        console.log('🟣 Meetings', structuredDataOnMeetings);
       } catch (error) {
         console.error(
           'An error has occurred while trying to fetch information on the meetings from Notion.',
@@ -21,9 +42,9 @@ const useInfoOnMeetings = () => {
         );
       }
     };
-    fetchInfoOnMeetings();
+    getDataOnMeetings();
   }, []);
-  return res;
+  return info;
 };
 
 export default useInfoOnMeetings;

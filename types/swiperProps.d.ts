@@ -1,6 +1,6 @@
 import { SwiperOptions } from 'swiper/types';
 
-export default interface Props {
+interface SwiperProps {
   className?: {
     swiper?: string;
     slide?: string;

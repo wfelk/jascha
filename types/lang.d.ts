@@ -1,3 +1,1 @@
-type Lang = "en" | "de" | "ru" | "uk" | "be";
-
-export default Lang;
+type Lang = 'en' | 'de' | 'ru' | 'uk' | 'be';
