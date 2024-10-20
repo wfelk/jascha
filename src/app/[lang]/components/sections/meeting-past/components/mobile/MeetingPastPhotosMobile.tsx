@@ -12,7 +12,6 @@ const MeetingPastPhotosMobile = () => (
     options={{
       centeredSlides: true,
       spaceBetween: 20,
-      loop: true,
       pagination: {
         clickable: true,
         renderBullet: (index: number, className: string) => {
