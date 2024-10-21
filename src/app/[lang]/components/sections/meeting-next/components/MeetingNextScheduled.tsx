@@ -25,18 +25,20 @@ const MeetingNextScheduled: FC = async () => {
 
   return (
     <>
-      <div className="flex flex-col xl:flex-row items-center gap-8 w-full xl:justify-between 2xl:justify-around">
-        <Time
-          dateTime={t('time.dateTime')}
-          marker={t('time.marker')}
-          display={t('time.display')}
-        />
-        <Date
-          dateTime={t('date.dateTime')}
-          date={t('date.date')}
-          month={t('date.month')}
-          year={t('date.year')}
-        />
+      <div className="flex flex-col items-center gap-8 w-full xl:justify-between 2xl:justify-around">
+        <div className="flex w-full flex-col gap-4 md:flex-row items-center md:justify-evenly lg:flex-col xl:flex-row">
+          <Time
+            dateTime={t('time.dateTime')}
+            marker={t('time.marker')}
+            display={t('time.display')}
+          />
+          <Date
+            dateTime={t('date.dateTime')}
+            date={t('date.date')}
+            month={t('date.month')}
+            year={t('date.year')}
+          />
+        </div>
         <Address
           coordinates={coordinates}
           lang={t('location.lang') as Lang}

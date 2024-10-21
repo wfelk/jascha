@@ -20,7 +20,7 @@ const Home: FC = async () => {
       <>
         <main className="scroll-smooth w-full scrollbar-hidden md:grid md:grid-cols-12 md:gap-y-24">
           <Hero />
-          <NextMeeting infoOnMeetings={infoOnMeetings} />
+          <NextMeeting infoOnMeetings={{ isNextMeetingScheduled: true }} />
           <About />
           <Photos />
           <Organisers />
