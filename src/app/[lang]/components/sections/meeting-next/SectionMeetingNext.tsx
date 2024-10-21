@@ -1,9 +1,12 @@
+'use client';
+
 import React, { FC } from 'react';
 import Unscheduled from './components/MeetingNextUnscheduled';
 import Scheduled from './components/MeetingNextScheduled';
 import SectionHeading from './SectionMeetingHeading';
 import Button from './components/MeetingNextButton';
 import { useTranslations } from 'next-intl';
+import useStore from '@/store';
 
 interface Props {
   infoOnMeetings: InfoOnMeetings;
@@ -13,6 +16,8 @@ const SectionMeetingNext: FC<Props> = ({
   infoOnMeetings: { isNextMeetingScheduled = false },
 }) => {
   const t = useTranslations('sections.nextMeeting');
+  useStore.setState({ isNextMeetingScheduled });
+
   return (
     <section
       className="md:col-span-8 md:max-h-[80vh] md:col-start-3 lg:max-h-full lg:col-start-2 lg:col-span-4 mt-32 md:m-0"

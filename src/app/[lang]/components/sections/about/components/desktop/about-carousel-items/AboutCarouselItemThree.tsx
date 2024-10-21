@@ -2,12 +2,13 @@ import React, { FC } from 'react';
 import Button from '@/src/app/[lang]/components/Button';
 import { classNameDefault } from '@/src/app/[lang]/components/Button';
 import { useTranslations } from 'next-intl';
-import isNextMeetingScheduled from '@/utils/constants/isNextMeetingScheduled';
 import scrollSmoothlyTo from '@/utils/functions/scrollSmoothlyTo';
 import useBelowBreakpointCheck from '@/utils/hooks/useBelowBreakpointCheck';
+import useStore from '@/store';
 
 const AboutCarouselItemThree: FC<OnlyClassNameProps> = ({ className }) => {
   const t = useTranslations('sections.about.carouselItems.item3.content');
+  const { isNextMeetingScheduled } = useStore();
   const isMobileScreen = useBelowBreakpointCheck(1024);
   const handleClick = () => {
     scrollSmoothlyTo('next-meeting');
