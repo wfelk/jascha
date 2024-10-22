@@ -10,7 +10,7 @@ const Map = dynamic(() => import('./MeetingNextMap'), {
 });
 
 interface Props {
-  coordinates: { lat: number; lon: number };
+  coordinates?: { lat: number; lon: number };
   lang: Lang;
   name: string;
   street: string;

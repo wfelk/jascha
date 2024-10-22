@@ -1,5 +1,6 @@
-import React, { FC } from 'react';
+import React, { FC, useEffect } from 'react';
 import IconClock from '../../../icons/IconClock';
+import useStore from '@/store';
 
 interface Props {
   dateTime: string;
@@ -8,6 +9,12 @@ interface Props {
 }
 
 const MeetingNextTime: FC<Props> = ({ dateTime, display, marker }) => {
+  const nextMeeting = useStore(state => state.nextMeeting);
+
+  useEffect(() => {
+    console.log('🚀 ~ nextMeeting:', nextMeeting);
+  }, [nextMeeting]);
+
   return (
     <time
       dateTime={dateTime}

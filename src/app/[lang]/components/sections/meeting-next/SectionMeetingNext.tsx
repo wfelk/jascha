@@ -1,6 +1,6 @@
 'use client';
 
-import React, { FC } from 'react';
+import React, { FC, useEffect } from 'react';
 import Unscheduled from './components/MeetingNextUnscheduled';
 import Scheduled from './components/MeetingNextScheduled';
 import SectionHeading from './SectionMeetingHeading';
@@ -13,10 +13,15 @@ interface Props {
 }
 
 const SectionMeetingNext: FC<Props> = ({
-  infoOnMeetings: { isNextMeetingScheduled = false },
+  infoOnMeetings: { isNextMeetingScheduled = false, nextMeeting },
 }) => {
   const t = useTranslations('sections.nextMeeting');
-  useStore.setState({ isNextMeetingScheduled });
+  const { setIsNextMeetingScheduled, setNextMeeting } = useStore();
+
+  useEffect(() => {
+    setIsNextMeetingScheduled(isNextMeetingScheduled);
+    setNextMeeting(nextMeeting);
+  }, []);
 
   return (
     <section

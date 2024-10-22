@@ -1,27 +1,33 @@
-import React, { FC } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 import Time from './MeetingNextTime';
 import Date from './MeetingNextDate';
 import Address from './MeetingNextAddress';
 import { useTranslations } from 'next-intl';
 
-async function getData(address: string) {
-  const res = await fetch(
-    `https://nominatim.openstreetmap.org/search?q=${encodeURI(
-      address
-    )}&format=json&limit=1`
-  );
-  if (!res.ok) {
-    throw new Error('Failed to fetch coordinates from OSM Nominatim API');
-  }
-
-  return res.json();
-}
-
-const MeetingNextScheduled: FC = async () => {
+const MeetingNextScheduled: FC = () => {
   const t = useTranslations('sections.nextMeeting.data');
+  const [coordinates, setCoordinates] = useState<{
+    lat: number;
+    lon: number;
+  } | null>(null);
   const address = `${t('address.street')} ${t('address.houseNumber')}, ${t('address.postCode')} ${t('address.city')}`;
-  const data = await getData(address);
-  const coordinates = data?.[0];
+
+  useEffect(() => {
+    async function fetchAndSetCoordinates(address: string) {
+      const res = await fetch(
+        `https://nominatim.openstreetmap.org/search?q=${encodeURI(
+          address
+        )}&format=json&limit=1`
+      );
+      if (!res.ok) {
+        throw new Error('Failed to fetch coordinates from OSM Nominatim API');
+      }
+
+      const data = await res.json();
+      setCoordinates(data?.[0] ? { lat: data[0].lat, lon: data[0].lon } : null);
+    }
+    fetchAndSetCoordinates(address);
+  }, [address]);
 
   return (
     <>
@@ -40,7 +46,6 @@ const MeetingNextScheduled: FC = async () => {
           />
         </div>
         <Address
-          coordinates={coordinates}
           lang={t('location.lang') as Lang}
           name={t('location.name')}
           street={t('address.street')}
