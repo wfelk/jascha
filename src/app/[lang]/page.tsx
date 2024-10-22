@@ -9,7 +9,6 @@ import Photos from './components/sections/meeting-past/SectionMeetingPast';
 import Footer from './components/Footer';
 import LookingForward from './components/sections/looking-forward/SectionLookingForward';
 7;
-import Initializer from '@/src/app/[lang]/Initializer';
 import getInfoOnMeetings from '@/actions/getInfoOnMeetings';
 
 const Home: FC = async () => {
