@@ -6,7 +6,6 @@ import About from './components/sections/about/SectionAbout';
 import Organisers from './components/sections/organisers/SectionOrganisers';
 import NextMeeting from './components/sections/meeting-next/SectionMeetingNext';
 import Photos from './components/sections/meeting-past/SectionMeetingPast';
-import Footer from './components/Footer';
 import LookingForward from './components/sections/looking-forward/SectionLookingForward';
 7;
 import getInfoOnMeetings from '@/actions/getInfoOnMeetings';
