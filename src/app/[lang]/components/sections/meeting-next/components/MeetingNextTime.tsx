@@ -10,11 +10,6 @@ interface Props {
 
 const MeetingNextTime: FC<Props> = ({ dateTime, display, marker }) => {
   const nextMeeting = useStore(state => state.nextMeeting);
-
-  useEffect(() => {
-    console.log('🚀 ~ nextMeeting:', nextMeeting);
-  }, [nextMeeting]);
-
   return (
     <time
       dateTime={dateTime}
