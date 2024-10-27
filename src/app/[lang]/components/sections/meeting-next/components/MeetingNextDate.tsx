@@ -1,3 +1,5 @@
+// TODO: Overflowing parts of icon are not hidden
+
 import React, { useEffect, useState } from 'react';
 import IconCalendarDays from '../../../icons/IconCalendarDays';
 import useStore from '@/store';
@@ -26,7 +28,6 @@ const MeetingNextDate = () => {
       dateTime={dateTime}
       className="flex items-baseline gap-2 xl:gap-1 2xl:gap-2 bg-teal-600/50 relative overflow-clip rounded-lg py-4 w-fit px-6"
     >
-      // TODO: Overflowing parts of icon are not hidden
       <IconCalendarDays className="absolute fill-teal-100/10 w-20 h-20 -left-4 bottom-1" />
       {date && (
         <span className="text-5xl md:text-3xl xl:text-xl 2xl:text-3xl text-sky-100/90">
