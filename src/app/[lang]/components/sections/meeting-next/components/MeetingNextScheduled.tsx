@@ -38,12 +38,7 @@ const MeetingNextScheduled: FC = () => {
             marker={t('time.marker')}
             display={t('time.display')}
           />
-          <Date
-            dateTime={t('date.dateTime')}
-            date={t('date.date')}
-            month={t('date.month')}
-            year={t('date.year')}
-          />
+          <Date />
         </div>
         <Address
           lang={t('location.lang') as Lang}
