@@ -6,28 +6,6 @@ import { useTranslations } from 'next-intl';
 
 const MeetingNextScheduled: FC = () => {
   const t = useTranslations('sections.nextMeeting.data');
-  const [coordinates, setCoordinates] = useState<{
-    lat: number;
-    lon: number;
-  } | null>(null);
-  const address = `${t('address.street')} ${t('address.houseNumber')}, ${t('address.postCode')} ${t('address.city')}`;
-
-  useEffect(() => {
-    async function fetchAndSetCoordinates(address: string) {
-      const res = await fetch(
-        `https://nominatim.openstreetmap.org/search?q=${encodeURI(
-          address
-        )}&format=json&limit=1`
-      );
-      if (!res.ok) {
-        throw new Error('Failed to fetch coordinates from OSM Nominatim API');
-      }
-
-      const data = await res.json();
-      setCoordinates(data?.[0] ? { lat: data[0].lat, lon: data[0].lon } : null);
-    }
-    fetchAndSetCoordinates(address);
-  }, [address]);
 
   return (
     <>
@@ -40,15 +18,7 @@ const MeetingNextScheduled: FC = () => {
           />
           <Date />
         </div>
-        <Address
-          lang={t('location.lang') as Lang}
-          name={t('location.name')}
-          street={t('address.street')}
-          houseNumber={t('address.houseNumber')}
-          postCode={t('address.postCode')}
-          city={t('address.city')}
-          venue={t('location.name')}
-        />
+        <Address />
       </div>
     </>
   );
