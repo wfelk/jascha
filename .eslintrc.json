@@ -17,14 +17,24 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint"],
+  "plugins": ["react", "@typescript-eslint", "unused-imports"],
   "rules": {
     "indent": ["error", 2],
     "linebreak-style": ["error", "unix"],
     "semi": ["error", "always"],
-    "no-unused-vars": ["warn"],
     "react/prop-types": "off",
-    "@typescript-eslint/no-unused-vars": "warn"
+    "no-unused-vars": "off", // Turn off the base rule
+    "@typescript-eslint/no-unused-vars": "off", // Turn off the TypeScript rule
+    "unused-imports/no-unused-imports": "error", // Enable unused-imports plugin
+    "unused-imports/no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ]
   },
   "settings": {
     "react": {
