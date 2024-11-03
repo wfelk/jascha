@@ -1,10 +1,10 @@
 import * as React from 'react';
-import Map, { Popup } from 'react-map-gl/maplibre';
+import Map, { Popup, Marker } from 'react-map-gl/maplibre';
 import 'maplibre-gl/dist/maplibre-gl.css';
-
-export const middleOfUSA = [-100, 40];
+import useStore from '@/store';
 
 const MeetingNextMap = () => {
+  const locationName = useStore(state => state.nextMeeting?.location?.name);
   return (
     <Map
       initialViewState={{
@@ -14,9 +14,7 @@ const MeetingNextMap = () => {
       }}
       mapStyle="/styles/map-dark.json"
     >
-      <Popup longitude={6.94537} latitude={50.93329}>
-        <h3>Next meeting</h3>
-      </Popup>
+      <Marker longitude={6.94537} latitude={50.93329} />
     </Map>
   );
 };

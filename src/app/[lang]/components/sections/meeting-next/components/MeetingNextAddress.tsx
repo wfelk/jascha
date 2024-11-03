@@ -7,11 +7,10 @@ import { useParams } from 'next/navigation';
 const Address = () => {
   const { lang } = useParams();
   const address = useStore(state => state.nextMeeting?.address);
-  console.log('🚀 ~ Address ~ address:', address);
   const location = useStore(state => state.nextMeeting?.location);
   return (
-    <div className="border-2 p-4 rounded-lg border-teal-200/50 flex flex-col gap-4 min-w-[300px] max-w-[400px] md:min-w-full">
-      <address className="flex not-italic items-center relative justify-between pl-7 pr-3">
+    <div className="border-2 p-4 rounded-lg border-teal-200/50 flex flex-col items-center gap-4 lg:gap-8 min-w-[300px] max-w-[400px] md:min-w-full">
+      <address className="flex not-italic items-center relative justify-between w-full pl-7 pr-3">
         <IconMapPin className="w-14 h-14 fill-teal-200/20 absolute -left-1 -top-1" />
         <span
           className="text-sky-200/90 quotation-marks tracking-wider text-xl inline-block text-center"
@@ -30,11 +29,9 @@ const Address = () => {
           </div>
         </div>
       </address>
-      {false && (
-        <div className="w-[400px] h-[400px]">
-          <MeetingNextMap />
-        </div>
-      )}
+      <div className="rounded-lg overflow-hidden w-[280px] h-[280px] md:w-[400px] lg:w-[280px] xl:w-[360px] 2xl:w-[400px]">
+        <MeetingNextMap />
+      </div>
     </div>
   );
 };
