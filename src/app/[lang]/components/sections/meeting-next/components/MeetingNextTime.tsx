@@ -1,4 +1,4 @@
-import React, { FC, useEffect } from 'react';
+import React from 'react';
 import IconClock from '../../../icons/IconClock';
 import useStore from '@/store';
 
@@ -8,7 +8,7 @@ interface Props {
   marker: string;
 }
 
-const MeetingNextTime: FC<Props> = ({ dateTime, display, marker }) => {
+const MeetingNextTime = ({ dateTime, display, marker }: Props) => {
   const nextMeeting = useStore(state => state.nextMeeting);
   return (
     <time

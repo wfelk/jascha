@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React from 'react';
 import IconMapPin from '../../../icons/IconMapPin';
 import MeetingNextMap from './MeetingNextMap';
 import useStore from '@/store';

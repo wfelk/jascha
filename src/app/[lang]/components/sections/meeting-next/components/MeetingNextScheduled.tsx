@@ -1,10 +1,10 @@
-import React, { FC, useEffect, useState } from 'react';
+import React from 'react';
 import Time from './MeetingNextTime';
 import Date from './MeetingNextDate';
 import Address from './MeetingNextAddress';
 import { useTranslations } from 'next-intl';
 
-const MeetingNextScheduled: FC = () => {
+const MeetingNextScheduled = () => {
   const t = useTranslations('sections.nextMeeting.data');
 
   return (
