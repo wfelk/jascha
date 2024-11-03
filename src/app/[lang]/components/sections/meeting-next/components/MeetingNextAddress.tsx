@@ -7,6 +7,7 @@ import { useParams } from 'next/navigation';
 const Address = () => {
   const { lang } = useParams();
   const address = useStore(state => state.nextMeeting?.address);
+  console.log('🚀 ~ Address ~ address:', address);
   const location = useStore(state => state.nextMeeting?.location);
   return (
     <div className="border-2 p-4 rounded-lg border-teal-200/50 flex flex-col gap-4 min-w-[300px] max-w-[400px] md:min-w-full">

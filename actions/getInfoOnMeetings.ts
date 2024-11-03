@@ -4,7 +4,6 @@ const getInfoOnMeetings = async () => {
     method: 'POST',
   });
   const infoOnMeetings = await response.json();
-
   return infoOnMeetings;
 };
 
