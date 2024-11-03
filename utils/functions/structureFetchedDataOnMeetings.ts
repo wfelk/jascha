@@ -8,7 +8,12 @@ const structureFetchedDataOnMeetings = (
     return {
       id: props[MEETINGS_TABLE_COLUMNS.id].title[0].plain_text,
       date: props[MEETINGS_TABLE_COLUMNS.date].date.start,
-      address: props[MEETINGS_TABLE_COLUMNS.address].rich_text[0].plain_text,
+      address: {
+        full: props[MEETINGS_TABLE_COLUMNS.address].rich_text[0].plain_text,
+        ...structureAddress(
+          props[MEETINGS_TABLE_COLUMNS.address].rich_text[0].plain_text
+        ),
+      },
       location: {
         name: props[MEETINGS_TABLE_COLUMNS.location].rich_text[0].plain_text,
         url: props[MEETINGS_TABLE_COLUMNS.location].rich_text[0].href,
@@ -20,3 +25,19 @@ const structureFetchedDataOnMeetings = (
 };
 
 export default structureFetchedDataOnMeetings;
+
+const structureAddress = (address: string) => {
+  const regex = /^(.*?)(?:\s+(\d+))?,\s*(\d{5})\s*(.*)$/;
+  const match = address.match(regex);
+
+  if (!match) {
+    return null;
+  }
+
+  return {
+    street: match[1].trim(),
+    houseNumber: match[2] ? match[2].trim() : null,
+    postCode: match[3].trim(),
+    city: match[4].trim(),
+  };
+};

@@ -21,15 +21,15 @@ const Address = () => {
         <div>
           <div className="flex items-center gap-1 text-sky-300">
             <span>{address?.street}</span>
-            <span>{houseNumber}</span>
+            <span>{address?.houseNumber}</span>
           </div>
           <div className="flex items-center gap-1 text-sky-400/75">
-            <span>{postCode}</span>
-            <span>{city}</span>
+            <span>{address?.postCode}</span>
+            <span>{address?.city}</span>
           </div>
         </div>
       </address>
-      {true && (
+      {false && (
         <div className="w-[400px] h-[400px]">
           <MeetingNextMap />
         </div>
