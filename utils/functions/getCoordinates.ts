@@ -3,7 +3,7 @@ const getCoordinates = async (address: string) => {
     .toLowerCase()
     .replace(/\s+/g, '+')
     .replace(/,/g, ',');
-  const url = `https://nominatim.openstreetmap.org/search.php?q=${parsedAddress}=jsonv2`;
+  const url = `https://nominatim.openstreetmap.org/search.php?q=${parsedAddress}&format=jsonv2`;
 
   const response = await fetch(url);
   const data = await response.json();

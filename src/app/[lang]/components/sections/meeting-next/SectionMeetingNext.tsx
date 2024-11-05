@@ -7,6 +7,7 @@ import SectionHeading from './SectionMeetingHeading';
 import Button from './components/MeetingNextButton';
 import { useTranslations } from 'next-intl';
 import useStore from '@/store';
+import getCoordinates from '@/utils/functions/getCoordinates';
 
 interface Props {
   infoOnMeetings: InfoOnMeetings;
@@ -21,6 +22,7 @@ const SectionMeetingNext: FC<Props> = ({
   useEffect(() => {
     setIsNextMeetingScheduled(isNextMeetingScheduled);
     setNextMeeting(nextMeeting);
+    getCoordinates(nextMeeting?.address?.full || '');
   }, []);
 
   return (
