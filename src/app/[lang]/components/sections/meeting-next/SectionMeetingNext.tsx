@@ -20,9 +20,19 @@ const SectionMeetingNext: FC<Props> = ({
   const { setIsNextMeetingScheduled, setNextMeeting } = useStore();
 
   useEffect(() => {
+    // ! This is a temporary solution to get the coordinates for the next meeting. Ideally, this should be done on the server.
+    const getCoordinatesAndSetNextMeeting = async (address?: string) => {
+      const coordinates = await getCoordinates(address || '');
+      setNextMeeting(((prevState: StructuredMeeting) => ({
+        ...prevState,
+        address: {
+          ...prevState.address,
+          coordinates,
+        },
+      })) as unknown as StructuredMeeting);
+    };
     setIsNextMeetingScheduled(isNextMeetingScheduled);
-    setNextMeeting(nextMeeting);
-    getCoordinates(nextMeeting?.address?.full || '');
+    getCoordinatesAndSetNextMeeting(nextMeeting?.address?.street);
   }, []);
 
   return (

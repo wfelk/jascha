@@ -9,7 +9,6 @@ interface Props {
 }
 
 const MeetingNextTime = ({ dateTime, display, marker }: Props) => {
-  const nextMeeting = useStore(state => state.nextMeeting);
   return (
     <time
       dateTime={dateTime}

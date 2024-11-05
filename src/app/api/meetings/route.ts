@@ -33,9 +33,13 @@ export const POST = async () => {
         return meetingDate > new Date();
       }
     );
-    const coordinates = await getCoordinates(nextMeeting.address.full);
-    console.log('🚀 ~ POST ~ coordinates:', coordinates);
-    if (coordinates) nextMeeting.address.coordinates = coordinates;
+    // ! It does not work at the moment. Alternatively, the coordinates are fetched on the client side.
+    if (nextMeeting.address.full) {
+      const coordinates = await getCoordinates(nextMeeting.address.full);
+      if (coordinates) {
+        nextMeeting.address.coordinates = coordinates;
+      }
+    }
 
     const infoOnMeetings: InfoOnMeetings = {
       meetings,
