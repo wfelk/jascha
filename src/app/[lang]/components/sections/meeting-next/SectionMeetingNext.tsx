@@ -23,13 +23,14 @@ const SectionMeetingNext: FC<Props> = ({
     // ! This is a temporary solution to get the coordinates for the next meeting. Ideally, this should be done on the server.
     const getCoordinatesAndSetNextMeeting = async (address?: string) => {
       const coordinates = await getCoordinates(address || '');
-      setNextMeeting(((prevState: StructuredMeeting) => ({
-        ...prevState,
+      const nextMeetingWithCoordinates = {
+        ...nextMeeting,
         address: {
-          ...prevState.address,
+          ...nextMeeting?.address,
           coordinates,
         },
-      })) as unknown as StructuredMeeting);
+      };
+      setNextMeeting(nextMeetingWithCoordinates);
     };
     setIsNextMeetingScheduled(isNextMeetingScheduled);
     getCoordinatesAndSetNextMeeting(nextMeeting?.address?.street);
