@@ -5,8 +5,11 @@ const getCoordinates = async (address: string) => {
     .replace(/,/g, ',');
   const url = `https://nominatim.openstreetmap.org/search.php?q=${parsedAddress}&format=jsonv2`;
 
+  console.log('🚀 ~ getCoordinates ~ url:', url);
   const response = await fetch(url);
+  console.log('🚀 ~ getCoordinates ~ response:', response);
   const data = await response.json();
+  console.log('🚀 ~ getCoordinates ~ data:', data);
 
   if (data.length === 0) {
     return null;

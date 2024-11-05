@@ -34,6 +34,7 @@ export const POST = async () => {
       }
     );
     const coordinates = await getCoordinates(nextMeeting.address.full);
+    console.log('🚀 ~ POST ~ coordinates:', coordinates);
     if (coordinates) nextMeeting.address.coordinates = coordinates;
 
     const infoOnMeetings: InfoOnMeetings = {
