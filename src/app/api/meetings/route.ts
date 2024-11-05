@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { Client } from '@notionhq/client';
 import structureFetchedDataOnMeetings from '@/utils/functions/structureFetchedDataOnMeetings';
+import getCoordinates from '@/utils/functions/getCoordinates';
 
 const notion = new Client({ auth: process.env.NOTION_KEY });
 
@@ -13,27 +14,32 @@ export const POST = async () => {
 
     const result = NextResponse.json(response);
     const notionData = await result.json();
-    const structuredDataOnMeetings = structureFetchedDataOnMeetings(
-      notionData.results
+
+    // Prepare data
+    const meetings = structureFetchedDataOnMeetings(notionData.results);
+    const nextMeeting = meetings
+      .filter((meeting: StructuredMeeting) => {
+        const meetingDate = new Date(meeting.date);
+        return meetingDate > new Date();
+      })
+      .sort((a: StructuredMeeting, b: StructuredMeeting) => {
+        const dateA = new Date(a.date);
+        const dateB = new Date(b.date);
+        return dateA.getTime() - dateB.getTime();
+      })[0];
+    const isNextMeetingScheduled = meetings.some(
+      (meeting: StructuredMeeting) => {
+        const meetingDate = new Date(meeting.date);
+        return meetingDate > new Date();
+      }
     );
+    const coordinates = await getCoordinates(nextMeeting.address.full);
+    if (coordinates) nextMeeting.address.coordinates = coordinates;
+
     const infoOnMeetings: InfoOnMeetings = {
-      meetings: structuredDataOnMeetings,
-      isNextMeetingScheduled: structuredDataOnMeetings.some(
-        (meeting: StructuredMeeting) => {
-          const meetingDate = new Date(meeting.date);
-          return meetingDate > new Date();
-        }
-      ),
-      nextMeeting: structuredDataOnMeetings
-        .filter((meeting: StructuredMeeting) => {
-          const meetingDate = new Date(meeting.date);
-          return meetingDate > new Date();
-        })
-        .sort((a: StructuredMeeting, b: StructuredMeeting) => {
-          const dateA = new Date(a.date);
-          const dateB = new Date(b.date);
-          return dateA.getTime() - dateB.getTime();
-        })[0],
+      meetings,
+      isNextMeetingScheduled,
+      nextMeeting,
     };
 
     return NextResponse.json(infoOnMeetings);

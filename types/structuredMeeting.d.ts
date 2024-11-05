@@ -9,7 +9,7 @@ interface StructuredMeeting {
     city?: string;
     coordinates?: {
       lat: number;
-      lng: number;
+      lon: number;
     };
   };
   location: {

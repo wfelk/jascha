@@ -1,20 +1,24 @@
 import * as React from 'react';
-import Map, { Popup, Marker } from 'react-map-gl/maplibre';
+import Map, { Marker } from 'react-map-gl/maplibre';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import useStore from '@/store';
 
 const MeetingNextMap = () => {
-  const locationName = useStore(state => state.nextMeeting?.location?.name);
+  const coordinates = useStore(
+    state => state.nextMeeting?.address?.coordinates
+  );
   return (
     <Map
       initialViewState={{
-        longitude: 6.94537,
-        latitude: 50.93329,
-        zoom: 10,
+        longitude: 6.959974,
+        latitude: 50.938361,
+        zoom: 11,
       }}
       mapStyle="/styles/map-dark.json"
     >
-      <Marker longitude={6.94537} latitude={50.93329} />
+      {coordinates?.lat && coordinates.lon && (
+        <Marker longitude={coordinates?.lon} latitude={coordinates?.lat} />
+      )}
     </Map>
   );
 };
