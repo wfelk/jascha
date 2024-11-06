@@ -1,6 +1,5 @@
 import React from 'react';
 import IconClock from '../../../icons/IconClock';
-import useStore from '@/store';
 
 interface Props {
   dateTime: string;
