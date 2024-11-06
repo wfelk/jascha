@@ -19,22 +19,31 @@ export const POST = async () => {
     const meetings = structureFetchedDataOnMeetings(notionData.results);
     const nextMeeting = meetings
       .filter((meeting: StructuredMeeting) => {
-        const meetingDate = new Date(meeting.date);
+        if (!meeting?.date) {
+          return false;
+        }
+        const meetingDate = new Date(meeting?.date);
         return meetingDate > new Date();
       })
       .sort((a: StructuredMeeting, b: StructuredMeeting) => {
+        if (!a.date || !b.date) {
+          return 0;
+        }
         const dateA = new Date(a.date);
         const dateB = new Date(b.date);
         return dateA.getTime() - dateB.getTime();
       })[0];
     const isNextMeetingScheduled = meetings.some(
       (meeting: StructuredMeeting) => {
+        if (!meeting?.date) {
+          return false;
+        }
         const meetingDate = new Date(meeting.date);
         return meetingDate > new Date();
       }
     );
     // ! It does not work at the moment. Alternatively, the coordinates are fetched on the client side.
-    if (nextMeeting.address.full) {
+    if (nextMeeting?.address?.full) {
       const coordinates = await getCoordinates(nextMeeting.address.full);
       if (coordinates) {
         nextMeeting.address.coordinates = coordinates;
