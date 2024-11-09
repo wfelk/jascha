@@ -4,8 +4,8 @@ import structureFetchedDataOnMeetings from '@/utils/functions/structureFetchedDa
 
 // Notion's API accepts only POST requests to query the database
 export const POST = async () => {
-  const notion = new Client({ auth: process.env.NOTION_KEY });
   try {
+    const notion = new Client({ auth: process.env.NOTION_KEY });
     const response = await notion.databases.query({
       database_id: process.env.NOTION_DATABASE_ID as string,
     });
