@@ -8,6 +8,7 @@ import { useParams } from 'next/navigation';
 const MeetingNextDate = () => {
   const { lang } = useParams();
   const rawDate = useStore(state => state.nextMeeting?.date);
+  console.log('🚀 ~ MeetingNextDate ~ rawDate:', rawDate);
   const [dateTime, setDateTime] = useState<string | undefined>();
   const [date, setDate] = useState<string | undefined>();
   const [month, setMonth] = useState<string | undefined>();
