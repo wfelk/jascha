@@ -16,6 +16,8 @@ interface Props {
 const SectionMeetingNext: FC<Props> = ({
   infoOnMeetings: { isNextMeetingScheduled = false, nextMeeting },
 }) => {
+  console.log('🚀 ~ nextMeeting:', nextMeeting);
+  console.log('🚀 ~ isNextMeetingScheduled:', isNextMeetingScheduled);
   const t = useTranslations('sections.nextMeeting');
   const { setIsNextMeetingScheduled, setNextMeeting } = useStore();
 
