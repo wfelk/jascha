@@ -2,10 +2,9 @@ import { NextResponse } from 'next/server';
 import { Client } from '@notionhq/client';
 import structureFetchedDataOnMeetings from '@/utils/functions/structureFetchedDataOnMeetings';
 
-const notion = new Client({ auth: process.env.NOTION_KEY });
-
 // Notion's API accepts only POST requests to query the database
 export const POST = async () => {
+  const notion = new Client({ auth: process.env.NOTION_KEY });
   try {
     const response = await notion.databases.query({
       database_id: process.env.NOTION_DATABASE_ID as string,
