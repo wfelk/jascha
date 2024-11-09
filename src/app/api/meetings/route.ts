@@ -1,7 +1,6 @@
 import { NextResponse } from 'next/server';
 import { Client } from '@notionhq/client';
 import structureFetchedDataOnMeetings from '@/utils/functions/structureFetchedDataOnMeetings';
-import getCoordinates from '@/utils/functions/getCoordinates';
 
 const notion = new Client({ auth: process.env.NOTION_KEY });
 
