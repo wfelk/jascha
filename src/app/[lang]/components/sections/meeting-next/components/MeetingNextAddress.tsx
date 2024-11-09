@@ -10,7 +10,7 @@ const Address = () => {
   const location = useStore(state => state.nextMeeting?.location);
   return (
     <div className="border-2 p-4 rounded-lg border-teal-200/50 flex flex-col items-center gap-4 lg:gap-8 min-w-[300px] max-w-[400px] md:min-w-full">
-      <address className="flex not-italic items-center relative justify-between w-full pl-7 pr-3">
+      <address className="flex not-italic items-center relative justify-between w-full gap-2 pl-7 pr-3">
         <IconMapPin className="w-14 h-14 fill-teal-200/20 absolute -left-1 -top-1" />
         <span
           className="text-sky-200/90 quotation-marks tracking-wider text-xl inline-block text-center"
