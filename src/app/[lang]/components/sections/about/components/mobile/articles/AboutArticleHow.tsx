@@ -1,7 +1,6 @@
 'use client';
 
 import React, { FC } from 'react';
-import Button from '../../../../../Button';
 import { useTranslations } from 'next-intl';
 
 const AboutArticleHow: FC = () => {
