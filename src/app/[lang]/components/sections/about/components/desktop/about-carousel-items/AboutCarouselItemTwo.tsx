@@ -1,7 +1,7 @@
-import React, { FC } from 'react';
+import React from 'react';
 import { useTranslations } from 'next-intl';
 
-const AboutCarouselItemTwo: FC<OnlyClassNameProps> = ({ className }) => {
+const AboutCarouselItemTwo = ({ className }: OnlyClassNameProps) => {
   const t = useTranslations('sections.about.carouselItems.item2.content');
   return (
     <div className={`text-lg leading-loose xl:text-xl ${className}`}>
