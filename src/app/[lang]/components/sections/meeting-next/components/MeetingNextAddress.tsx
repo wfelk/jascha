@@ -9,8 +9,8 @@ const Address = () => {
   const address = useStore(state => state.nextMeeting?.address);
   const location = useStore(state => state.nextMeeting?.location);
   return (
-    <div className="border-2 p-4 rounded-lg border-teal-200/50 flex flex-col items-center gap-4 lg:gap-8 min-w-[300px] max-w-[400px] sm:w-[400px] md:min-w-full">
-      <address className="flex not-italic items-center relative justify-between w-full gap-2 pl-7 pr-3">
+    <div className="border-2 p-4 rounded-lg border-teal-200/50 flex flex-col items-center gap-4 lg:gap-6 min-w-[300px] sm:w-[500px] md:max-w-full box-border">
+      <address className="flex not-italic items-center relative justify-between gap-2 pl-7 pr-3 w-[280px] sm:w-[450px] md:w-[400px] lg:w-[280px] xl:w-[360px] 2xl:w-[400px]">
         <IconMapPin className="w-14 h-14 fill-teal-200/20 absolute -left-1 -top-1" />
         <span
           className="text-sky-200/90 quotation-marks tracking-wider text-xl inline-block text-center"
@@ -29,7 +29,7 @@ const Address = () => {
           </div>
         </div>
       </address>
-      <div className="rounded-lg overflow-hidden w-[280px] h-[280px] sm:w-[350px] md:w-[400px] lg:w-[280px] xl:w-[360px] 2xl:w-[400px]">
+      <div className="rounded-lg overflow-hidden w-[280px] h-[280px] sm:w-[450px] md:w-[400px] lg:w-[280px] xl:w-[360px] 2xl:w-[400px]">
         <MeetingNextMap />
       </div>
     </div>

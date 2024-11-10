@@ -38,7 +38,7 @@ const SectionMeetingNext: FC<Props> = ({
 
   return (
     <section
-      className="md:col-span-8 md:max-h-[80vh] md:col-start-3 lg:max-h-full lg:col-start-2 lg:col-span-4 mt-32 md:m-0"
+      className="md:col-span-8 md:col-start-3 lg:col-start-2 lg:col-span-4 mt-32 md:m-0"
       id="next-meeting"
     >
       <article className="flex flex-col items-center gap-8 min-h-full h-full">
