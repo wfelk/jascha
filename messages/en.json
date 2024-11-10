@@ -14,23 +14,6 @@
     },
     "nextMeeting": {
       "heading": "Next meeting",
-      "data": {
-        "date": {
-          "day": "Saturday",
-          "date": "14th",
-          "month": "December",
-          "year": "2023",
-          "dateTime": "2023-12-14"
-        },
-        "time": { "display": "7:00", "marker": "pm", "dateTime": "19:00" },
-        "location": { "name": "Bar Botanik", "lang": "en" },
-        "address": {
-          "street": "Kaygasse",
-          "houseNumber": "2",
-          "city": "Köln",
-          "postCode": "50676"
-        }
-      },
       "unscheduled": {
         "heading": "Nothing planned yet!",
         "content": {
@@ -41,7 +24,7 @@
           "paragraphTwo": "We will also keep you updated through other channels."
         }
       },
-      "button": "register"
+      "button": "Open map"
     },
     "photos": {
       "heading": "Last meetings"
@@ -82,10 +65,6 @@
             "paragraph2": {
               "beforeEmphasis": "You can also let us know in advance by posting a message on social media, or confirm your participation here on Meetup. This allows us to keep track of the number of participants, and change the venue if necessary to provide",
               "emphasis": "enough space for everyone."
-            },
-            "button": {
-              "nextMeetingScheduled": "to the next meeting",
-              "nextMeetingUnscheduled": "stay informed"
             }
           }
         }
@@ -97,7 +76,7 @@
         "heading": "Andrey",
         "content": {
           "paragraph1": {
-            "beforeEmphasis": "Andrey is 29 years old and works as a software tester in Cologne. He was born and raised in Kaliningrad and has been living in Germany for three years. He has taken a liking to Cologne. Furthermore, he",
+            "beforeEmphasis": "Andrey is 31 years old and works as a software tester in Cologne. He was born and raised in Kaliningrad and has been living in Germany for three years. He has taken a liking to Cologne. Furthermore, he",
             "emphasis": "sees his future in the city on the Rhine."
           },
           "paragraph2": {
@@ -110,7 +89,7 @@
       "wilhelm": {
         "heading": "Wilhelm",
         "content": {
-          "paragraph1": "Wilhelm is 27 years old and works as a web developer. He was born in Germany. His family comes from the former Soviet Union.",
+          "paragraph1": "Wilhelm is 29 years old and works as a web developer. He was born in Germany. His family comes from the former Soviet Union.",
           "paragraph2": {
             "beforeEmphasis": "Although Wilhelm grew up speaking Russian, he only started to ",
             "emphasis": "discover the language for himself during his studies.",

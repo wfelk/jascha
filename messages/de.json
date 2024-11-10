@@ -14,24 +14,7 @@
     },
     "nextMeeting": {
       "heading": "Nächstes Treffen",
-      "data": {
-        "date": {
-          "day": "Samstag",
-          "date": "14.",
-          "month": "Dezember",
-          "year": "2023",
-          "dateTime": "2023-12-14"
-        },
-        "time": { "display": "19:00", "marker": "Uhr", "dateTime": "19:00" },
-        "location": { "name": "Bar Botanik", "lang": "de" },
-        "address": {
-          "street": "Kaygasse",
-          "houseNumber": "2",
-          "city": "Köln",
-          "postCode": "50676"
-        }
-      },
-      "button": "anmelden",
+      "button": "Karte öffnen",
       "unscheduled": {
         "heading": "Noch nichts geplant!",
         "content": {
@@ -82,10 +65,6 @@
             "paragraph2": {
               "beforeEmphasis": "Du kannst uns auch im Voraus über den sozialen Netzen bescheidgeben oder deine Teilnahme bei Meetup bestätigen. Das ermöglicht uns, die Anzahl der Teilnehmer im Auge zu behalten. Bei Bedarf wechseln wir dann den Veranstaltungsort, um",
               "emphasis": "genügend Platz für alle zu bieten."
-            },
-            "button": {
-              "nextMeetingScheduled": "zum nächsten Treffen",
-              "nextMeetingUnscheduled": "auf dem Laufenden bleiben"
             }
           }
         }
@@ -97,7 +76,7 @@
         "heading": "Andrej",
         "content": {
           "paragraph1": {
-            "beforeEmphasis": "Andrej ist 30 Jahre alt und arbeitet als Software-Tester in Köln. Er ist in Kaliningrad geboren und aufgewachsen und lebt seit drei Jahren in Deutschland. Köln hat es ihm angetan. Außerdem hat er",
+            "beforeEmphasis": "Andrej ist 31 Jahre alt und arbeitet als Software-Tester in Köln. Er ist in Kaliningrad geboren und aufgewachsen und lebt seit drei Jahren in Deutschland. Köln hat es ihm angetan. Außerdem hat er",
             "emphasis": "sieht er seine Zukunft in der Stadt am Rhein."
           },
           "paragraph2": {
@@ -110,7 +89,7 @@
       "wilhelm": {
         "heading": "Wilhelm",
         "content": {
-          "paragraph1": "Wilhelm ist 28 Jahre alt und arbeitet als Webentwickler. Er wurde in Deutschland geboren. Seine Familie stammt aus der ehemaligen Sowjetunion.",
+          "paragraph1": "Wilhelm ist 29 Jahre alt und arbeitet als Webentwickler. Er wurde in Deutschland geboren. Seine Familie stammt aus der ehemaligen Sowjetunion.",
           "paragraph2": {
             "beforeEmphasis": "Obwohl Wilhelm mit der russischen Sprache aufgewachsen ist, hat er sie erst ",
             "emphasis": "während seines Studiums für sich entdeckt.",

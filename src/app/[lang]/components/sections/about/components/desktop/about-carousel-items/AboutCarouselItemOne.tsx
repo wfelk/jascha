@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl';
 const AboutCarouselItemOne: FC<OnlyClassNameProps> = ({ className }) => {
   const t = useTranslations('sections.about.carouselItems.item1.content');
   return (
-    <div className={className}>
+    <div className={`text-lg xl:text-2xl ${className}`}>
       <p>{t('paragraph1')}</p>
       <p>
         {t('paragraph2.beforeEmphasis')}{' '}

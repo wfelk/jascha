@@ -1,13 +1,17 @@
 import React from 'react';
 import IconClock from '../../../icons/IconClock';
+import useStore from '@/store';
+import { useParams } from 'next/navigation';
 
-interface Props {
-  dateTime: string;
-  display: string;
-  marker: string;
-}
+const MeetingNextTime = () => {
+  const { lang } = useParams();
+  const date = useStore(state => state.nextMeeting?.date) || new Date();
+  const dateTime = new Date(date).toISOString();
+  const display = new Date(date).toLocaleTimeString(lang, {
+    hour: 'numeric',
+    minute: 'numeric',
+  });
 
-const MeetingNextTime = ({ dateTime, display, marker }: Props) => {
   return (
     <time
       dateTime={dateTime}
@@ -18,9 +22,11 @@ const MeetingNextTime = ({ dateTime, display, marker }: Props) => {
         <span className="text-6xl md:text-3xl inline-block text-sky-400/80">
           {display}
         </span>
-        <span className="text-4xl md:text-xl inline-block text-sky-600">
-          {marker}
-        </span>
+        {lang === 'de' && (
+          <span className="text-4xl md:text-xl inline-block text-sky-600">
+            Uhr
+          </span>
+        )}
       </div>
     </time>
   );

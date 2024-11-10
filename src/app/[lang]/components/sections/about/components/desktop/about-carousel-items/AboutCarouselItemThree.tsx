@@ -15,27 +15,14 @@ const AboutCarouselItemThree: FC<OnlyClassNameProps> = ({ className }) => {
   };
 
   return (
-    <div className={className}>
-      <p className="font-light text-xl">{t('paragraph1')}</p>
-      <p>
+    <div className={`text-xl xl:text-2xl ${className}`}>
+      <p className="font-light text-3xl xl:text-4xl">{t('paragraph1')}</p>
+      <p className="leading-loose">
         {t('paragraph2.beforeEmphasis')}{' '}
         <span className="font-bold text-sky-200">
           {t('paragraph2.emphasis')}
         </span>
       </p>
-      {isNextMeetingScheduled ? (
-        <Button
-          className={`${classNameDefault} mt-8 lg:mt-0 2xl:mt-16 max-w-fit mx-auto`}
-        >
-          <a onClick={handleClick}>{t('button.nextMeetingScheduled')}</a>
-        </Button>
-      ) : isMobileScreen ? (
-        <Button
-          className={`${classNameDefault} mt-8 lg:mt-0 2xl:mt-16 max-w-fit mx-auto`}
-        >
-          <a onClick={handleClick}>{t('button.nextMeetingUnscheduled')}</a>
-        </Button>
-      ) : null}
     </div>
   );
 };

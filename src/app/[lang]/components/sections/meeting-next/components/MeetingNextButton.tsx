@@ -1,17 +1,23 @@
-import React, { FC } from 'react';
+import React from 'react';
 import IconArrowUpRight from '../../../icons/IconArrowUpRight';
+import useStore from '@/store';
 
 interface Props {
   label: string;
   isNextMeetingScheduled: boolean;
 }
 
-const Button: FC<Props> = ({ label, isNextMeetingScheduled }) => {
+const Button = ({ label, isNextMeetingScheduled }: Props) => {
+  const address = useStore(state => state.nextMeeting?.address?.full);
   return isNextMeetingScheduled ? (
     <button
-      className={`bg-gradient-to-tr uppercase font-mono py-8 tracking-widest text-lg flex items-center justify-center relative overflow-hidden gap-2 md:rounded-b-lg transition-all group via-teal-500/75 to-teal-400/50 from-teal-700 hover:via-teal-700/75 hover:to-teal-800/50 hover:from-teal-900 w-full text-teal-950/75 hover:text-teal-400`}
+      className={`bg-gradient-to-tr uppercase flex font-mono py-6 tracking-widest text-lg items-center justify-center relative overflow-hidden gap-1 md:rounded-b-lg transition-all group via-teal-500/75 to-teal-400/50 from-teal-700 hover:via-teal-700/75 hover:to-teal-800/50 hover:from-teal-900 w-full text-teal-950/75 hover:text-teal-400`}
     >
-      <a href="#" target="_blank" rel="noreferrer">
+      <a
+        href={`https://www.google.de/maps/search/${address}`}
+        target="_blank"
+        rel="noreferrer"
+      >
         {label}
       </a>
       <IconArrowUpRight
