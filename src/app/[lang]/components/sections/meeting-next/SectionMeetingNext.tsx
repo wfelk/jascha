@@ -33,7 +33,7 @@ const SectionMeetingNext: FC<Props> = ({
       setNextMeeting(nextMeetingWithCoordinates);
     };
     setIsNextMeetingScheduled(isNextMeetingScheduled);
-    getCoordinatesAndSetNextMeeting(nextMeeting?.address?.street);
+    getCoordinatesAndSetNextMeeting(nextMeeting?.address?.full);
   }, []);
 
   return (
