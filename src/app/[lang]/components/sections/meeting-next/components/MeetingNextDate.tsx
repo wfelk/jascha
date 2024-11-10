@@ -32,10 +32,11 @@ const MeetingNextDate = () => {
       {date && (
         <span className="text-5xl md:text-3xl xl:text-xl 2xl:text-3xl text-sky-100/90">
           {date}
+          {lang === 'de' ? '.' : ''}
         </span>
       )}
       {month && (
-        <span className="text-2xl md:text-xl xl:text-lg 2xl:text-xl text-sky-300">
+        <span className="text-2xl md:text-xl 2xl:text-xl text-teal-100">
           {month}
         </span>
       )}
